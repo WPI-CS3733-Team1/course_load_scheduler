@@ -1,0 +1,96 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel ui:field="htmlPanel">
+		<g:Grid ui:field="grid" width="448px" height="301px">
+			<g:row>
+				<g:customCell>
+					<g:Label ui:field="label0" text="New Label">Label 0!</g:Label>
+				</g:customCell>
+				<g:customCell>
+					<g:Label ui:field="label1" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label ui:field="label2" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label ui:field="label3" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label ui:field="label4" text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:Label text="New Label"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:HTMLPanel>
+</ui:UiBinder> 
