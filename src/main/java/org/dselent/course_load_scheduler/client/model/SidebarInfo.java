@@ -159,6 +159,32 @@ public class SidebarInfo extends Model {
 					return false;
 				return true;
 			}
+			@Override
+			public String toString() {
+				StringBuilder builder = new StringBuilder();
+				builder.append("SidebarInfo [id=");
+				builder.append(id);
+				builder.append(", userName=");
+				builder.append(userName);
+				builder.append(", firstName=");
+				builder.append(firstName);
+				builder.append(", lastName=");
+				builder.append(lastName);
+				builder.append(", email=");
+				builder.append(email);
+				builder.append(", roleName=");
+				builder.append(roleName);
+				builder.append(", departmentName=");
+				builder.append(departmentName);
+				builder.append(", createdAt=");
+				builder.append(createdAt);
+				builder.append(", updatedAt=");
+				builder.append(updatedAt);
+				builder.append(", courses=");
+				builder.append(courses);
+				builder.append("]");
+				return builder.toString();
+			}
 
 			// methods
 				
