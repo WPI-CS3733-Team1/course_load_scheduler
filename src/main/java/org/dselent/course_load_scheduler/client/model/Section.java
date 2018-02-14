@@ -224,6 +224,42 @@ public class Section extends Model {
 				return false;
 			return true;
 		}
+		@Override
+		public String toString() {
+			StringBuilder builder = new StringBuilder();
+			builder.append("Section [id=");
+			builder.append(id);
+			builder.append(", courseId=");
+			builder.append(courseId);
+			builder.append(", CRN=");
+			builder.append(CRN);
+			builder.append(", sectionName=");
+			builder.append(sectionName);
+			builder.append(", sectionId=");
+			builder.append(sectionId);
+			builder.append(", expectedPop=");
+			builder.append(expectedPop);
+			builder.append(", requiredFreq=");
+			builder.append(requiredFreq);
+			builder.append(", academicYear=");
+			builder.append(academicYear);
+			builder.append(", academicTerm=");
+			builder.append(academicTerm);
+			builder.append(", startTime=");
+			builder.append(startTime);
+			builder.append(", endTime=");
+			builder.append(endTime);
+			builder.append(", daysPerWeek=");
+			builder.append(daysPerWeek);
+			builder.append(", courseLocation=");
+			builder.append(courseLocation);
+			builder.append(", createdAt=");
+			builder.append(createdAt);
+			builder.append(", updatedAt=");
+			builder.append(updatedAt);
+			builder.append("]");
+			return builder.toString();
+		}
 
 		// methods
 			
