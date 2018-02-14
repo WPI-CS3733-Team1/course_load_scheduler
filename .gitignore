@@ -1,3 +1,7 @@
 /.gradle/
 /.project
 .project
+/*.project
+/war/CourseLoadScheduler.css
+/war/CourseLoadScheduler.html
+/war/WEB-INF
