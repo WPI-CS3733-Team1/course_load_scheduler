@@ -3,9 +3,13 @@ package org.dselent.course_load_scheduler.client;
 import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.IndexView;
+import org.dselent.course_load_scheduler.client.view.ScheduleView;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
+import com.google.gwt.user.client.ui.RootPanel;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -56,13 +60,26 @@ public class CourseLoadScheduler implements EntryPoint
 		IndexPresenterImpl indexPresenter = injector.getIndexPresenter(); // on-demand injection
 		indexPresenter.init();
 		IndexView indexView = indexPresenter.getView();		
-		
+		/*
 		LoginPresenterImpl loginPresenter = injector.getLoginPresenter();
 		loginPresenter.init();
+		*/
+		
+		
 		//LoginView loginView = loginPresenter.getView();	
 		
-		//indexPresenter.go(RootPanel.get("indexContainer"));
+		System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
+		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
+		schedulePresenter.setParentPresenter(indexPresenter);
+		schedulePresenter.init();
+		
+		
+		
+		indexPresenter.go(RootPanel.get("indexContainer"));
 		indexPresenter.go(root);
-		loginPresenter.go(indexView.getViewRootPanel());
+		
+		//schedulePresenter.go(indexView.getViewRootPanel());
+		//loginPresenter.go(indexView.getViewRootPanel());
+		schedulePresenter.go(indexView.getViewRootPanel());
 	}
 }
