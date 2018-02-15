@@ -1,0 +1,760 @@
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2840 units from cache.
+Compiling...
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   80% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 8.49 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl.ScheduleViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl_ScheduleViewImplUiBinderImpl_designTime1518653443866.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl_ScheduleViewImplUiBinderImpl_designTime1518653443866.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl_ScheduleViewImplUiBinderImpl_designTime1518653443866_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl.ScheduleViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl_ScheduleViewImplUiBinderImpl_designTime1518653445023.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl_ScheduleViewImplUiBinderImpl_designTime1518653445023.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl_ScheduleViewImplUiBinderImpl_designTime1518653445023_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2840 cached/archived units.  Used 2840 / 2842 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "header" in urn:import:com.google.gwt.user.client.ui: <g:header> (:10)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder'; expect subsequent failures
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "header" in urn:import:com.google.gwt.user.client.ui: <g:header> (:10)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2841 cached/archived units.  Used 2841 / 2842 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] Cannot parse value: "400px" as type double: <g:north size='400px'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2842 cached/archived units.  Used 2842 / 2842 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl.LoginViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1518654339937.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1518654339937.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1518654339937_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl.LoginViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1518654340352.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1518654340352.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1518654340352_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+   [WARN] For the following type(s), generated source was never committed (did you forget to call commit()?)
+      [WARN] org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518654215605
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518654722932_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518654723086_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518654836285_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518654836500_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] The element type "g:DockLayoutPanel" must be terminated by the matching end-tag "</g:DockLayoutPanel>".
+      [ERROR] Error parsing XML (line 9): The element type "g:DockLayoutPanel" must be terminated by the matching end-tag "</g:DockLayoutPanel>".
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2842 cached/archived units.  Used 2842 / 2842 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] Attribute "ui:field" was already specified for element "g:DockLayoutPanel".
+      [ERROR] Error parsing XML (line 7): Attribute "ui:field" was already specified for element "g:DockLayoutPanel".
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder'; expect subsequent failures
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] Attribute "ui:field" was already specified for element "g:DockLayoutPanel".
+      [ERROR] Error parsing XML (line 5): Attribute "ui:field" was already specified for element "g:DockLayoutPanel".
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2842 cached/archived units.  Used 2842 / 2842 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655005636_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655005847_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655023791_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655028658_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655037459_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655056815_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655056846_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655082190_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655321946_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655321992_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655376834_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518655376865_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2843 units from cache.
+Compiling...
+   Compilation completed in 11.52 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/Harsh/Desktop/Software%20Engineering/code_ui/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518656988150_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518656988390_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518658049020_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl.SideBarContainerImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl_SideBarContainerImplUiBinderImpl_designTime1518658049057_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
