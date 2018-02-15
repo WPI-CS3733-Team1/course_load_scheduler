@@ -1,0 +1,1246 @@
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2841 units from cache.
+Compiling...
+   10% complete (ETR: 25 seconds)
+   10% complete (ETR: 25 seconds)
+   20% complete (ETR: 23 seconds)
+   30% complete (ETR: 16 seconds)
+   40% complete (ETR: 12 seconds)
+   50% complete (ETR: 9 seconds)
+   60% complete (ETR: 7 seconds)
+   70% complete (ETR: 5 seconds)
+   80% complete (ETR: 3 seconds)
+   90% complete (ETR: 2 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 20.08 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518666780996.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518666780996.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518666780996_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518666782674.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518666782674.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518666782674_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667255054.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667255054.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667255054_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667268035.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667268035.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667268035_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667272635.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667272635.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667272635_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667285983.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667285983.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667285983_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667294416.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667294416.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667294416_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667302811.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667302811.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667302811_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667308516.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667308516.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667308516_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667338575.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667338575.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667338575_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667485491_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667485537_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667490005_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667490046_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667490151.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667490151.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667490151_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667493030_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667493070_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667494819.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667494819.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667494819_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667545313.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667545313.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667545313_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667553536.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667553536.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667553536_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667611606_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.14 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667611798_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667618030.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667618030.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667618030_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667622717.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667622717.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667622717_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667638369.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667638369.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667638369_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667643428.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667643428.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667643428_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667647550.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667647550.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667647550_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667654761.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667654761.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667654761_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667665894.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667665894.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667665894_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667671378.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667671378.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667671378_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667693605.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667693605.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667693605_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667698469.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667698469.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518667698469_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668376800.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668376800.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668376800_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668388586_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668388630_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.07 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668389712.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668389712.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668389712_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668397031.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668397031.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668397031_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668411046.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668411046.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668411046_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.19 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668415307.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668415307.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668415307_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668417319.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668417319.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668417319_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668441400.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668441400.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668441400_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668447125.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668447125.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668447125_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668484868.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668484868.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668484868_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668490950.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668490950.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668490950_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668518058.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668518058.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668518058_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668552438.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668552438.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668552438_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668557414.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668557414.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668557414_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668570472.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668570472.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668570472_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668576034.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668576034.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668576034_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668581244.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668581244.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518668581244_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669472212_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669472251_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669485681_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '2' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669485710_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669485773.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669485773.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669485773_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669497327.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669497327.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669497327_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669503087.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669503087.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669503087_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669508543.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669508543.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1518669508543_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2844 units from cache.
+Compiling...
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   70% complete (ETR: 2 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 9.77 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+         [ERROR] Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+         [ERROR] Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+         [ERROR] Line 120: The method toInstant() is undefined for the type Timestamp
+         [ERROR] Line 138: The method toInstant() is undefined for the type Timestamp
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2843 cached/archived units.  Used 2843 / 2844 units from cache.
+Compiling...
+   Compilation completed in 0.03 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+         [ERROR] Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+         [ERROR] Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+         [ERROR] Line 120: The method toInstant() is undefined for the type Timestamp
+         [ERROR] Line 138: The method toInstant() is undefined for the type Timestamp
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2844 cached/archived units.  Used 2844 / 2844 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+      Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/CourseLoad.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Message.java'
+      Line 21: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Section.java'
+      Line 28: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/SidebarInfo.java'
+      Line 22: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 120: The method toInstant() is undefined for the type Timestamp
+      Line 138: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserRole.java'
+      Line 12: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 52: The method toInstant() is undefined for the type Timestamp
+      Line 70: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UserState.java'
+      Line 13: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 53: The method toInstant() is undefined for the type Timestamp
+      Line 71: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersHistory.java'
+      Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 128: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersRolesLink.java'
+      Line 14: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      Line 63: The method toInstant() is undefined for the type Timestamp
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/UsersSectionsLink.java'
+      Line 16: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/Course.java'
+         [ERROR] Line 25: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/model/User.java'
+         [ERROR] Line 19: No source code is available for type java.time.Instant; did you forget to inherit a required module?
+         [ERROR] Line 120: The method toInstant() is undefined for the type Timestamp
+         [ERROR] Line 138: The method toInstant() is undefined for the type Timestamp
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
