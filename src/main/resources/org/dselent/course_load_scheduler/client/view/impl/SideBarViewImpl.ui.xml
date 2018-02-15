@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+		<g:DockLayoutPanel ui:field = "sideBarPanel" width="280px" height="900px">
+			<g:north size = "400.0">
+				<g:Label>Tab 1</g:Label>
+				
+			</g:north>
+			
+			<g:center size = "200.0">
+				<g:Label>Tab 2</g:Label>
+
+			</g:center>
+			
+			<g:south size = "300.0">
+				<g:Label>Tab 3</g:Label>
+			
+			</g:south>
+			</g:DockLayoutPanel>
+</ui:UiBinder> 
