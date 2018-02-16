@@ -1,9 +1,0 @@
-/.gradle/
-/.project
-.project
-/*.project
-/war/CourseLoadScheduler.css
-/war/CourseLoadScheduler.html
-/war/WEB-INF
-/gwt-unitCache
-/war/course_load_scheduler
