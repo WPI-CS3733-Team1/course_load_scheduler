@@ -7,9 +7,15 @@ import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImp
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
+//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+//import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
+//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+//import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.IndexViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.SimpleEventBus;
@@ -42,11 +48,16 @@ public interface Injector extends Ginjector
     public SchedulePresenterImpl getSchedulePresenter();
     public FacultyTopBarPresenterImpl getFacultyTopBarPresenter();
     public AdminTopBarPresenterImpl getAdminTopBarPresenter();
-    
+	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+    //public FacultyPresenterImpl getFacultyPresenter();
+    public SideBarPresenterImpl getSideBarPresenter();
     //views
     public IndexViewImpl getIndexView();
     public LoginViewImpl getLoginView();
     public ScheduleViewImpl getScheduleView();
     public FacultyTopBarViewImpl getFacultyTopBarView();
     public AdminTopBarViewImpl getAdminTopBarView();
+	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+    //public FacultyViewImpl getFacultyView();
+    public SideBarViewImpl getSideBarView();
 }

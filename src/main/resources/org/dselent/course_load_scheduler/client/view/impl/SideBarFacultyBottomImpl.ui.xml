@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+	
+	<g:VerticalPanel width = "280px" height = "300px" ui:field = "facBottomSection" styleName="WithPadding" horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE">
+		<g:Label ui:field="course1">Course #1 Name</g:Label>
+		<g:Label ui:field="course2">Course #2 Name</g:Label>
+		<g:Label ui:field="course3">Course #3 Name</g:Label>
+		<g:Label ui:field="course4">Course #4 Name</g:Label>
+		<g:Label ui:field="course5">Course #5 Name</g:Label>
+	</g:VerticalPanel>
+	
+</ui:UiBinder> 
