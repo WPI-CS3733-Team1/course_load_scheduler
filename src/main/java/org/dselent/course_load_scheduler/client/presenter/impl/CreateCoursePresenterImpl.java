@@ -1,5 +1,6 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.dselent.course_load_scheduler.client.exceptions.EmptyStringException;
@@ -53,10 +54,16 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 		eventBusRegistration.put(InvalidCreateCourseEvent.TYPE, registration);	
 	}
 	
-	private void validateCreateCourseFields(String courseName, String courseNumber, String courseSections) throws EmptyStringException
+	private void validateCourseName(String courseName) throws EmptyStringException
 	{
 		checkEmptyString(courseName);
+	}
+	private void validateCourseNumber(String courseNumber) throws EmptyStringException
+	{
 		checkEmptyString(courseNumber);
+	}
+	private void validateCourseSections(String courseSections) throws EmptyStringException
+	{
 		checkEmptyString(courseSections);
 	}
 	@Override
@@ -100,13 +107,45 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			boolean validCourseNumber = true;
 			boolean validCourseSections = true;
 			
-			List<String> invalidReasonList = newArrayList<>();
+			List<String> invalidReasonList = new ArrayList<>();
 			
 			try
 			{
-				validateCreateCourseFields(courseName,  courseNumber, courseSections);
+				validateCourseName(courseName);
 			}
 			catch(EmptyStringException e)
+			{
+				invalidReasonList.add(InvalidCreateCourseString.NULL_COURSE_NAME);
+				validCourseName = false;
+			}
+			try 
+			{
+				validateCourseNumber(courseNumber);
+			}
+			catch(EmptyStringException e)
+			{
+				invalidReasonList.add(InvalidCreateCourseString.NULL_COURSE_NUMBER);
+				validCourseNumber = false;
+			}
+			try
+			{
+				validateCourseSections(courseSections);
+			}
+			catch(EmptyStringException e)
+			{
+				invalidReasonList.add(InvalidCreateCourseString.NULL_COURSE_SECTIONS);
+				validCourseSections = false;
+			}
+			if(validCourseName && validCourseNumber && validCourseSections)
+			{
+				sendCreateCourse(courseName, courseNumber, courseSections);
+			}
+			else
+			{
+				InvalidCreateCourseAction icca = new InvalidCreateCourseAction(invalidReasonList);
+				InvalidCreateCourseEvent icce = new InvalidCreateCourseEvent(icce);
+				eventBus.fireEvent(icce);
+			}
 		}
 			
 			
