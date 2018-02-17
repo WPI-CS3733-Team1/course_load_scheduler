@@ -47,7 +47,6 @@ public class InjectorModule extends AbstractGinModule
         bind(SideBarPresenter.class).to(SideBarPresenterImpl.class).in(Singleton.class);
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         //bind(FacultyPresenter.class).to(FacultyPresenterImpl.class).in(Singleton.class);
-        bind(SideBarPresenter.class).to(SideBarPresenterImpl.class).in(Singleton.class);
         
         // views
         bind(IndexView.class).to(IndexViewImpl.class).in(Singleton.class);
@@ -56,7 +55,6 @@ public class InjectorModule extends AbstractGinModule
         bind(SideBarView.class).to(SideBarViewImpl.class).in(Singleton.class);
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         //bind(FacultyView.class).to(FacultyViewImpl.class).in(Singleton.class);
-        bind(SideBarView.class).to(SideBarViewImpl.class).in(Singleton.class);
         
        
     }
