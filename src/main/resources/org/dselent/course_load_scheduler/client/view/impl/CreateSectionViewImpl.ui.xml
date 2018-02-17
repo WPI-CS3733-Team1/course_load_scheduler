@@ -1,0 +1,50 @@
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<g:HorizontalPanel>
+			<g:VerticalPanel horizontalAlignment="ALIGN_CENTER" ui:field="createCourseVerticalPanel"
+			verticalAlignment="ALIGN_MIDDLE" width="963px" height="565px">
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:IntegerBox ui:field="sectionExpectedPopulationIntBox" text="Expected Population"/>
+				</g:Cell>
+				<g:Cell verticalAlignment="ALIGN_MIDDLE">
+					<g:TextBox ui:field="sectionNameTextBox" text="Section Name" />
+				</g:Cell>
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:IntegerBox text="Required Frequency"
+					/>
+				</g:Cell>
+				<g:Cell verticalAlignment="ALIGN_MIDDLE">
+					<g:TextBox ui:field="sectionIdTextBox" text="Section ID" />
+				</g:Cell>
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:TextBox ui:field="sectionYearTextBox" text="Year" alignment="CENTER"/>
+				</g:Cell>
+				<g:Cell verticalAlignment="ALIGN_BOTTOM">
+					<g:TextBox ui:field="sectionTypeTextBox" text="Section Type"/>
+				</g:Cell>
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:TextBox ui:field="sectionTermTextBox" text="Term" direction="RTL" alignment="CENTER"/>
+				</g:Cell>
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:TextBox text="Start Time" alignment="CENTER" ui:field="sectionStartTimeTextBox"/>
+				</g:Cell>
+				<g:Cell horizontalAlignment="ALIGN_RIGHT">
+					<g:TextBox text="Days of the Week" alignment="CENTER" ui:field="sectionDaysOfTheWeek"/>
+				</g:Cell>
+				<g:TextBox text="Course" ui:field="sectionCourseTextBox"/>
+				<g:TextBox ui:field="sectionCourseNumberTextBox" text="Course Number"/>
+				<g:TextBox ui:field="sectionCourseNumberOfSectionsTextBox" text="Number of Sections"/>
+				<g:Label text="Available Sections:" ui:field="sectionAvailableSectionsLabel"/>
+			<g:Button ui:field="createSectionButton" text="Create Section" width="20%" />
+			
+		</g:VerticalPanel>
+			<g:ScrollPanel ui:field="courseScrollPanel" width="86px" height="299px"/>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
