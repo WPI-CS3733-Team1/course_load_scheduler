@@ -1,11 +1,27 @@
 package org.dselent.course_load_scheduler.client.gin;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminInboxPresenterImpl;
+=======
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.IndexViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.shared.SimpleEventBus;
@@ -36,10 +52,42 @@ public interface Injector extends Ginjector
     public IndexPresenterImpl getIndexPresenter();
     public LoginPresenterImpl getLoginPresenter();
     public SchedulePresenterImpl getSchedulePresenter();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public AdminInboxPresenterImpl getAdminInboxPresenter();
+=======
+    public FacultyPresenterImpl getFacultyPresenter();
+    public SideBarPresenterImpl getSideBarPresenter();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+    public FacultyPresenterImpl getFacultyPresenter();
+    public SideBarPresenterImpl getSideBarPresenter();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+    public FacultyPresenterImpl getFacultyPresenter();
+    public SideBarPresenterImpl getSideBarPresenter();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
     
     //views
     public IndexViewImpl getIndexView();
     public LoginViewImpl getLoginView();
     public ScheduleViewImpl getScheduleView();
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public AdminInboxPresenterImpl getAdminInboxView();
+=======
+    public FacultyViewImpl getFacultyView();
+    public SideBarViewImpl getSideBarView();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+    public FacultyViewImpl getFacultyView();
+    public SideBarViewImpl getSideBarView();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+    public FacultyViewImpl getFacultyView();
+    public SideBarViewImpl getSideBarView();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
     
 }

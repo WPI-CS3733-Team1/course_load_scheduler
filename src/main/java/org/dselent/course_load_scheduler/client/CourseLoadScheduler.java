@@ -1,9 +1,23 @@
 package org.dselent.course_load_scheduler.client;
 
 import org.dselent.course_load_scheduler.client.gin.Injector;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminInboxPresenterImpl;
+=======
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 
@@ -60,26 +74,75 @@ public class CourseLoadScheduler implements EntryPoint
 		IndexPresenterImpl indexPresenter = injector.getIndexPresenter(); // on-demand injection
 		indexPresenter.init();
 		IndexView indexView = indexPresenter.getView();		
-		/*
+		
 		LoginPresenterImpl loginPresenter = injector.getLoginPresenter();
 		loginPresenter.init();
+<<<<<<< HEAD
+=======
 		*/
-		
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
 		
 		//LoginView loginView = loginPresenter.getView();	
 		
-		System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
+		FacultyPresenterImpl facultyPresenter = injector.getFacultyPresenter();
+		facultyPresenter.init();
+		
+		
+		//System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
 		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
 		schedulePresenter.setParentPresenter(indexPresenter);
 		schedulePresenter.init();
 		
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		AdminInboxPresenterImpl adminInboxPresenter = injector.getAdminInboxPresenter();
+		adminInboxPresenter.setParentPresenter(indexPresenter);
+		adminInboxPresenter.init();
+=======
+		SideBarPresenterImpl sidebarPresenter = injector.getSideBarPresenter();
+		//sidebarPresenter.setParentPresenter(indexPresenter);
+		sidebarPresenter.init();
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
 		
+		//indexPresenter.go(RootPanel.get("indexContainer"));
+		//indexPresenter.go(root);
 		
-		indexPresenter.go(RootPanel.get("indexContainer"));
-		indexPresenter.go(root);
+		//loginPresenter.go(indexView.getViewRootPanel());
+<<<<<<< HEAD
+		//schedulePresenter.go(indexView.getViewRootPanel());
+		adminInboxPresenter.go(indexView.getViewRootPanel());
+=======
+		
+		//schedulePresenter.go(indexView.getViewRootPanel());
+		
+		facultyPresenter.go(indexView.getViewRootPanel());	
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+		SideBarPresenterImpl sidebarPresenter = injector.getSideBarPresenter();
+		//sidebarPresenter.setParentPresenter(indexPresenter);
+		sidebarPresenter.init();
+		
+		//indexPresenter.go(RootPanel.get("indexContainer"));
+		//indexPresenter.go(root);
+=======
+		SideBarPresenterImpl sidebarPresenter = injector.getSideBarPresenter();
+		//sidebarPresenter.setParentPresenter(indexPresenter);
+		sidebarPresenter.init();
+		
+		//indexPresenter.go(RootPanel.get("indexContainer"));
+		//indexPresenter.go(root);
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
-		schedulePresenter.go(indexView.getViewRootPanel());
+		
+		//schedulePresenter.go(indexView.getViewRootPanel());
+		
+		facultyPresenter.go(indexView.getViewRootPanel());	
+<<<<<<< HEAD
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
+=======
+>>>>>>> 21eddb0790cc495a1d25bb55512193b6b01f8bce
 	}
 }
