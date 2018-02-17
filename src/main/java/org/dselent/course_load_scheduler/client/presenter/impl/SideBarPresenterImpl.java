@@ -37,9 +37,9 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	}
 
 	@Override
-	public BaseView<? extends BasePresenter> getView() {
+	public SideBarView getView() {
 		// TODO Auto-generated method stub
-		return null;
+		return view;
 	}
 
 	@Override
@@ -56,6 +56,18 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 
 	@Override
 	public void unbind() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public IndexPresenter getParentPresenter() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setParentPresenter(IndexPresenter parentPresenter) {
 		// TODO Auto-generated method stub
 		
 	}
