@@ -58,21 +58,23 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 	}
 	
 	@Override
-	public BaseView<? extends BasePresenter> getView() {
-		// TODO Auto-generated method stub
-		return null;
+	public CreateCourseView getView() {
+		return view;
 	}
 
+	
 	@Override
 	public void setParentPresenter(IndexPresenter parentPresenter) {
-		// TODO Auto-generated method stub
-		
+		this.parentPresenter = parentPresenter;
 	}
-
+	
+	
 	@Override
 	public void createCourse() {
-		// TODO Auto-generated method stub
-		
+		if(!createCourseClickInProgress) {
+			
+			
+		}
 	}
 	
 
