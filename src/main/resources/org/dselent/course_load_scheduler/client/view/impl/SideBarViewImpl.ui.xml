@@ -10,7 +10,7 @@
 			</g:north>
 			
 			<g:center size = "200.0">
-				<g:Label>Tab 2</g:Label>
+				<h:SideBarFacultyMiddleImpl></h:SideBarFacultyMiddleImpl>	
 
 			</g:center>
 			
