@@ -102,15 +102,16 @@ public class CourseLoadScheduler implements EntryPoint
 		sidebarPresenter.init();
 		
 		
-		sideBarPresenter.go(RootPanel.get("sideBarContainer"));
-		sideBarPresenter.go(root);
+
+		//sideBarPresenter.go(root);
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
 		//schedulePresenter.go(sideBarView.getViewRootPanel());
-		sideBarPresenter.go(sideBarView.getViewRootPanel());
+		//sideBarPresenter.go(sideBarView.getViewRootPanel());
 		//indexPresenter.go(RootPanel.get("indexContainer"));
-		//indexPresenter.go(root);
+		indexPresenter.go(root);
+		sideBarPresenter.go(indexView.getViewRootPanel());
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
