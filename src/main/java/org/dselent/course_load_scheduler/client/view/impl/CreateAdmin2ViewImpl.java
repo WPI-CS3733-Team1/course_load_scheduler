@@ -58,10 +58,6 @@ public class CreateAdmin2ViewImpl extends Composite implements HasText {
 	public String getText() {
 		return null;
 	}
-
-	@UiHandler("professorEntry")
-		void onProfessorEntryClick(ClickEvent event) {
-	}
 	
 	public Label getFirstNameLabel() {
 		return firstNameLabel;
@@ -110,7 +106,11 @@ public class CreateAdmin2ViewImpl extends Composite implements HasText {
 	public void setProfessorEntry(Label professorEntry) {
 		this.professorEntry = professorEntry;
 	}
-	
+
+	@UiHandler("professorEntry")
+		void onProfessorEntryClick(ClickEvent event) {
+	}
+
 	@UiHandler("adminToggle")
 		void onAdminToggleClick(ClickEvent event) {
 	}
