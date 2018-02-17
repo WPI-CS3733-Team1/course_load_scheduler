@@ -1,8 +1,12 @@
 package org.dselent.course_load_scheduler.client.gin;
 
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.IndexViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
@@ -36,10 +40,13 @@ public interface Injector extends Ginjector
     public IndexPresenterImpl getIndexPresenter();
     public LoginPresenterImpl getLoginPresenter();
     public SchedulePresenterImpl getSchedulePresenter();
+    public FacultyTopBarPresenterImpl getFacultyTopBarPresenter();
+    public AdminTopBarPresenterImpl getAdminTopBarPresenter();
     
     //views
     public IndexViewImpl getIndexView();
     public LoginViewImpl getLoginView();
     public ScheduleViewImpl getScheduleView();
-    
+    public FacultyTopBarViewImpl getFacultyTopBarView();
+    public AdminTopBarViewImpl getAdminTopBarView();
 }

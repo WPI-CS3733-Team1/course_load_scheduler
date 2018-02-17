@@ -1,6 +1,7 @@
 package org.dselent.course_load_scheduler.client;
 
 import org.dselent.course_load_scheduler.client.gin.Injector;
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
@@ -69,9 +70,9 @@ public class CourseLoadScheduler implements EntryPoint
 		//LoginView loginView = loginPresenter.getView();	
 		
 		System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
-		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
-		schedulePresenter.setParentPresenter(indexPresenter);
-		schedulePresenter.init();
+		FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
+		facultyTopBarPresenter.setParentPresenter(indexPresenter);
+		facultyTopBarPresenter.init();
 		
 		
 		
@@ -80,6 +81,7 @@ public class CourseLoadScheduler implements EntryPoint
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
-		schedulePresenter.go(indexView.getViewRootPanel());
+		//schedulePresenter.go(indexView.getViewRootPanel());
+		facultyTopBarPresenter.go(indexView.getViewRootPanel());
 	}
 }
