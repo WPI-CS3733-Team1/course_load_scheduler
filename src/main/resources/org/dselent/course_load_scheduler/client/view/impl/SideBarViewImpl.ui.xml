@@ -15,7 +15,7 @@
 			</g:center>
 			
 			<g:south size = "300.0">
-				<g:Label>Tab 3</g:Label>
+				<h:SideBarFacultyBottomImpl></h:SideBarFacultyBottomImpl>	
 			
 			</g:south>
 			</g:DockLayoutPanel>

@@ -3,7 +3,7 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
 	
 	<g:VerticalPanel width = "280px" height = "200px" ui:field = "facMiddleSection" styleName="WithPadding" horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE">
-		<g:Button>View Schedule</g:Button>
-		<g:Button>Request Schedule Change</g:Button>
+		<g:Button ui:field="viewScheduleButton">View Schedule</g:Button>
+		<g:Button ui:field="requestChangeButton">Request Schedule Change</g:Button>
 	</g:VerticalPanel>
 </ui:UiBinder> 
