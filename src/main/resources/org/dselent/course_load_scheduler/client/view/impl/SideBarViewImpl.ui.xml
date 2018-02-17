@@ -1,20 +1,21 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:h="urn:import:org.dselent.course_load_scheduler.client.view.impl">
 
 		<g:DockLayoutPanel ui:field = "sideBarPanel" width="280px" height="900px">
 			<g:north size = "400.0">
-				<g:Label>Tab 1</g:Label>
+				<h:SideBarTopViewImpl></h:SideBarTopViewImpl>	
 				
 			</g:north>
 			
 			<g:center size = "200.0">
-				<g:Label>Tab 2</g:Label>
+				<h:SideBarFacultyMiddleImpl></h:SideBarFacultyMiddleImpl>	
 
 			</g:center>
 			
 			<g:south size = "300.0">
-				<g:Label>Tab 3</g:Label>
+				<h:SideBarFacultyBottomImpl></h:SideBarFacultyBottomImpl>	
 			
 			</g:south>
 			</g:DockLayoutPanel>
