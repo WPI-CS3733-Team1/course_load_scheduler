@@ -4,10 +4,10 @@
 
 	<g:VerticalPanel width = "280px" height = "400px" ui:field = "northSection" styleName="WithPadding" horizontalAlignment="ALIGN_CENTER">
 			<g:Image width="100" height="100" url="WEB-INF/classes/org/dselent/course_load_scheduler/client/view/images/loading.gif" ui:field="profilePhoto" />
-			<g:Label ui:field="ProfName" horizontalAlignment="ALIGN_CENTER"> Professor Name</g:Label>
-			<g:Label ui:field="ProfDepartment" horizontalAlignment="ALIGN_CENTER"> Professor Department</g:Label>
-			<g:Label ui:field="ProfRank" horizontalAlignment="ALIGN_CENTER"> Professor Rank</g:Label>
-			<g:Label ui:field="ProfEmail" horizontalAlignment="ALIGN_CENTER"> Professor Email</g:Label>
+			<g:Label ui:field="profName" horizontalAlignment="ALIGN_CENTER"> Professor Name</g:Label>
+			<g:Label ui:field="profDepartment" horizontalAlignment="ALIGN_CENTER"> Professor Department</g:Label>
+			<g:Label ui:field="profRank" horizontalAlignment="ALIGN_CENTER"> Professor Rank</g:Label>
+			<g:Label ui:field="profEmail" horizontalAlignment="ALIGN_CENTER"> Professor Email</g:Label>
 			
 		
 	</g:VerticalPanel>
