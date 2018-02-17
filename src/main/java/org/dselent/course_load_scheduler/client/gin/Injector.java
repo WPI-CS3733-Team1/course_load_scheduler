@@ -1,12 +1,14 @@
 package org.dselent.course_load_scheduler.client.gin;
 
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 //import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
@@ -49,7 +51,7 @@ public interface Injector extends Ginjector
     public FacultyTopBarPresenterImpl getFacultyTopBarPresenter();
     public AdminTopBarPresenterImpl getAdminTopBarPresenter();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
-    //public FacultyPresenterImpl getFacultyPresenter();
+    public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();
     //views
     public IndexViewImpl getIndexView();
@@ -58,6 +60,6 @@ public interface Injector extends Ginjector
     public FacultyTopBarViewImpl getFacultyTopBarView();
     public AdminTopBarViewImpl getAdminTopBarView();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
-    //public FacultyViewImpl getFacultyView();
+    public FacultyViewImpl getFacultyView();
     public SideBarViewImpl getSideBarView();
 }

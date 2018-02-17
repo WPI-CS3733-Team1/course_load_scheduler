@@ -41,11 +41,18 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 	@UiField
 	ScheduleView scheduleView;
 	
+	/*
 	@UiField
 	SideBarView sidebar;
+	*/
 	
 	@UiField
 	Header mainP;
+	
+	public FacultyViewImpl() {
+		initWidget(uiBinder.createAndBindUi(this));
+	}
+	
 	
 	@Override
 	public HTMLPanel getMainPanel() {
@@ -62,11 +69,6 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 		return sideBar;
 	}
 	
-	
-	public FacultyViewImpl() {
-		initWidget(uiBinder.createAndBindUi(this));
-	}
-
 	@Override
 	public void setPresenter(FacultyPresenter presenter) {
 		this.presenter = presenter;

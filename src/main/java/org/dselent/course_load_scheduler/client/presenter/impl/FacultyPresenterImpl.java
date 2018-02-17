@@ -25,21 +25,7 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 		view.setPresenter(this);
 	}
 	
-	public void addTopBarView(/*TopBarView*/) {
-		//view.getTopPanel().add(view);
-	}
-	
-	public void addSideBarView(/*SideBarView*/) {
-		//view.getSidePanel().add(view);
-	}
-	
-	public void addScheduleView(ScheduleView view) {
-		//view.getMainPanel().add(View);
-		//this.view.getMainPanel().add(view.getGrid());
-		//this.view.getMainPanel().add(view.getWidgetContainer()); //questionable....
-		//could pass view into go??
-	}
-	
+		
 	@Override
 	public void init() {
 		bind();
@@ -68,5 +54,17 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	@Override
 	public void bind() {
 		//nothing to put here yet
+	}
+
+
+	@Override
+	public IndexPresenter getParentPresenter() {
+		return parentPresenter;
+	}
+
+
+	@Override
+	public void setParentPresenter(IndexPresenter parentPresenter) {
+		this.parentPresenter = parentPresenter;
 	}
 }
