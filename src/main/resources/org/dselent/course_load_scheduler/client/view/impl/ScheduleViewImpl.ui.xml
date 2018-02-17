@@ -8,87 +8,104 @@
 		<g:Grid ui:field="grid" width="448px" height="301px">
 			<g:row>
 				<g:customCell>
-					<g:Label ui:field="label0" text="New Label">Label 0!</g:Label>
+					<g:InlineLabel text="Monday"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label1" text="New Label"/>
+					<g:InlineLabel text="Tuesday"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label2" text="New Label"/>
+					<g:InlineLabel text="Wednesday"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label3" text="New Label"/>
+					<g:InlineLabel text="Thursday"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label4" text="New Label"/>
-				</g:customCell>
-			</g:row>
-			<g:row>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="Friday"/>
 				</g:customCell>
 			</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="label0" text="0,0"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="label1" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="label2" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="label3" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-			</g:row>
-			<g:row>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
-				</g:customCell>
-				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="label4" text="New Label"/>
 				</g:customCell>
 			</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel text="New Label"/>
 				</g:customCell>
 			</g:row>
 		</g:Grid>
