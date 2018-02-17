@@ -10,7 +10,7 @@
 		<g:AbsolutePanel ui:field="rootPanel" width="100%" height="100%">
 			<g:at top="0" left="0">
 				<g:HTMLPanel ui:field="sideBar" height="100%" width="25%">
-				<d:SideBarViewImpl ui:field="sideBarView"/>
+				<!--  <d:SideBarViewImpl ui:field="sideBarView"/> -->
 				</g:HTMLPanel>
 			</g:at>
 			<g:at top="0" left="334">
