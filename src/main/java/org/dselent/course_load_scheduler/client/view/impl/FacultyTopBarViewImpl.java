@@ -35,7 +35,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 	@UiField Button cTerm;
 	@UiField Button dTerm;
 	@UiField HTMLPanel htmlPanel;
-	String username = "dselent";
+	String userName = "dselent";
 	
 	
 	public FacultyTopBarViewImpl() {
@@ -75,28 +75,28 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 
 	@UiHandler("mySchedule")
 	void onMyScheduleClick(ClickEvent event) {
-		presenter.openSchedule(username, "a");
+		presenter.openSchedule(userName, "A");
 	}
 	@UiHandler("aTerm")
 	void onATermClick(ClickEvent event) {
-		presenter.openSchedule(username, "a");
+		presenter.openSchedule(userName, "A");
 	}
 	@UiHandler("bTerm")
 	void onBTermClick(ClickEvent event) {
-		presenter.openSchedule(username, "b");
+		presenter.openSchedule(userName, "B");
 	}
 	@UiHandler("cTerm")
 	void onCTermClick(ClickEvent event) {
-		presenter.openSchedule(username, "c");
+		presenter.openSchedule(userName, "C");
 	}
 	@UiHandler("dTerm")
 	void onDtermClick(ClickEvent event) {
-		presenter.openSchedule(username, "d");
+		presenter.openSchedule(userName, "D");
 		
 	}
 	@UiHandler("search")
 	void onSearchClick(ClickEvent event) {
-		
+		presenter.openSearch(userName);
 	}
 	
 	@Override

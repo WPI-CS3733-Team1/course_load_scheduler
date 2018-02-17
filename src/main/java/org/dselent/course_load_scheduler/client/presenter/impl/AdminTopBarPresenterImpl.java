@@ -1,5 +1,7 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import javax.inject.Inject;
+
 import org.dselent.course_load_scheduler.client.action.OpenInboxAction;
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.action.OpenSearchAction;
@@ -10,20 +12,32 @@ import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
+import org.dselent.course_load_scheduler.client.view.IndexView;
+import org.dselent.course_load_scheduler.client.view.SideBarView;
 import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
 
 public class AdminTopBarPresenterImpl extends BasePresenterImpl implements AdminTopBarPresenter {
 
-	private AdminTopBarPresenter parentPresenter;
 	private AdminTopBarView view;
+	private IndexPresenter parentPresenter;
 	
 	@Override
 	public void init() {
 		bind();
 	}
+	
+	@Inject
+	public AdminTopBarPresenterImpl(IndexPresenter parentPresenter, AdminTopBarView view)
+	{
+		this.view = view;
+		this.parentPresenter = parentPresenter;
+		view.setPresenter(this);
+	}
+	
 	
 	@Override
 	public void go(HasWidgets container) {
@@ -37,12 +51,12 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 	}
 
 	@Override
-	public AdminTopBarPresenter getParentPresenter() {
+	public IndexPresenter getParentPresenter() {
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(AdminTopBarPresenter parentPresenter) {
+	public void setParentPresenter(IndexPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 	}
 

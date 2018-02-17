@@ -22,12 +22,6 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 
 	private IndexPresenter parentPresenter;
 	private FacultyTopBarView view;
-	private boolean aTermButtonClickInProgress = false;
-	private boolean bTermButtonClickInProgress = false;
-	private boolean cTermButtonClickInProgress = false;
-	private boolean dTermButtonClickInProgress = false;
-	private boolean scheduleButtonClickInProgress = false;
-	private boolean searchButtonClickInProgress = false;
 	public String userName = "dselent";
 	
 	@Override
@@ -68,30 +62,6 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 
 	@Override
 	public void FacultyTopBar() {
-		if(!aTermButtonClickInProgress) {
-			aTermButtonClickInProgress=true;
-			view.getATerm().setEnabled(false);
-			view.getBTerm().setEnabled(false);
-			view.getCTerm().setEnabled(false);
-			view.getDTerm().setEnabled(false);
-			view.getSearch().setEnabled(false);
-			view.getMySchedule().setEnabled(false);
-			parentPresenter.showLoadScreen();
-			openSchedule(userName, "a");
-			
-			
-		}
-		else if(!bTermButtonClickInProgress) {
-			aTermButtonClickInProgress=true;
-			view.getATerm().setEnabled(false);
-			view.getBTerm().setEnabled(false);
-			view.getCTerm().setEnabled(false);
-			view.getDTerm().setEnabled(false);
-			view.getSearch().setEnabled(false);
-			view.getMySchedule().setEnabled(false);
-			parentPresenter.showLoadScreen();
-			openSchedule(userName, "b");			
-		}
 	}
 
 	@Override

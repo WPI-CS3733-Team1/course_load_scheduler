@@ -8,15 +8,26 @@ import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.ModeratorTopBarView;
+import org.dselent.course_load_scheduler.client.view.SideBarView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.inject.Inject;
 
 public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements ModeratorTopBarPresenter {
 
-	private ModeratorTopBarPresenter parentPresenter;
+	private IndexPresenter parentPresenter;
 	private ModeratorTopBarView view;
+	
+	@Inject
+	public ModeratorTopBarPresenterImpl(IndexPresenter parentPresenter, ModeratorTopBarView view)
+	{
+		this.view = view;
+		this.parentPresenter = parentPresenter;
+		view.setPresenter(this);
+	}
 	
 	@Override
 	public void init() {
@@ -35,12 +46,12 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 	}
 
 	@Override
-	public ModeratorTopBarPresenter getParentPresenter() {
+	public IndexPresenter getParentPresenter() {
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(ModeratorTopBarPresenter parentPresenter) {
+	public void setParentPresenter(IndexPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 	}
 
