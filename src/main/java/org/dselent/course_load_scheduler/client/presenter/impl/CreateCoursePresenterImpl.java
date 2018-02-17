@@ -1,5 +1,8 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import java.util.List;
+
+import org.dselent.course_load_scheduler.client.exceptions.EmptyStringException;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -28,6 +31,13 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 		createCourseClickInProgress = false;
 	}
 	
+	private void sendCreateCourse(String courseName, String courseNumber, String courseSections)
+	{
+		SendCreateCourseAction scca = new SendCreateCourseAction(courseName, courseNumber, courseSections);
+		SendCreateCourseEvent scce = new SendCreateCourseEvent(scca);
+		eventBus.fireEvent(scce);
+	}
+	
 	@Override
 	public void init()
 	{
@@ -39,10 +49,16 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 	{
 		HandlerRegistration registration;
 		
-		registration = eventBus.addHandler(InvalidCourseCreationEvent.TYPE, this);
-		eventBusRegistration.put(InvalidCourseCreationEvent.TYPE, registration);	
+		registration = eventBus.addHandler(InvalidCreateCourseEvent.TYPE, this);
+		eventBusRegistration.put(InvalidCreateCourseEvent.TYPE, registration);	
 	}
 	
+	private void validateCreateCourseFields(String courseName, String courseNumber, String courseSections) throws EmptyStringException
+	{
+		checkEmptyString(courseName);
+		checkEmptyString(courseNumber);
+		checkEmptyString(courseSections);
+	}
 	@Override
 	public void go(HasWidgets container) {
 		container.clear();
@@ -72,10 +88,38 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 	@Override
 	public void createCourse() {
 		if(!createCourseClickInProgress) {
+			createCourseClickInProgress = true;
+			view.getCreateCourseButton().setEnabled(false);
+			parentPresenter.showLoadScreen();
+			
+			String courseName = view.getCourseNameTextBox().getText();
+			String courseNumber = view.getCourseNumberTextBox().getText();
+			String courseSections = view.getCourseSectionsTextBox().getText();
+			
+			boolean validCourseName = true;
+			boolean validCourseNumber = true;
+			boolean validCourseSections = true;
+			
+			List<String> invalidReasonList = newArrayList<>();
+			
+			try
+			{
+				validateCreateCourseFields(courseName,  courseNumber, courseSections);
+			}
+			catch(EmptyStringException e)
+		}
 			
 			
 		}
+	private void checkEmptyString(String string) throws EmptyStringException
+		{
+			if(string == null || string.equals(""))
+			{
+				throw new EmptyStringException();
+			}
+		
 	}
+	
 	
 
 	
