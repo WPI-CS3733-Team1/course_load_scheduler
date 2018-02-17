@@ -69,19 +69,19 @@ public class CourseLoadScheduler implements EntryPoint
 		
 		//LoginView loginView = loginPresenter.getView();	
 		
-		System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
-		FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
-		facultyTopBarPresenter.setParentPresenter(indexPresenter);
-		facultyTopBarPresenter.init();
+		//System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
+		//FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
+		//facultyTopBarPresenter.setParentPresenter(indexPresenter);
+		//facultyTopBarPresenter.init();
 		
 		
 		
-		indexPresenter.go(RootPanel.get("indexContainer"));
-		indexPresenter.go(root);
+		//indexPresenter.go(RootPanel.get("indexContainer"));
+		//indexPresenter.go(root);
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
 		//schedulePresenter.go(indexView.getViewRootPanel());
-		facultyTopBarPresenter.go(indexView.getViewRootPanel());
+		//facultyTopBarPresenter.go(indexView.getViewRootPanel());
 	}
 }
