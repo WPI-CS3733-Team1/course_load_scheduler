@@ -1,5 +1,5 @@
 .classpath
 gwt-unitCache/
-.gwt/.gwt-log
 war/course_load_scheduler/
 src/main/java/org/dselent/course_load_scheduler/.DS_Store
+.classpath
