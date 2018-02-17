@@ -18,30 +18,30 @@ public class SideBarViewImpl extends BaseViewImpl<SideBarPresenter> implements S
 
 	interface SideBarContainerImplUiBinder extends UiBinder<Widget, SideBarViewImpl> {}
 	
+	@UiField
+	DockLayoutPanel sideBarPanel;
+	
 	
 	
 	public SideBarViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-
-
-
+	
 	@Override
-	public void setPresenter(SideBarPresenter presenter) {
-		
-	}
-
-
-
-	@Override
-	public Widget getWidgetContainer() {
+	public Widget getWidgetContainer()
+	{
 		return this;
 	}
 
-
+	@Override
+	public void setPresenter(SideBarPresenter presenter) {
+		this.presenter = presenter;
+		
+	}
 
 	@Override
 	public HasWidgets getViewRootPanel() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 

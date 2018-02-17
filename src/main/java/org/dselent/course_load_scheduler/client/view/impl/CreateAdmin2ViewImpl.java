@@ -62,40 +62,56 @@ public class CreateAdmin2ViewImpl extends Composite implements HasText {
 	@UiHandler("professorEntry")
 		void onProfessorEntryClick(ClickEvent event) {
 	}
+	
 	public Label getFirstNameLabel() {
 		return firstNameLabel;
 	}
+	
 	public void setFirstNameLabel(Label firstNameLabel) {
 		this.firstNameLabel = firstNameLabel;
 	}
+	
 	public Label getLastNameLabel() {
 		return lastNameLabel;
 	}
+	
 	public void setLastNameLabel(Label lastNameLabel) {
 		this.lastNameLabel = lastNameLabel;
 	}
+	
 	public Label getUserNameLabel() {
 		return userNameLabel;
 	}
+	
 	public void setUserNameLabel(Label userNameLabel) {
 		this.userNameLabel = userNameLabel;
 	}
+	
 	public Label getTitleLabel() {
 		return titleLabel;
 	}
+	
 	public void setTitleLabel(Label titleLabel) {
 		this.titleLabel = titleLabel;
 	}
+	
 	public Label getDepartmentLabel() {
 		return departmentLabel;
 	}
+	
 	public void setDepartmentLabel(Label departmentLabel) {
 		this.departmentLabel = departmentLabel;
 	}
+	
 	public Label getProfessorEntry() {
 		return professorEntry;
 	}
+	
 	public void setProfessorEntry(Label professorEntry) {
 		this.professorEntry = professorEntry;
+	}
+	
+	@UiHandler("adminToggle")
+		void onAdminToggleClick(ClickEvent event) {
 	}
 }
