@@ -67,6 +67,7 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
 	@UiHandler("professorEntry")
 		void onProfessorEntryClick(ClickEvent event) {
 	}

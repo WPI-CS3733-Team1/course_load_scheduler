@@ -1,16 +1,24 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
 
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.inject.Inject;
 
 public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements CreateAdmin1Presenter {
 	
 	private IndexPresenter parentPresenter;
 	private CreateAdmin1View view;
 
+	@Inject
+	public CreateAdmin1PresenterImpl(IndexPresenter parentPresenter, CreateAdmin1View view) {
+		
+	}
+	
 	@Override
 	public void init() {
 		bind();
@@ -29,12 +37,12 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 
 	@Override
 	public void bind() {
-		/*
+		
 		HandlerRegistration registration;
 		
 		registration = eventBus.addHandler(InvalidLoginEvent.TYPE, this);
 		eventBusRegistration.put(InvalidLoginEvent.TYPE, registration);
-		*/
+		
 	}
 
 	@Override
