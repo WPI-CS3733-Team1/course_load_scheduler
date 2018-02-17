@@ -1,5 +1,11 @@
 package org.dselent.course_load_scheduler.client.view;
 
-public class SideBarView {
+import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
 
-}
+import com.google.gwt.user.client.ui.Widget;
+
+public interface SideBarView extends BaseView<SideBarPresenter> {
+	
+
+	}
+
