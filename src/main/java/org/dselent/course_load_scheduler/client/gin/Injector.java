@@ -1,19 +1,22 @@
 package org.dselent.course_load_scheduler.client.gin;
 
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminInboxPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
-import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.view.impl.AdminInboxViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
+
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 //import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
-//import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.IndexViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
@@ -50,6 +53,8 @@ public interface Injector extends Ginjector
     public SchedulePresenterImpl getSchedulePresenter();
     public FacultyTopBarPresenterImpl getFacultyTopBarPresenter();
     public AdminTopBarPresenterImpl getAdminTopBarPresenter();
+    public AdminInboxPresenterImpl getAdminInboxPresenter();
+    
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();
@@ -59,6 +64,8 @@ public interface Injector extends Ginjector
     public ScheduleViewImpl getScheduleView();
     public FacultyTopBarViewImpl getFacultyTopBarView();
     public AdminTopBarViewImpl getAdminTopBarView();
+    public AdminInboxViewImpl getAdminInboxView();
+    
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
     public SideBarViewImpl getSideBarView();

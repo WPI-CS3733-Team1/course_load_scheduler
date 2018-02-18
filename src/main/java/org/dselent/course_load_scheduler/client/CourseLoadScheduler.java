@@ -1,10 +1,10 @@
 package org.dselent.course_load_scheduler.client;
 
 import org.dselent.course_load_scheduler.client.gin.Injector;
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminInboxPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
-//import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
@@ -68,12 +68,11 @@ public class CourseLoadScheduler implements EntryPoint
 		indexPresenter.init();
 		IndexView indexView = indexPresenter.getView();		
 		//---------------End of OG files-----------------------------------------------------------		
+		
 		SideBarPresenterImpl sideBarPresenter = injector.getSideBarPresenter();
 		sideBarPresenter.setParentPresenter(indexPresenter);
 		sideBarPresenter.init();
 		SideBarView sideBarView = sideBarPresenter.getView();
-		
-		
 		
 		/*
 		LoginPresenterImpl loginPresenter = injector.getLoginPresenter();
@@ -92,7 +91,6 @@ public class CourseLoadScheduler implements EntryPoint
 		//schedulePresenter.init();
 		//SideBarPresenterImpl sideBar
 		
-		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 		FacultyPresenterImpl facultyPresenter = injector.getFacultyPresenter();
 		facultyPresenter.setParentPresenter(indexPresenter);
 		facultyPresenter.init();
@@ -102,6 +100,10 @@ public class CourseLoadScheduler implements EntryPoint
 		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
 		schedulePresenter.setParentPresenter(indexPresenter);
 		schedulePresenter.init();
+		
+		AdminInboxPresenterImpl adminInboxPresenter = injector.getAdminInboxPresenter();
+		adminInboxPresenter.setParentPresenter(indexPresenter);
+		adminInboxPresenter.init();
 		
 		SideBarPresenterImpl sidebarPresenter = injector.getSideBarPresenter();
 		//sidebarPresenter.setParentPresenter(indexPresenter);
@@ -123,19 +125,15 @@ public class CourseLoadScheduler implements EntryPoint
 		//sideBarPresenter.go(sideBarView.getViewRootPanel());
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		indexPresenter.go(root);
-		
-		facultyPresenter.go(indexView.getViewRootPanel());
-		
 		//sideBarPresenter.go(indexView.getViewRootPanel());
-		
-		
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
-		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 		//facultyPresenter.go(indexView.getViewRootPanel());
+		
+		adminInboxPresenter.go(indexView.getViewRootPanel());
 	}
 }

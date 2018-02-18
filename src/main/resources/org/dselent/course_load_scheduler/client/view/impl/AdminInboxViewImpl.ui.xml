@@ -5,5 +5,9 @@
 	
 	</ui:style>
 	<g:HTMLPanel>
+		<g:ScrollPanel ui:field="scrollPanel" width="100%" height="100%">
+			<g:Grid width="100%" height="100%" ui:field="gridPanel">
+			</g:Grid>
+		</g:ScrollPanel>
 	</g:HTMLPanel>
 </ui:UiBinder> 

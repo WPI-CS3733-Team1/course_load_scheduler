@@ -1,5 +1,6 @@
 package org.dselent.course_load_scheduler.client.gin;
 
+import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
@@ -9,6 +10,7 @@ import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.LoginPresenter;
 import org.dselent.course_load_scheduler.client.presenter.ModeratorTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.SchedulePresenter;
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminInboxPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
@@ -18,6 +20,7 @@ import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImp
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.ModeratorTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.view.AdminInboxView;
 import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import org.dselent.course_load_scheduler.client.view.FacultyView;
@@ -27,6 +30,7 @@ import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.LoginView;
 import org.dselent.course_load_scheduler.client.view.ModeratorTopBarView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
+import org.dselent.course_load_scheduler.client.view.impl.AdminInboxViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
@@ -64,7 +68,8 @@ public class InjectorModule extends AbstractGinModule
         bind(AdminTopBarPresenter.class).to(AdminTopBarPresenterImpl.class).in(Singleton.class);
         bind(ModeratorTopBarPresenter.class).to(ModeratorTopBarPresenterImpl.class).in(Singleton.class);
         bind(SideBarPresenter.class).to(SideBarPresenterImpl.class).in(Singleton.class);
-		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+		bind(AdminInboxPresenter.class).to(AdminInboxPresenterImpl.class).in(Singleton.class);
+        //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         bind(FacultyPresenter.class).to(FacultyPresenterImpl.class).in(Singleton.class);
         
         // views
@@ -75,6 +80,7 @@ public class InjectorModule extends AbstractGinModule
         bind(AdminTopBarView.class).to(AdminTopBarViewImpl.class).in(Singleton.class);
         bind(ModeratorTopBarView.class).to(ModeratorTopBarViewImpl.class).in(Singleton.class);
         bind(SideBarView.class).to(SideBarViewImpl.class).in(Singleton.class);
+        bind(AdminInboxView.class).to(AdminInboxViewImpl.class).in(Singleton.class);
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         bind(FacultyView.class).to(FacultyViewImpl.class).in(Singleton.class);  
     }
