@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Message extends Model {
 	// table name
-			
+		
 		// attributes
 		
 		private Integer id;
