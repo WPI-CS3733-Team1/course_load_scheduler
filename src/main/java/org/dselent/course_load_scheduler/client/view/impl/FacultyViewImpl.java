@@ -13,6 +13,7 @@ import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 
 public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements FacultyView {
@@ -20,55 +21,23 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 	private static FacultyViewImplUiBinder uiBinder = GWT.create(FacultyViewImplUiBinder.class);
 
 	interface FacultyViewImplUiBinder extends UiBinder<Widget, FacultyView> {}
-
-	
-	//DEFINE UI LAYOUTS/PANELS HERE!!!!!
-	
-	//DEFINE GETTERS FOR PANELS
-	
-	@UiField
-	AbsolutePanel rootPanel;
-	
-	@UiField
-	HTMLPanel mainPanel;
-	
-	@UiField
-	HTMLPanel navBar;
-	
-	@UiField
-	HTMLPanel sideBar;
-	
-	@UiField
-	ScheduleView scheduleView;
 	
 	/*
 	@UiField
 	SideBarView sidebar;
 	*/
 	
+	
+	
 	@UiField
-	Header mainP;
+	Label test;
 	
 	public FacultyViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 	
 	
-	@Override
-	public HTMLPanel getMainPanel() {
-		return mainPanel;
-	}
-	
-	@Override
-	public HTMLPanel getNavBar() {
-		return navBar;
-	}
-	
-	@Override
-	public HTMLPanel getSideBar() {
-		return sideBar;
-	}
-	
+		
 	@Override
 	public void setPresenter(FacultyPresenter presenter) {
 		this.presenter = presenter;
@@ -81,7 +50,31 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 
 	@Override
 	public HasWidgets getViewRootPanel() {
-		return rootPanel; //absolute panel
+		return null; //absolute panel
+	}
+
+
+
+	@Override
+	public HTMLPanel getNavBar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public HTMLPanel getMainPanel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public HTMLPanel getSideBar() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

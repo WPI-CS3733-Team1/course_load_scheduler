@@ -6,91 +6,234 @@
 	</ui:style>
 	<g:HTMLPanel ui:field="htmlPanel">
 		<g:Grid ui:field="grid" width="448px" height="301px">
+		<g:row>
+			<g:customCell>
+					<g:InlineLabel text=""></g:InlineLabel>
+			</g:customCell>
+			
+			<g:customCell>
+					<g:InlineLabel ui:field="monday" text="MONDAY"></g:InlineLabel>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="tuesday" text="TUESDAY"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="wednesday" text="WEDNESDAY"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="thursday" text="THURSDAY"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday" text="FRIDAY"/>
+				</g:customCell>
+		</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label ui:field="label0" text="New Label">Label 0!</g:Label>
+					<g:InlineLabel text="8am"></g:InlineLabel>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label1" text="New Label"/>
+					<g:InlineLabel ui:field="monday_8_9" text="New Label"></g:InlineLabel>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label2" text="New Label"/>
+					<g:InlineLabel ui:field="tuesday_8_9" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label3" text="New Label"/>
+					<g:InlineLabel ui:field="wednesday_8_9" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label ui:field="label4" text="New Label"/>
+					<g:InlineLabel ui:field="thursday_8_9" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_8_9" text="New Label"/>
 				</g:customCell>
 			</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="9am"></g:InlineLabel>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="monday_9_10" text="tuesday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="tuesday_9_10" text="tuesday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="wednesday_9_10" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="thursday_9_10" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_9_10" text="New Label"/>
+				</g:customCell>
+				
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:InlineLabel text="10am"></g:InlineLabel>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="monday_10_11" text="wednesday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="tuesday_10_11" text="wednesday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="wednesday_10_11" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="thursday_10_11" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_10_11" text="New Label"/>
+				</g:customCell>
+				
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:InlineLabel text="11am"></g:InlineLabel>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="monday_11_12" text="thursday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="tuesday_11_12" text="thursday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="wednesday_11_12" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="thursday_11_12" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_11_12" text="New Label"/>
 				</g:customCell>
 			</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="12pm"></g:InlineLabel>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="monday_12_1" text="friday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="tuesday_12_1" text="friday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="wednesday_12_1" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="thursday_12_1" text="New Label"/>
 				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_12_1" text="New Label"/>
+				</g:customCell>
+				
 			</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="1pm"></g:InlineLabel>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="monday_1_2" text="friday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="tuesday_1_2" text="friday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="wednesday_1_2" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="thursday_1_2" text="New Label"/>
 				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_1_2" text="New Label"/>
+				</g:customCell>
+				
+			</g:row><g:row>
+				<g:customCell>
+					<g:InlineLabel text="2pm"></g:InlineLabel>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="monday_2_3" text="friday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="tuesday_2_3" text="friday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="wednesday_2_3" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="thursday_2_3" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_2_3" text="New Label"/>
+				</g:customCell>
+				
+			</g:row><g:row>
+				<g:customCell>
+					<g:InlineLabel text="3pm"></g:InlineLabel>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="monday_3_4" text="friday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="tuesday_3_4" text="friday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="wednesday_3_4" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="thursday_3_4" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_3_4" text="New Label"/>
+				</g:customCell>
+				
 			</g:row>
 			<g:row>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel text="4pm"></g:InlineLabel>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="monday_4_5" text="friday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="tuesday_4_5" text="friday_8_9"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="wednesday_4_5" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:Label text="New Label"/>
+					<g:InlineLabel ui:field="thursday_4_5" text="New Label"/>
 				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_4_5" text="New Label"/>
+				</g:customCell>
+				
 			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:InlineLabel text="5pm"></g:InlineLabel>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="monday_5_6" text="friday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="tuesday_5_6" text="friday_8_9"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="wednesday_5_6" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="thursday_5_6" text="New Label"/>
+				</g:customCell>
+				<g:customCell>
+					<g:InlineLabel ui:field="friday_5_6" text="New Label"/>
+				</g:customCell>
+				
+			</g:row>
+			
 		</g:Grid>
 	</g:HTMLPanel>
 </ui:UiBinder> 

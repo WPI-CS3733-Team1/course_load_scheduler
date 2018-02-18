@@ -79,6 +79,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 	}
 	@UiHandler("aTerm")
 	void onATermClick(ClickEvent event) {
+		//
 		presenter.openSchedule(userName, "A");
 	}
 	@UiHandler("bTerm")
@@ -89,6 +90,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 	void onCTermClick(ClickEvent event) {
 		presenter.openSchedule(userName, "C");
 	}
+	
 	@UiHandler("dTerm")
 	void onDtermClick(ClickEvent event) {
 		presenter.openSchedule(userName, "D");

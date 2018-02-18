@@ -2,6 +2,7 @@ package org.dselent.course_load_scheduler.client.gin;
 
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
 //----------------------------------------------------------------------------------Faculty Issue in Imports; Please fix--------//
@@ -22,6 +23,8 @@ import org.dselent.course_load_scheduler.client.presenter.impl.ModeratorTopBarPr
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.AdminInboxView;
 import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
+import org.dselent.course_load_scheduler.client.view.CreateCourseView;
+import org.dselent.course_load_scheduler.client.view.CreateSectionView;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import org.dselent.course_load_scheduler.client.view.FacultyView;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
@@ -32,6 +35,8 @@ import org.dselent.course_load_scheduler.client.view.ModeratorTopBarView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.impl.AdminInboxViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.CreateCourseViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.CreateSectionViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 import org.dselent.course_load_scheduler.client.view.SideBarView;
@@ -70,6 +75,8 @@ public class InjectorModule extends AbstractGinModule
         bind(SideBarPresenter.class).to(SideBarPresenterImpl.class).in(Singleton.class);
 		bind(AdminInboxPresenter.class).to(AdminInboxPresenterImpl.class).in(Singleton.class);
         //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+        bind(CreateCoursePresenter.class).to(CreateCoursePresenter.class).in(Singleton.class);
+		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         bind(FacultyPresenter.class).to(FacultyPresenterImpl.class).in(Singleton.class);
         
         // views
@@ -81,6 +88,8 @@ public class InjectorModule extends AbstractGinModule
         bind(ModeratorTopBarView.class).to(ModeratorTopBarViewImpl.class).in(Singleton.class);
         bind(SideBarView.class).to(SideBarViewImpl.class).in(Singleton.class);
         bind(AdminInboxView.class).to(AdminInboxViewImpl.class).in(Singleton.class);
+        bind(CreateCourseView.class).to(CreateCourseViewImpl.class).in(Singleton.class);
+        bind(CreateSectionView.class).to(CreateSectionViewImpl.class).in(Singleton.class);
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         bind(FacultyView.class).to(FacultyViewImpl.class).in(Singleton.class);  
     }

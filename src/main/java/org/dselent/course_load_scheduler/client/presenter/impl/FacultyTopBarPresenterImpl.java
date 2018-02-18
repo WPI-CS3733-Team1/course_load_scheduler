@@ -68,7 +68,7 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	public void openSchedule(String username, String term) 	{
 		OpenScheduleAction osca = new OpenScheduleAction(userName, term);
 		OpenScheduleEvent osce = new OpenScheduleEvent(osca);
-		eventBus.fireEvent(osce);
+		eventBus.fireEvent(osce); //how is this going to connect to schedulePresenter/scheduleView?
 	}
 
 	@Override
@@ -76,6 +76,6 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 		OpenSearchAction osa = new OpenSearchAction(userName);
 		OpenSearchEvent ose = new OpenSearchEvent(osa);
 		eventBus.fireEvent(ose);
-	}
+	} 
 	
 }
