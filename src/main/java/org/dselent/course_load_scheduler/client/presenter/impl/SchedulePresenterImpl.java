@@ -1,10 +1,15 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.SchedulePresenter;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.gwt.user.client.ui.InlineLabel;
 import com.google.inject.Inject;
 
 public class SchedulePresenterImpl extends BasePresenterImpl implements SchedulePresenter {
@@ -62,10 +67,44 @@ public class SchedulePresenterImpl extends BasePresenterImpl implements Schedule
 		this.parentPresenter = parentPresenter;
 	}
 
+	//Noah - Assuming map of formatted strings with timeslots will come from service layer after
+	// a openScheduleEvent....
+	
 	@Override
-	public void presentSchedule() {
+	public void presentSchedule(List<HashMap<String, String>> sections) {
+		HashMap<String, InlineLabel> monday = view.getMondaySchedule();
+		HashMap<String, InlineLabel> tuesday = view.getTuesdaySchedule();
+		HashMap<String, InlineLabel> wednesday = view.getWednesdaySchedule();
+		HashMap<String, InlineLabel> thursday = view.getWednesdaySchedule();
+		HashMap<String, InlineLabel> friday = view.getWednesdaySchedule();
 		
-		System.out.println("[SchedulePresenter] presentSchedule() ran!");
+		
+		
+		ArrayList<HashMap<String, InlineLabel>> list = new ArrayList<HashMap<String, InlineLabel>>();
+		list.add(monday);
+		list.add(tuesday);
+		list.add(wednesday);
+		list.add(thursday);
+		list.add(friday);
+		
+		//iterates though list of daily schedules, sets text of InlineLabel to string inside Sections
+		//both the list and sections are indexed by day
+		for(HashMap<String, InlineLabel> map : list) {
+			//for(string key : sections)
+			for(int i = 0; i<sections.size();i++) {
+				
+				for(String key : sections.get(i).keySet()) {
+					
+					String section = sections.get(i).get(key);
+					
+					if(section!=null) {
+						map.get(key).setText(sections.get(i).get(key));
+					}
+				
+				}
+			
+			}
+		}
 	}
 
 }

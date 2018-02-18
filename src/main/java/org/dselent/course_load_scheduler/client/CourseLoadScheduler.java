@@ -1,5 +1,8 @@
 package org.dselent.course_load_scheduler.client;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
@@ -107,6 +110,18 @@ public class CourseLoadScheduler implements EntryPoint
 		//sidebarPresenter.setParentPresenter(indexPresenter);
 		sidebarPresenter.init();
 		
+		
+		ArrayList<HashMap<String, String>> testerList = new ArrayList<HashMap<String,String>>();
+		HashMap<String, String> monday = new HashMap<String, String>();
+		monday.put("8-9", "CS 3733 AXBO1 STUFF");
+		monday.put("11-12", "CS 3733 AXBO2 STUFF");
+		monday.put("2-3", "CS 3733 AXBO3 MORE STUFF");
+		monday.put("4-5", "CS 3733 AXBO4 STUFF");
+		testerList.add(monday);
+		schedulePresenter.presentSchedule(testerList);
+		
+		
+		
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		//indexPresenter.go(root);
 		
@@ -127,6 +142,7 @@ public class CourseLoadScheduler implements EntryPoint
 		facultyPresenter.go(indexView.getViewRootPanel());
 		
 		//sideBarPresenter.go(indexView.getViewRootPanel());
+		
 		
 		
 		

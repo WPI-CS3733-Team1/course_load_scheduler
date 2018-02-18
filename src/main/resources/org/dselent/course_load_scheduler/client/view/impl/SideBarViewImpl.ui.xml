@@ -18,5 +18,5 @@
 				<h:SideBarFacultyBottomImpl></h:SideBarFacultyBottomImpl>	
 			
 			</g:south>
-			</g:DockLayoutPanel>
+			</g:DockLayoutPanel> 
 </ui:UiBinder> 
