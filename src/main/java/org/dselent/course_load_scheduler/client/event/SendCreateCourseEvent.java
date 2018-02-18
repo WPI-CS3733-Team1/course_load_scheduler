@@ -1,6 +1,6 @@
 package org.dselent.course_load_scheduler.client.event;
 
-import org.dselent.course_load_scheduler.client.action.SendCreateCourse;
+import org.dselent.course_load_scheduler.client.action.SendCreateCourseAction;
 import org.dselent.course_load_scheduler.client.event_handler.SendCreateCourseEventHandler;
 
 import com.google.gwt.event.shared.GwtEvent;
@@ -12,7 +12,7 @@ public class SendCreateCourseEvent extends GwtEvent<SendCreateCourseEventHandler
 	
 	private SendCreateCourseAction action;
 	
-	public SendCreateCourseEvent(SendCreateCourseAcction action)
+	public SendCreateCourseEvent(SendCreateCourseAction action)
 	{
 		this.action = action;
 	}

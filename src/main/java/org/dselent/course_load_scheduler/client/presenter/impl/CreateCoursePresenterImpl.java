@@ -3,6 +3,11 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.dselent.course_load_scheduler.client.action.InvalidCreateCourseAction;
+import org.dselent.course_load_scheduler.client.action.SendCreateCourseAction;
+import org.dselent.course_load_scheduler.client.errorstring.InvalidCreateCourseStrings;
+import org.dselent.course_load_scheduler.client.event.InvalidCreateCourseEvent;
+import org.dselent.course_load_scheduler.client.event.SendCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.exceptions.EmptyStringException;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
@@ -115,7 +120,7 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			}
 			catch(EmptyStringException e)
 			{
-				invalidReasonList.add(InvalidCreateCourseString.NULL_COURSE_NAME);
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_NAME);
 				validCourseName = false;
 			}
 			try 
@@ -124,7 +129,7 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			}
 			catch(EmptyStringException e)
 			{
-				invalidReasonList.add(InvalidCreateCourseString.NULL_COURSE_NUMBER);
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_NUMBER);
 				validCourseNumber = false;
 			}
 			try
@@ -133,7 +138,7 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			}
 			catch(EmptyStringException e)
 			{
-				invalidReasonList.add(InvalidCreateCourseString.NULL_COURSE_SECTIONS);
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_SECTIONS);
 				validCourseSections = false;
 			}
 			if(validCourseName && validCourseNumber && validCourseSections)
@@ -143,7 +148,7 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			else
 			{
 				InvalidCreateCourseAction icca = new InvalidCreateCourseAction(invalidReasonList);
-				InvalidCreateCourseEvent icce = new InvalidCreateCourseEvent(icce);
+				InvalidCreateCourseEvent icce = new InvalidCreateCourseEvent(icca);
 				eventBus.fireEvent(icce);
 			}
 		}
@@ -156,8 +161,10 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			{
 				throw new EmptyStringException();
 			}
-		
-	}
+	
+		}
+	
+	
 	
 	
 

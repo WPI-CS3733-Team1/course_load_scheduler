@@ -10,13 +10,13 @@
 			<g:VerticalPanel horizontalAlignment="ALIGN_CENTER" ui:field="createCourseVerticalPanel"
 			verticalAlignment="ALIGN_MIDDLE" width="963px" height="565px">
 				<g:Cell horizontalAlignment="ALIGN_RIGHT">
-					<g:IntegerBox ui:field="sectionExpectedPopulationIntBox" text="Expected Population"/>
+					<g:TextBox ui:field="sectionExpectedPopulationTextBox" text="Expected Population"/>
 				</g:Cell>
 				<g:Cell verticalAlignment="ALIGN_MIDDLE">
 					<g:TextBox ui:field="sectionNameTextBox" text="Section Name" />
 				</g:Cell>
 				<g:Cell horizontalAlignment="ALIGN_RIGHT">
-					<g:IntegerBox text="Required Frequency"
+					<g:TextBox ui:field = "sectionRequiredFrequencyTextBox" text="Required Frequency"
 					/>
 				</g:Cell>
 				<g:Cell verticalAlignment="ALIGN_MIDDLE">

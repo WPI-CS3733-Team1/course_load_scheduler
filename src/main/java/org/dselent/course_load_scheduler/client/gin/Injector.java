@@ -1,12 +1,14 @@
 package org.dselent.course_load_scheduler.client.gin;
 
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateCoursePresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.CreateCourseViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
@@ -50,6 +52,8 @@ public interface Injector extends Ginjector
     public SchedulePresenterImpl getSchedulePresenter();
     public FacultyTopBarPresenterImpl getFacultyTopBarPresenter();
     public AdminTopBarPresenterImpl getAdminTopBarPresenter();
+    public CreateCoursePresenterImpl getCreateCoursePresenter();
+    public CreateSectionPresenterImpl getCreateSectionPresenter();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();
@@ -59,7 +63,11 @@ public interface Injector extends Ginjector
     public ScheduleViewImpl getScheduleView();
     public FacultyTopBarViewImpl getFacultyTopBarView();
     public AdminTopBarViewImpl getAdminTopBarView();
+    public CreateCourseViewImpl getCreateCourseView();
+    public CreateSectionViewImpl getCreateSectionView();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
     public SideBarViewImpl getSideBarView();
+  
+    
 }
