@@ -29,8 +29,8 @@ public class CreateSectionPresenterImpl extends BasePresenterImpl implements Cre
 	{
 		HandlerRegistration registration;
 		
-		registration = eventBus.addHandler(InvalidCreateSectionEvent.TYPE, this);
-		eventBusRegistration.put(InvalidCreateSectionEvent.TYPE, registration);
+		//registration = eventBus.addHandler(InvalidCreateSectionEvent.TYPE, this);
+		//eventBusRegistration.put(InvalidCreateSectionEvent.TYPE, registration);
 	}
 
 	@Override

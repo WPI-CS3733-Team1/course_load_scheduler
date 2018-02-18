@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.dselent.course_load_scheduler.client.gin.Injector;
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 //import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.ModPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.view.IndexView;
@@ -100,6 +102,13 @@ public class CourseLoadScheduler implements EntryPoint
 		facultyPresenter.setParentPresenter(indexPresenter);
 		facultyPresenter.init();
 		
+		AdminPresenterImpl adminPresenter = injector.getAdminPresenter();
+		adminPresenter.setParentPresenter(indexPresenter);
+		adminPresenter.init();
+		
+		ModPresenterImpl modPresenter = injector.getModPresenter();
+		modPresenter.setParentPresenter(indexPresenter);
+		modPresenter.init();
 		
 		//System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
 		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
@@ -108,19 +117,7 @@ public class CourseLoadScheduler implements EntryPoint
 		
 		SideBarPresenterImpl sidebarPresenter = injector.getSideBarPresenter();
 		//sidebarPresenter.setParentPresenter(indexPresenter);
-		sidebarPresenter.init();
-		
-		
-		ArrayList<HashMap<String, String>> testerList = new ArrayList<HashMap<String,String>>();
-		HashMap<String, String> monday = new HashMap<String, String>();
-		monday.put("8-9", "CS 3733 AXBO1 STUFF");
-		monday.put("11-12", "CS 3733 AXBO2 STUFF");
-		monday.put("2-3", "CS 3733 AXBO3 MORE STUFF");
-		monday.put("4-5", "CS 3733 AXBO4 STUFF");
-		testerList.add(monday);
-		schedulePresenter.presentSchedule(testerList);
-		
-		
+		sidebarPresenter.init();		
 		
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		//indexPresenter.go(root);
@@ -139,10 +136,10 @@ public class CourseLoadScheduler implements EntryPoint
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		indexPresenter.go(root);
 		
-		facultyPresenter.go(indexView.getViewRootPanel());
-		
+		//facultyPresenter.go(indexView.getViewRootPanel());
+		//adminPresenter.go(indexView.getViewRootPanel());
 		//sideBarPresenter.go(indexView.getViewRootPanel());
-		
+		modPresenter.go(indexView.getViewRootPanel());
 		
 		
 		

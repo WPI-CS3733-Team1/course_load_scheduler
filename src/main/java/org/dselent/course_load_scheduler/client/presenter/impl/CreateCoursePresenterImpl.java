@@ -55,8 +55,8 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 	{
 		HandlerRegistration registration;
 		
-		registration = eventBus.addHandler(InvalidCreateCourseEvent.TYPE, this);
-		eventBusRegistration.put(InvalidCreateCourseEvent.TYPE, registration);	
+		//registration = eventBus.addHandler(InvalidCreateCourseEvent.TYPE, this);
+		//eventBusRegistration.put(InvalidCreateCourseEvent.TYPE, registration);	
 	}
 	
 	private void validateCourseName(String courseName) throws EmptyStringException
