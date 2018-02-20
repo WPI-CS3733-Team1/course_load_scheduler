@@ -1,30 +1,30 @@
 package org.dselent.course_load_scheduler.client.gin;
 
-import org.dselent.course_load_scheduler.client.presenter.impl.AdminInboxPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
-<<<<<<< HEAD
-=======
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateCoursePresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateSectionPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
->>>>>>> d813959408bd09ed0ecff856246842e26f039ab1
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.ModPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
-import org.dselent.course_load_scheduler.client.view.impl.AdminInboxViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.AdminViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.CreateCourseViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.CreateSectionViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
-import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
-
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 //import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.service.impl.UserServiceImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
-import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
+//import org.dselent.course_load_scheduler.client.view.impl.FacultyViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.IndexViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.ModViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl;
 
@@ -53,15 +53,19 @@ public interface Injector extends Ginjector
     // event bus
     public SimpleEventBus getEventBus();
     
+    //services
+    public UserServiceImpl getUserService();
+    
     // presenters
     public IndexPresenterImpl getIndexPresenter();
     public LoginPresenterImpl getLoginPresenter();
     public SchedulePresenterImpl getSchedulePresenter();
     public FacultyTopBarPresenterImpl getFacultyTopBarPresenter();
     public AdminTopBarPresenterImpl getAdminTopBarPresenter();
-    public AdminInboxPresenterImpl getAdminInboxPresenter();
     public CreateCoursePresenterImpl getCreateCoursePresenter();
     public CreateSectionPresenterImpl getCreateSectionPresenter();
+    public AdminPresenterImpl getAdminPresenter();
+    public ModPresenterImpl getModPresenter();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();
@@ -71,9 +75,11 @@ public interface Injector extends Ginjector
     public ScheduleViewImpl getScheduleView();
     public FacultyTopBarViewImpl getFacultyTopBarView();
     public AdminTopBarViewImpl getAdminTopBarView();
-    public AdminInboxViewImpl getAdminInboxView();
     public CreateCourseViewImpl getCreateCourseView();
     public CreateSectionViewImpl getCreateSectionView();
+    public AdminViewImpl getAdminView();
+    public ModViewImpl getModView();
+    
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
     public SideBarViewImpl getSideBarView();

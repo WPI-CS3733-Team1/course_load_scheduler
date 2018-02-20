@@ -1,5 +1,6 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin2Presenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -42,5 +43,11 @@ public class CreateAdmin2PresenterImpl extends BasePresenterImpl implements Crea
 	@Override
 	public void createAdmin2() {
 		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
+		// TODO Auto-generated method stub
+		
 	}
 }

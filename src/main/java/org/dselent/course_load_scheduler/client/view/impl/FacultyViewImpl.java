@@ -22,21 +22,10 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 
 	interface FacultyViewImplUiBinder extends UiBinder<Widget, FacultyView> {}
 	
-	/*
-	@UiField
-	SideBarView sidebar;
-	*/
-	
-	
-	
-	@UiField
-	Label test;
 	
 	public FacultyViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-	
-	
 		
 	@Override
 	public void setPresenter(FacultyPresenter presenter) {
@@ -51,32 +40,6 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 	@Override
 	public HasWidgets getViewRootPanel() {
 		return null; //absolute panel
-	}
-
-
-
-	@Override
-	public HTMLPanel getNavBar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-
-	@Override
-	public HTMLPanel getMainPanel() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-
-	@Override
-	public HTMLPanel getSideBar() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
+	}	
 
 }

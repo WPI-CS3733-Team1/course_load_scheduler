@@ -32,3 +32,25 @@ h1 {
 #closeButton {
   margin: 15px 6px 6px;
 }
+.table {
+table-width: 800px;
+	margin: 10px 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+table-layout: fixed;
+border-spacing: 0px;
+}
+.rowOdd {
+background-color: lightgrey;
+table-layout: fixed;
+cell-width:150px;
+padding-left:20px;
+padding-right:20px;
+}
+.rowEven {
+background-color: white;
+table-layout: fixed;
+cell-width:150px;
+padding-left:20px;
+padding-right:20px;
+}

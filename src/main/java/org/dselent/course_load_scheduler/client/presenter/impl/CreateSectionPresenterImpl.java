@@ -1,6 +1,7 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import org.dselent.course_load_scheduler.client.event.InvalidCreateSectionEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.CreateSectionPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.CreateSectionView;
@@ -30,7 +31,7 @@ public class CreateSectionPresenterImpl extends BasePresenterImpl implements Cre
 		HandlerRegistration registration;
 		
 		registration = eventBus.addHandler(InvalidCreateSectionEvent.TYPE, this);
-		eventBusRegistration.put(InvalidCreateSectionEvent.TYPE, registration);
+		//eventBusRegistration.put(InvalidCreateSectionEvent.TYPE, registration);
 	}
 
 	@Override
@@ -81,6 +82,12 @@ public class CreateSectionPresenterImpl extends BasePresenterImpl implements Cre
 
 	@Override
 	public void setParentPresenter(IndexPresenter parentPresenter) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
 		// TODO Auto-generated method stub
 		
 	}

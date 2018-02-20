@@ -1,6 +1,7 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
@@ -59,4 +60,5 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 	public void createAdmin1() {
 		// TODO Auto-generated method stub
 	}
+
 }
