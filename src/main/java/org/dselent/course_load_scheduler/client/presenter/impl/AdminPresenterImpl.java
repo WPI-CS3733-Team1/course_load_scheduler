@@ -1,5 +1,6 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.model.Model;
 import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
@@ -58,6 +59,13 @@ public class AdminPresenterImpl extends BasePresenterImpl implements AdminPresen
 	@Override
 	public void setParentPresenter(IndexPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
+	}
+
+
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

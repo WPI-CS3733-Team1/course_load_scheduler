@@ -9,6 +9,7 @@ import org.dselent.course_load_scheduler.client.action.SendLoginAction;
 import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
@@ -84,5 +85,10 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 		OpenScheduleAction osca = new OpenScheduleAction(username, term);
 		OpenScheduleEvent osce = new OpenScheduleEvent(osca);
 		eventBus.fireEvent(osce);
+	}
+
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
+		
 	}
 }
