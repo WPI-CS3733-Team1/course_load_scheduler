@@ -52,6 +52,9 @@ public interface Injector extends Ginjector
     // event bus
     public SimpleEventBus getEventBus();
     
+    //services
+    public UserServiceImpl getUserService();
+    
     // presenters
     public IndexPresenterImpl getIndexPresenter();
     public LoginPresenterImpl getLoginPresenter();

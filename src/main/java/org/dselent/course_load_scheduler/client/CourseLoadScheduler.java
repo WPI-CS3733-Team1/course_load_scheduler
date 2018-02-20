@@ -129,6 +129,11 @@ public class CourseLoadScheduler implements EntryPoint
 
 		//sideBarPresenter.go(root);
 		
+		UserServiceImpl userService = injector.getUserService();
+		userService.init();
+
+		
+		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
 		//schedulePresenter.go(sideBarView.getViewRootPanel());
