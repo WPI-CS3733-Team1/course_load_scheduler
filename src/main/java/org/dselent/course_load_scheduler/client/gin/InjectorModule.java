@@ -70,6 +70,10 @@ public class InjectorModule extends AbstractGinModule
 		// event bus
         bind(SimpleEventBus.class).in(Singleton.class);
         
+        //services
+        bind(UserService.class).to(UserServiceImpl.class).in(Singleton.class);
+
+        
         // presenters
         bind(IndexPresenter.class).to(IndexPresenterImpl.class).in(Singleton.class);
         bind(LoginPresenter.class).to(LoginPresenterImpl.class).in(Singleton.class);
