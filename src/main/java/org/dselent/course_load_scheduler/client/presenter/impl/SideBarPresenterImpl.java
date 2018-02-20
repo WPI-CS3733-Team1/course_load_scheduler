@@ -43,12 +43,6 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	}
 
 	@Override
-	public Model getModel() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public void bind() {
 		// TODO Auto-generated method stub
 		

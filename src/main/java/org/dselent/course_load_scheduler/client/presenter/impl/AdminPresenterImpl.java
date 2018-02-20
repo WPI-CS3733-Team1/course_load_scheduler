@@ -40,12 +40,6 @@ public class AdminPresenterImpl extends BasePresenterImpl implements AdminPresen
 	}
 
 	@Override
-	public Model getModel() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public void bind() {
 		// TODO Auto-generated method stub
 		

@@ -46,12 +46,6 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	}
 
 	@Override
-	public Model getModel() { //no model
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public void bind() {
 		//nothing to put here yet
 	}
