@@ -1,12 +1,15 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui">
-	<ui:style>
-	
-	</ui:style>
-	<g:HTMLPanel ui:field="htmlPanel">
-		<g:Grid ui:field="grid" width="448px" height="301px">
-		<g:row>
+<ui:style>
+	.gwt-InlineLabel {
+		width:150px;
+ 	}
+</ui:style>
+
+	<g:HTMLPanel ui:field="htmlPanel" width="800">
+		<g:Grid ui:field="grid" width="800" height="301px" styleName="table" cellPadding="20">
+		<g:row styleName = "rowOdd">
 			<g:customCell>
 					<g:InlineLabel text=""></g:InlineLabel>
 			</g:customCell>
@@ -24,10 +27,10 @@
 					<g:InlineLabel ui:field="thursday" text="THURSDAY"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday" text="FRIDAY"/>
+					<g:InlineLabel ui:field="friday" text="FRIDAY" width="100" wordWrap="false"/>
 				</g:customCell>
 		</g:row>
-			<g:row>
+			<g:row styleName = "rowEven">
 				<g:customCell>
 					<g:InlineLabel text="8am"></g:InlineLabel>
 				</g:customCell>
@@ -44,10 +47,10 @@
 					<g:InlineLabel ui:field="thursday_8_9" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_8_9" text="New Label"/>
+					<g:InlineLabel ui:field="friday_8_9" text="New Label" wordWrap="false"/>
 				</g:customCell>
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowOdd">
 				<g:customCell>
 					<g:InlineLabel text="9am"></g:InlineLabel>
 				</g:customCell>
@@ -64,11 +67,11 @@
 					<g:InlineLabel ui:field="thursday_9_10" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_9_10" text="New Label"/>
+					<g:InlineLabel ui:field="friday_9_10" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowEven">
 				<g:customCell>
 					<g:InlineLabel text="10am"></g:InlineLabel>
 				</g:customCell>
@@ -85,11 +88,11 @@
 					<g:InlineLabel ui:field="thursday_10_11" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_10_11" text="New Label"/>
+					<g:InlineLabel ui:field="friday_10_11" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowOdd">
 				<g:customCell>
 					<g:InlineLabel text="11am"></g:InlineLabel>
 				</g:customCell>
@@ -106,10 +109,10 @@
 					<g:InlineLabel ui:field="thursday_11_12" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_11_12" text="New Label"/>
+					<g:InlineLabel ui:field="friday_11_12" text="New Label" wordWrap="false"/>
 				</g:customCell>
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowEven">
 				<g:customCell>
 					<g:InlineLabel text="12pm"></g:InlineLabel>
 				</g:customCell>
@@ -126,11 +129,11 @@
 					<g:InlineLabel ui:field="thursday_12_1" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_12_1" text="New Label"/>
+					<g:InlineLabel ui:field="friday_12_1" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowOdd">
 				<g:customCell>
 					<g:InlineLabel text="1pm"></g:InlineLabel>
 				</g:customCell>
@@ -147,10 +150,11 @@
 					<g:InlineLabel ui:field="thursday_1_2" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_1_2" text="New Label"/>
+					<g:InlineLabel ui:field="friday_1_2" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
-			</g:row><g:row>
+			</g:row>
+			<g:row styleName = "rowEven">
 				<g:customCell>
 					<g:InlineLabel text="2pm"></g:InlineLabel>
 				</g:customCell>
@@ -167,10 +171,11 @@
 					<g:InlineLabel ui:field="thursday_2_3" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_2_3" text="New Label"/>
+					<g:InlineLabel ui:field="friday_2_3" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
-			</g:row><g:row>
+			</g:row>
+			<g:row styleName = "rowOdd">
 				<g:customCell>
 					<g:InlineLabel text="3pm"></g:InlineLabel>
 				</g:customCell>
@@ -187,11 +192,11 @@
 					<g:InlineLabel ui:field="thursday_3_4" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_3_4" text="New Label"/>
+					<g:InlineLabel ui:field="friday_3_4" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowEven">
 				<g:customCell>
 					<g:InlineLabel text="4pm"></g:InlineLabel>
 				</g:customCell>
@@ -208,11 +213,11 @@
 					<g:InlineLabel ui:field="thursday_4_5" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_4_5" text="New Label"/>
+					<g:InlineLabel ui:field="friday_4_5" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
 			</g:row>
-			<g:row>
+			<g:row styleName = "rowOdd">
 				<g:customCell>
 					<g:InlineLabel text="5pm"></g:InlineLabel>
 				</g:customCell>
@@ -229,7 +234,7 @@
 					<g:InlineLabel ui:field="thursday_5_6" text="New Label"/>
 				</g:customCell>
 				<g:customCell>
-					<g:InlineLabel ui:field="friday_5_6" text="New Label"/>
+					<g:InlineLabel ui:field="friday_5_6" text="New Label" wordWrap="false"/>
 				</g:customCell>
 				
 			</g:row>
