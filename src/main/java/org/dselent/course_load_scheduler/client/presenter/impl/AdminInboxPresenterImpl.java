@@ -49,8 +49,8 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 		this.parentPresenter = parentPresenter;		
 	}
 	
-
-	{
+	/*
+	public Message makeM1() {
 	Message m1 = new Message();
 	m1.setId(1000);
 	m1.setUserId(1000);
@@ -59,9 +59,10 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	m1.setResolved(false);
 	m1.setReceivedAt(null);
 	m1.setDeptId(6);
+	return m1;
 	}
 	
-	{
+	public Message makeM2() {
 	Message m2 = new Message();
 	m2.setId(1001);
 	m2.setUserId(1001);
@@ -70,12 +71,14 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	m2.setResolved(false);
 	m2.setReceivedAt(null);
 	m2.setDeptId(6);
+	return m2;
 	}
 	
-	{
+	public ArrayList<Message> makeLOM() {
 	ArrayList<Message> lom = new ArrayList<Message>();
-	
-	
+	lom.add(makeM1());
+	lom.add(makeM1());
+	return lom;
 	}
-
+	*/
 }

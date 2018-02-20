@@ -60,5 +60,6 @@ public class AdminInboxViewImpl extends BaseViewImpl<AdminInboxPresenter> implem
 			gridPanel.add(new AdminInboxRowViewImpl(newUser, newMessage));
 		}
 	}
+	
 
 }
