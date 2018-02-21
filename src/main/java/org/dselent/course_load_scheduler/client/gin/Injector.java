@@ -2,6 +2,8 @@ package org.dselent.course_load_scheduler.client.gin;
 
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdmin1PresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdmin2PresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateCoursePresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateSectionPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
@@ -66,6 +68,8 @@ public interface Injector extends Ginjector
     public CreateSectionPresenterImpl getCreateSectionPresenter();
     public AdminPresenterImpl getAdminPresenter();
     public ModPresenterImpl getModPresenter();
+    public CreateAdmin1PresenterImpl getCreateAdmin1Presenter();
+    public CreateAdmin2PresenterImpl getCreateAdmin2Presenter();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();

@@ -2,6 +2,8 @@ package org.dselent.course_load_scheduler.client.gin;
 
 import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateAdmin2Presenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
@@ -14,6 +16,8 @@ import org.dselent.course_load_scheduler.client.presenter.ModeratorTopBarPresent
 import org.dselent.course_load_scheduler.client.presenter.SchedulePresenter;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdmin1PresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdmin2PresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateCoursePresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
@@ -26,6 +30,8 @@ import org.dselent.course_load_scheduler.client.presenter.impl.ModeratorTopBarPr
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
 import org.dselent.course_load_scheduler.client.view.AdminView;
+import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
+import org.dselent.course_load_scheduler.client.view.CreateAdmin2View;
 import org.dselent.course_load_scheduler.client.view.CreateCourseView;
 import org.dselent.course_load_scheduler.client.view.CreateSectionView;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
@@ -41,6 +47,8 @@ import org.dselent.course_load_scheduler.client.view.ModeratorTopBarView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.CreateAdmin1ViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.CreateAdmin2ViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.CreateCourseViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.CreateSectionViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
@@ -85,6 +93,8 @@ public class InjectorModule extends AbstractGinModule
         bind(ModeratorTopBarPresenter.class).to(ModeratorTopBarPresenterImpl.class).in(Singleton.class);
         bind(SideBarPresenter.class).to(SideBarPresenterImpl.class).in(Singleton.class);
         bind(CreateCoursePresenter.class).to(CreateCoursePresenterImpl.class).in(Singleton.class);
+        bind(CreateAdmin1Presenter.class).to(CreateAdmin1PresenterImpl.class).in(Singleton.class);
+        bind(CreateAdmin2Presenter.class).to(CreateAdmin2PresenterImpl.class).in(Singleton.class);
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         bind(FacultyPresenter.class).to(FacultyPresenterImpl.class).in(Singleton.class);
         bind(AdminPresenter.class).to(AdminPresenterImpl.class).in(Singleton.class);
@@ -100,6 +110,8 @@ public class InjectorModule extends AbstractGinModule
         bind(SideBarView.class).to(SideBarViewImpl.class).in(Singleton.class);
         bind(CreateCourseView.class).to(CreateCourseViewImpl.class).in(Singleton.class);
         bind(CreateSectionView.class).to(CreateSectionViewImpl.class).in(Singleton.class);
+        bind(CreateAdmin1View.class).to(CreateAdmin1ViewImpl.class).in(Singleton.class);
+        bind(CreateAdmin2View.class).to(CreateAdmin2ViewImpl.class).in(Singleton.class);
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
         bind(FacultyView.class).to(FacultyViewImpl.class).in(Singleton.class);  
         bind(AdminView.class).to(AdminViewImpl.class).in(Singleton.class);
