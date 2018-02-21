@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.dselent.course_load_scheduler.client.action.ReceiveOpenCreateAdminAction;
 import org.dselent.course_load_scheduler.client.action.SendOpenCreateAdminAction;
-import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.model.User;
 import org.dselent.course_load_scheduler.client.receive.jsonkeys.ReceiveOpenCreateAdminKeys;
 import org.dselent.course_load_scheduler.client.send.jsonkeys.SendOpenCreateAdminKeys;
