@@ -20,7 +20,6 @@ public class CourseLoad extends Model {
 		private Instant updatedAt;
 
 		// methods
-			
 		
 		public Integer getId() {
 			return id;
