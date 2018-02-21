@@ -6,6 +6,7 @@ import org.dselent.course_load_scheduler.client.view.SideBarView;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
@@ -18,8 +19,11 @@ public class SideBarViewImpl extends BaseViewImpl<SideBarPresenter> implements S
 
 	interface SideBarContainerImplUiBinder extends UiBinder<Widget, SideBarViewImpl> {}
 	
-	@UiField
-	DockLayoutPanel sideBarPanel;
+	@UiField DockLayoutPanel sideBarPanel;
+	@UiField SideBarFacultyTopImpl sideBarTop;
+	@UiField SideBarFacultyMiddleImpl sideBarMiddle;
+	@UiField SideBarFacultyBottomImpl sideBarBottom;
+	
 	
 	
 	

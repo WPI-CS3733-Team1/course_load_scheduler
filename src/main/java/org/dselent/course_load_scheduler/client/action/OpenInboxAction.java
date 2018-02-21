@@ -1,6 +1,6 @@
 package org.dselent.course_load_scheduler.client.action;
 
-public class OpenInboxAction 
+public class OpenInboxAction extends Action
 {
 	private String userName;
 	

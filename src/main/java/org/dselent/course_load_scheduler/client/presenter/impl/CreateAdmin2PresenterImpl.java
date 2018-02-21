@@ -5,14 +5,23 @@ import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin2Presenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
+import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
 import org.dselent.course_load_scheduler.client.view.CreateAdmin2View;
 
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.inject.Inject;
 
 public class CreateAdmin2PresenterImpl extends BasePresenterImpl implements CreateAdmin2Presenter {
 
 	private IndexPresenter parentPresenter;
 	private CreateAdmin2View view;
+	
+	@Inject
+	public CreateAdmin2PresenterImpl(IndexPresenter parent, CreateAdmin2View view) {
+		this.parentPresenter = parent;
+		this.view = view;
+		view.setPresenter(this);
+	}
 	
 	@Override
 	public void init() {
