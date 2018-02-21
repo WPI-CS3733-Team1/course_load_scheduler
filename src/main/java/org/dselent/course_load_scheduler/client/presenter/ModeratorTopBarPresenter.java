@@ -7,4 +7,5 @@ public interface ModeratorTopBarPresenter extends BasePresenter{
 	void openCreateAdmin(String userName);
 	void openCreateCourse(String userName);
 	void openSearch(String userName);
+	void openCreateSection(String userName);
 }

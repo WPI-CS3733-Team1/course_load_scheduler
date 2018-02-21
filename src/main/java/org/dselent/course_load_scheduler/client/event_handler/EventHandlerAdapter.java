@@ -5,6 +5,7 @@ import org.dselent.course_load_scheduler.client.event.InvalidCreateSectionEvent;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
+import org.dselent.course_load_scheduler.client.event.OpenCreateSectionEvent;
 import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
@@ -26,7 +27,7 @@ import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 public abstract class EventHandlerAdapter
 implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEventHandler, OpenCreateCourseEventHandler, ReceiveLoginEventHandler,
 			InvalidCreateCourseEventHandler, InvalidCreateSectionEventHandler, OpenInboxEventHandler, OpenScheduleEventHandler,
-			OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler
+			OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler, OpenCreateSectionEventHandler
 {
 	//Noah - Still need to write ExecuteSearchEventHandler/Action/Event pathway
 	
@@ -65,5 +66,9 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	
 	@Override
 	public void onSendCreateSection(SendCreateSectionEvent evt) {}
+	
+	@Override
+	public void onOpenCreateSection(OpenCreateSectionEvent evt) {}
+	
 	
 }

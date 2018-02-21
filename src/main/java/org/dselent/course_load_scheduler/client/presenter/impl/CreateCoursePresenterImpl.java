@@ -37,7 +37,7 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 		view.setPresenter(this);
 		createCourseClickInProgress = false;
 	}
-	
+	 	
 	private void sendCreateCourse(String courseName, String courseNumber, String courseSections)
 	{
 		SendCreateCourseAction scca = new SendCreateCourseAction(courseName, courseNumber, courseSections);
