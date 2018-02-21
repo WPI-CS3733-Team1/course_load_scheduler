@@ -4,4 +4,6 @@ war/course_load_scheduler/
 src/main/java/org/dselent/course_load_scheduler/.DS_Store
 .classpath
 war/
-.gwt
+
+/.gradle/
+>>>>>>> 6a358b86a0d1f59ea34e9cf1202073eef1a73e42

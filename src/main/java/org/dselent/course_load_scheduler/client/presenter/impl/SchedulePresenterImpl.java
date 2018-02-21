@@ -34,10 +34,8 @@ public class SchedulePresenterImpl extends BasePresenterImpl implements Schedule
 
 	@Override
 	public void go(HasWidgets container) {
-		
 		container.clear();
 		container.add(view.getWidgetContainer());
-	
 	}
 
 	@Override
