@@ -58,7 +58,7 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 
 	@Override
 	public void createAdmin1() {
-		// TODO Auto-generated method stub
+		
 	}
 
 }
