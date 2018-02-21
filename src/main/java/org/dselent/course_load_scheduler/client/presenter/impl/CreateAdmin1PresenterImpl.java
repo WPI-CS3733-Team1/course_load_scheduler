@@ -16,8 +16,10 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 	private CreateAdmin1View view;
 
 	@Inject
-	public CreateAdmin1PresenterImpl(IndexPresenter parentPresenter, CreateAdmin1View view) {
-		
+	public CreateAdmin1PresenterImpl(IndexPresenter parent, CreateAdmin1View view) {
+		this.parentPresenter = parent;
+		this.view = view;
+		view.setPresenter(this);
 	}
 	
 	@Override
@@ -38,12 +40,12 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 
 	@Override
 	public void bind() {
-		
+		/*
 		HandlerRegistration registration;
 		
 		registration = eventBus.addHandler(InvalidLoginEvent.TYPE, this);
 		eventBusRegistration.put(InvalidLoginEvent.TYPE, registration);
-		
+		*/
 	}
 
 	@Override

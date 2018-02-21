@@ -2,6 +2,7 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import java.util.ArrayList;
 
+import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
@@ -85,7 +86,10 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	}
 	
 	@Override
-	public void onReceiveLogin(ReceiveLoginEvent evt) {
+	public void onOpenInbox(OpenInboxEvent evt) {
 		// TODO Auto-generated method stub
+		evt.getAction().getUserName();
+		
 	}
+	
 }
