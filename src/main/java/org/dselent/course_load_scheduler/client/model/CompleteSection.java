@@ -13,11 +13,11 @@ public class CompleteSection extends Model
 {
 	// table name
 	//public static final String TABLE_NAME = "courses";
-		
 
-	
+
+
 	// attributes
-	
+
 	private Integer id;
 	private String courseAbrv;
 	private String name;
@@ -283,7 +283,7 @@ public class CompleteSection extends Model
 	}
 
 	// methods
-		
-	
-	
+
+
+
 }
