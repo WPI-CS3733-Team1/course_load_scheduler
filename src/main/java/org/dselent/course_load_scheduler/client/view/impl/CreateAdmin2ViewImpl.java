@@ -1,5 +1,8 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import java.util.ArrayList;
+
+import org.dselent.course_load_scheduler.client.model.User;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin2Presenter;
 import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
@@ -18,6 +21,7 @@ import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.client.ui.ToggleButton;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.ScrollPanel;
 
 public class CreateAdmin2ViewImpl extends BaseViewImpl<CreateAdmin2Presenter> implements CreateAdmin2View {
@@ -44,9 +48,7 @@ public class CreateAdmin2ViewImpl extends BaseViewImpl<CreateAdmin2Presenter> im
 	@UiField
 	ToggleButton adminToggle;
 	@UiField
-	ScrollPanel professorList;
-	@UiField
-	Label professorEntry;
+	ListBox professorList;
 
 	public CreateAdmin2ViewImpl(String firstName) {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -122,16 +124,22 @@ public class CreateAdmin2ViewImpl extends BaseViewImpl<CreateAdmin2Presenter> im
 		this.departmentLabel = departmentLabel;
 	}
 	
-	public Label getProfessorEntry() {
-		return professorEntry;
-	}
-	
-	public void setProfessorEntry(Label professorEntry) {
-		this.professorEntry = professorEntry;
+	public ListBox getProfessorList() {
+		return professorList;
 	}
 
-	@UiHandler("professorEntry")
-		void onProfessorEntryClick(ClickEvent event) {
+	public void setProfessorList(ListBox professorList) {
+		this.professorList = professorList;
+	}
+	
+	public void populateListBox(ArrayList<User> users) {
+		for (int i = 0; i < users.size() ; i++) {
+			User newUserObject = users.get(i);
+			String firstName = newUserObject.getFirstName();
+			String lastName = newUserObject.getLastName();
+			String userName = newUserObject.getUserName();
+			professorList.addItem(firstName + "" + lastName + " (" + userName + ")");
+		}
 	}
 
 	@UiHandler("adminToggle")

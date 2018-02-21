@@ -8,7 +8,7 @@
 	</ui:style>
 	<g:HTMLPanel>
 		<g:HorizontalPanel width="450px" height="300px" horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE">
-			<g:VerticalPanel height="300px" horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE" width="250px">
+			<g:VerticalPanel height="300px" horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE" width="200px">
 				<g:Label text="First Name" ui:field="firstNameLabel"/>
 				<g:Label text="Last Name" ui:field="lastNameLabel"/>
 				<g:Label text="Username" ui:field="userNameLabel"/>
@@ -18,9 +18,7 @@
 			<g:VerticalPanel horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE" width="100px">
 				<g:ToggleButton text="Make Admin" ui:field="adminToggle"/>
 			</g:VerticalPanel>
-			<g:ScrollPanel width="100px" height="300px" ui:field="professorList">
-				<g:Label text="New Label" width="100%" height="100%" ui:field="professorEntry"/>
-			</g:ScrollPanel>
+			<g:ListBox visibleItemCount="15" width="150px" height="300px" ui:field="professorList"/>
 		</g:HorizontalPanel>\
 	</g:HTMLPanel>
 </ui:UiBinder> 
