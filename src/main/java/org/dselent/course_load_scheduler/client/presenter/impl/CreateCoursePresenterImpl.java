@@ -7,6 +7,7 @@ import org.dselent.course_load_scheduler.client.action.InvalidCreateCourseAction
 import org.dselent.course_load_scheduler.client.action.SendCreateCourseAction;
 import org.dselent.course_load_scheduler.client.errorstring.InvalidCreateCourseStrings;
 import org.dselent.course_load_scheduler.client.event.InvalidCreateCourseEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.exceptions.EmptyStringException;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
@@ -163,6 +164,12 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			}
 	
 		}
+
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

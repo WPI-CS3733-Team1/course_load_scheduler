@@ -14,6 +14,7 @@ import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImp
 import org.dselent.course_load_scheduler.client.presenter.impl.ModPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.service.impl.UserServiceImpl;
 import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.SideBarView;
@@ -128,6 +129,11 @@ public class CourseLoadScheduler implements EntryPoint
 		//facultyTopBarPresenter.go(indexView.getViewRootPanel());
 
 		//sideBarPresenter.go(root);
+		
+		UserServiceImpl userService = injector.getUserService();
+		userService.init();
+
+		
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());

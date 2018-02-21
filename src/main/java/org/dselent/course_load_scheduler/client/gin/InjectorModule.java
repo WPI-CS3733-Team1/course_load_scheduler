@@ -31,6 +31,8 @@ import org.dselent.course_load_scheduler.client.view.CreateSectionView;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import org.dselent.course_load_scheduler.client.view.FacultyView;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.service.UserService;
+import org.dselent.course_load_scheduler.client.service.impl.UserServiceImpl;
 //import org.dselent.course_load_scheduler.client.view.FacultyView;
 import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.LoginView;
@@ -69,6 +71,10 @@ public class InjectorModule extends AbstractGinModule
     {
 		// event bus
         bind(SimpleEventBus.class).in(Singleton.class);
+        
+        //services
+        bind(UserService.class).to(UserServiceImpl.class).in(Singleton.class);
+
         
         // presenters
         bind(IndexPresenter.class).to(IndexPresenterImpl.class).in(Singleton.class);

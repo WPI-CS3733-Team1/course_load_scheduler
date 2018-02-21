@@ -2,6 +2,7 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import java.util.ArrayList;
 
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
@@ -49,7 +50,7 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 		this.parentPresenter = parentPresenter;		
 	}
 	
-
+/*
 	{
 	Message m1 = new Message();
 	m1.setId(1000);
@@ -73,9 +74,16 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	}
 	
 	{
+		
 	ArrayList<Message> lom = new ArrayList<Message>();
 	
 	
+	}*/
+
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
