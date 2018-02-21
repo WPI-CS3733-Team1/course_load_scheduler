@@ -1,36 +1,31 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
+import org.dselent.course_load_scheduler.client.view.SideBarFacultyTopView;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 
-public class SideBarTopViewImpl extends Composite {
+public class SideBarFacultyTopImpl extends BaseViewImpl<SideBarPresenter> implements SideBarFacultyTopView{
 
 	private static SideBarTopViewImplUiBinder uiBinder = GWT.create(SideBarTopViewImplUiBinder.class);
 
-	interface SideBarTopViewImplUiBinder extends UiBinder<Widget, SideBarTopViewImpl> {
+	interface SideBarTopViewImplUiBinder extends UiBinder<Widget, SideBarFacultyTopImpl> {
 	}
 
-	@UiField
-	Image profilePhoto;
+	@UiField Image profilePhoto;	
+	@UiField Label profName;	
+	@UiField Label profRank;
+	@UiField Label profDepartment;	
+	@UiField Label profEmail;
 	
-	@UiField
-	Label profName;
-	
-	@UiField
-	Label profRank;
-
-	@UiField
-	Label profDepartment;
-	
-	@UiField
-	Label profEmail;
-	
-	public SideBarTopViewImpl() {
+	public SideBarFacultyTopImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 
@@ -65,6 +60,25 @@ public class SideBarTopViewImpl extends Composite {
 	public void setProfEmail(String profEmail) {
 		this.profEmail.setText(profEmail);
 	}
+
+	@Override
+	public void setPresenter(SideBarPresenter presenter) {
+		this.presenter = presenter;
+		
+	}
+
+	@Override
+	public Widget getWidgetContainer() {
+		
+		return this;
+	}
+
+	@Override
+	public HasWidgets getViewRootPanel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 	
 
