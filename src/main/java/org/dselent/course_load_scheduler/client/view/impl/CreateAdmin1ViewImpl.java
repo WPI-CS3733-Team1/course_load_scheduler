@@ -53,8 +53,7 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 
 	@Override
 	public void setPresenter(CreateAdmin1Presenter presenter) {
-		this.presenter = presenter;
-		
+		this.presenter = presenter;	
 	}
 
 	@Override
@@ -64,7 +63,6 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 
 	@Override
 	public HasWidgets getViewRootPanel() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	

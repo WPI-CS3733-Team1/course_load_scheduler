@@ -1,5 +1,10 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateAdmin2Presenter;
+import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
+import org.dselent.course_load_scheduler.client.view.CreateAdmin2View;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -9,12 +14,13 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
+import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.client.ui.ToggleButton;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ScrollPanel;
 
-public class CreateAdmin2ViewImpl extends Composite implements HasText {
+public class CreateAdmin2ViewImpl extends BaseViewImpl<CreateAdmin2Presenter> implements CreateAdmin2View {
 
 	private static CreateAdmin2ViewImplUiBinder uiBinder = GWT.create(CreateAdmin2ViewImplUiBinder.class);
 
@@ -51,6 +57,23 @@ public class CreateAdmin2ViewImpl extends Composite implements HasText {
 		Window.alert("Hello!");
 	}
 */
+	
+	@Override
+	public Widget getWidgetContainer() {
+		return this;
+	}
+	
+	@Override
+	public void setPresenter(CreateAdmin2Presenter presenter) {
+		this.presenter = presenter;	
+	}
+	
+	@Override
+	public HasWidgets getViewRootPanel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 	public void setText(String text) {
 		
 	}

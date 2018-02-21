@@ -4,15 +4,17 @@ import org.dselent.course_load_scheduler.client.action.OpenInboxAction;
 import org.dselent.course_load_scheduler.client.event_handler.OpenInboxEventHandler;
 
 import com.google.gwt.event.shared.GwtEvent;
+import com.google.gwt.user.client.ui.HasWidgets;
 
-public class OpenInboxEvent extends GwtEvent<OpenInboxEventHandler>
+public class OpenInboxEvent extends DisplayEvent<OpenInboxAction, OpenInboxEventHandler>
 {
 	public static Type<OpenInboxEventHandler> TYPE = new Type<OpenInboxEventHandler>();
 	
 	private OpenInboxAction action;
 	
-	public OpenInboxEvent(OpenInboxAction action)
+	public OpenInboxEvent(OpenInboxAction action, HasWidgets container)
 	{
+		super(action, container);
 		this.action = action;
 	}
 	
@@ -21,9 +23,6 @@ public class OpenInboxEvent extends GwtEvent<OpenInboxEventHandler>
 		return action;
 	}
 	
-	/*
-	 * 
-	 */
 	@Override
 	public Type<OpenInboxEventHandler> getAssociatedType()
 	{

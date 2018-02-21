@@ -4,6 +4,7 @@ import java.sql.JDBCType;
 import java.sql.Timestamp;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +19,7 @@ public class Message extends Model {
 		private String authorUserName;
 		private String message;
 		private boolean resolved;
-		private Instant receivedAt;
+		private Date receivedAt;
 		private Integer deptId;
 
 		public Integer getId() {
@@ -61,11 +62,11 @@ public class Message extends Model {
 			this.resolved = resolved;
 		}
 
-		public Instant getReceivedAt() {
+		public Date getReceivedAt() {
 			return receivedAt;
 		}
 
-		public void setReceivedAt(Instant receivedAt) {
+		public void setReceivedAt(Date receivedAt) {
 			this.receivedAt = receivedAt;
 		}
 

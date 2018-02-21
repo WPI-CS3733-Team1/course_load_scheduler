@@ -5,17 +5,17 @@
 
 		<g:DockLayoutPanel ui:field = "sideBarPanel" width="280px" height="900px">
 			<g:north size = "400.0">
-				<h:SideBarTopViewImpl></h:SideBarTopViewImpl>	
+				<h:SideBarFacultyTopImpl ui:field = "sideBarTop"></h:SideBarFacultyTopImpl>	
 				
 			</g:north>
 			
 			<g:center size = "200.0">
-				<h:SideBarFacultyMiddleImpl></h:SideBarFacultyMiddleImpl>	
+				<h:SideBarFacultyMiddleImpl ui:field = "sideBarMiddle"></h:SideBarFacultyMiddleImpl>	
 
 			</g:center>
 			
 			<g:south size = "300.0">
-				<h:SideBarFacultyBottomImpl></h:SideBarFacultyBottomImpl>	
+				<h:SideBarFacultyBottomImpl ui:field = "sideBarBottom"></h:SideBarFacultyBottomImpl>	
 			
 			</g:south>
 			</g:DockLayoutPanel> 
