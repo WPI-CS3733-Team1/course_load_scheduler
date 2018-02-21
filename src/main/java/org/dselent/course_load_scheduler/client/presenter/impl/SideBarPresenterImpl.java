@@ -6,6 +6,9 @@ import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.LoginView;
+import org.dselent.course_load_scheduler.client.view.SideBarFacultyBottomView;
+import org.dselent.course_load_scheduler.client.view.SideBarFacultyMiddleView;
+import org.dselent.course_load_scheduler.client.view.SideBarFacultyTopView;
 import org.dselent.course_load_scheduler.client.view.SideBarView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
@@ -15,12 +18,18 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 
 	private IndexPresenter parentPresenter;
 	private SideBarView view;
+	private SideBarFacultyTopView topView;
+	private SideBarFacultyMiddleView middleView;
+	private SideBarFacultyBottomView bottomView;
 	private boolean loginClickInProgress;
 
 	@Inject
-	public SideBarPresenterImpl(IndexPresenter parentPresenter, SideBarView view)
+	public SideBarPresenterImpl(IndexPresenter parentPresenter, SideBarView view, SideBarFacultyTopView topView, SideBarFacultyMiddleView middleView, SideBarFacultyBottomView bottomView)
 	{
 		this.view = view;
+		this.topView = topView;
+		this.middleView = middleView;
+		this.bottomView = bottomView;
 		this.parentPresenter = parentPresenter;
 		view.setPresenter(this);
 	}
