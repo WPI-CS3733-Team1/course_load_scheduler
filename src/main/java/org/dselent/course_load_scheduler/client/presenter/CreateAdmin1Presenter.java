@@ -4,4 +4,5 @@ public interface CreateAdmin1Presenter extends BasePresenter {
 	IndexPresenter getParentPresenter();
 	void setParentPresenter(IndexPresenter parentPresenter);
 	void createAdmin1();
+	void selectUser();
 }

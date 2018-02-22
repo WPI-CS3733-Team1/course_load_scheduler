@@ -138,7 +138,7 @@ public class CreateAdmin2ViewImpl extends BaseViewImpl<CreateAdmin2Presenter> im
 			String firstName = newUserObject.getFirstName();
 			String lastName = newUserObject.getLastName();
 			String userName = newUserObject.getUserName();
-			professorList.addItem(firstName + "" + lastName + " (" + userName + ")");
+			professorList.addItem(firstName + "" + lastName, userName);
 		}
 	}
 

@@ -1,7 +1,9 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import org.dselent.course_load_scheduler.client.action.SendCreateAdminAction;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
@@ -14,12 +16,22 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 	
 	private IndexPresenter parentPresenter;
 	private CreateAdmin1View view;
+	private boolean toggleAdminClickInProgress;
 
 	@Inject
 	public CreateAdmin1PresenterImpl(IndexPresenter parent, CreateAdmin1View view) {
 		this.parentPresenter = parent;
 		this.view = view;
 		view.setPresenter(this);
+		toggleAdminClickInProgress = false;
+		view.getAdminToggle().setEnabled(false);
+	}
+	
+	private void sendCreateAdmin(String firstName, String lastName, String userName, String title, String department)
+	{
+		SendCreateAdminAction scca = new SendCreateAdminAction(firstName, lastName, userName, title, department);
+		SendCreateAdminEvent scce = new SendCreateAdminEvent(scca);
+		eventBus.fireEvent(scce);
 	}
 	
 	@Override
@@ -57,10 +69,19 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 	public void setParentPresenter(IndexPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 	}
+	
+	@Override
+	public void selectUser() {
+		view.getAdminToggle().setEnabled(true);
+		view.getUserNameLabel().setText(view.getProfessorList().getSelectedValue());
+	}
 
 	@Override
 	public void createAdmin1() {
-		
+		if(!toggleAdminClickInProgress) {
+			toggleAdminClickInProgress = true;
+			
+		}
 	}
 
 }

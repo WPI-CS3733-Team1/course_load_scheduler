@@ -19,8 +19,10 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.client.ui.ScrollPanel;
+import com.google.gwt.user.client.ui.ToggleButton;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
 
@@ -35,8 +37,21 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 	@UiField
-	Label instruction;
-	@UiField ListBox professorList;
+	HorizontalPanel createAdmin1ViewHorizontalPanel;
+	@UiField
+	Label firstNameLabel;
+	@UiField
+	Label lastNameLabel;
+	@UiField
+	Label userNameLabel;
+	@UiField
+	Label titleLabel;
+	@UiField
+	Label departmentLabel;
+	@UiField
+	ToggleButton adminToggle;
+	@UiField
+	ListBox professorList;
 
 /*
 	@UiHandler("button")
@@ -67,12 +82,79 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 		return null;
 	}
 
+	@Override
+	public Label getFirstNameLabel() {
+		return firstNameLabel;
+	}
+	
+	@Override
+	public void setFirstNameLabel(Label firstNameLabel) {
+		this.firstNameLabel = firstNameLabel;
+	}
+	
+	@Override
+	public Label getLastNameLabel() {
+		return lastNameLabel;
+	}
+	
+	@Override
+	public void setLastNameLabel(Label lastNameLabel) {
+		this.lastNameLabel = lastNameLabel;
+	}
+	
+	@Override
+	public Label getUserNameLabel() {
+		return userNameLabel;
+	}
+	
+	@Override
+	public void setUserNameLabel(Label userNameLabel) {
+		this.userNameLabel = userNameLabel;
+	}
+	
+	@Override
+	public Label getTitleLabel() {
+		return titleLabel;
+	}
+	
+	@Override
+	public void setTitleLabel(Label titleLabel) {
+		this.titleLabel = titleLabel;
+	}
+	
+	@Override
+	public Label getDepartmentLabel() {
+		return departmentLabel;
+	}
+	
+	@Override
+	public void setDepartmentLabel(Label departmentLabel) {
+		this.departmentLabel = departmentLabel;
+	}
+	
+	@Override
+	public ToggleButton getAdminToggle() {
+		return this.adminToggle;
+	}
+	
+	@Override
+	public void setAdminToggle(ToggleButton button) {
+		this.adminToggle = button;
+	}
+	
+	@Override
 	public ListBox getProfessorList() {
 		return professorList;
 	}
-
+	
+	@Override
 	public void setProfessorList(ListBox professorList) {
 		this.professorList = professorList;
+	}
+	
+	@Override
+	public HorizontalPanel getAdmin1HorizontalPanel() {
+		return createAdmin1ViewHorizontalPanel;
 	}
 	
 	public void populateListBox(ArrayList<User> users) {
@@ -81,7 +163,17 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 			String firstName = newUserObject.getFirstName();
 			String lastName = newUserObject.getLastName();
 			String userName = newUserObject.getUserName();
-			professorList.addItem(firstName + "" + lastName + " (" + userName + ")");
+			professorList.addItem(firstName + "" + lastName, userName);
 		}
+	}
+	
+	@UiHandler("professorList")
+	void onProfessorListClicked(ClickEvent evt) {
+		presenter.selectUser();
+	}
+	
+	@UiHandler("adminToggle")
+	void onAdminToggleClicked(ClickEvent evt) {
+		presenter.createAdmin1();
 	}
 }

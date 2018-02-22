@@ -1,5 +1,6 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateSectionEvent;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
@@ -10,6 +11,7 @@ import org.dselent.course_load_scheduler.client.presenter.ModPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.CreateCourseView;
 import org.dselent.course_load_scheduler.client.view.CreateSectionView;
+import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
 import org.dselent.course_load_scheduler.client.view.ModView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
@@ -21,13 +23,15 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 	ModView view;
 	private CreateCourseView createCourseView;
 	private CreateSectionView createSectionView;
+	private CreateAdmin1View createAdmin1View;
 	
 	@Inject
-	public ModPresenterImpl(IndexPresenter parent, ModView view, CreateSectionView createSectionView, CreateCourseView createCourseView) {
+	public ModPresenterImpl(IndexPresenter parent, ModView view, CreateSectionView createSectionView, CreateCourseView createCourseView, CreateAdmin1View createAdmin1View) {
 		this.parentPresenter = parent;
 		this.view = view;
 		this.createSectionView = createSectionView;
 		this.createCourseView = createCourseView;
+		this.createAdmin1View = createAdmin1View;
 		view.setPresenter(this);
 		//createSectionView.setParentPresenter(this);
 		//createCourseView.setParentPresenter(this);
@@ -71,9 +75,6 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 	@Override
 	public void onOpenCreateCourse(OpenCreateCourseEvent evt)
 	{
-		
-		
-		
 		view.getDockPanel().add(createCourseView.getCourseHorizontalPanel(), view.getDockPanel().CENTER);
 	}
 	
@@ -83,5 +84,10 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 		view.getDockPanel().add(createSectionView.getSectionVerticalPanel(), view.getDockPanel().CENTER); 
 	}
 	
+	@Override
+	public void onOpenCreateAdmin(OpenCreateAdminEvent evt)
+	{
+		view.getDockPanel().add(createAdmin1View.getAdmin1HorizontalPanel(), view.getDockPanel().CENTER);
+	}
 
 }
