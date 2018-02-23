@@ -1,11 +1,9 @@
 package org.dselent.course_load_scheduler.client.event;
 
 import org.dselent.course_load_scheduler.client.action.SendCreateAdminAction;
-import org.dselent.course_load_scheduler.client.action.SendCreateCourseAction;
 import org.dselent.course_load_scheduler.client.event_handler.SendCreateAdminEventHandler;
 
 import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.GwtEvent.Type;
 
 public class SendCreateAdminEvent extends GwtEvent<SendCreateAdminEventHandler> {
 

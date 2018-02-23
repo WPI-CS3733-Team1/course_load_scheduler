@@ -1,30 +1,28 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import org.dselent.course_load_scheduler.client.action.SendCreateAdminAction;
-import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
-import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateAdminEvent;
-import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateAdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
-import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
+import org.dselent.course_load_scheduler.client.view.CreateAdminView;
 
-import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.inject.Inject;
 
-public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements CreateAdmin1Presenter {
+public class CreateAdminPresenterImpl extends BasePresenterImpl implements CreateAdminPresenter {
 	
 	private IndexPresenter parentPresenter;
-	private CreateAdmin1View view;
+	private CreateAdminView view;
 	private boolean toggleAdminClickInProgress;
 
 	@Inject
-	public CreateAdmin1PresenterImpl(IndexPresenter parent, CreateAdmin1View view) {
+	public CreateAdminPresenterImpl(IndexPresenter parent, CreateAdminView view) {
 		this.parentPresenter = parent;
 		this.view = view;
 		view.setPresenter(this);
 		toggleAdminClickInProgress = false;
 		view.getAdminToggle().setEnabled(false);
+		view.getAdminToggle().setText("No Faculty Selected");
 	}
 	
 	private void sendCreateAdmin(String firstName, String lastName, String userName, String title, String department)
@@ -46,7 +44,7 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 	}
 
 	@Override
-	public CreateAdmin1View getView() {
+	public CreateAdminView getView() {
 		return view;
 	}
 
@@ -77,10 +75,9 @@ public class CreateAdmin1PresenterImpl extends BasePresenterImpl implements Crea
 	}
 
 	@Override
-	public void createAdmin1() {
+	public void createAdmin() {
 		if(!toggleAdminClickInProgress) {
 			toggleAdminClickInProgress = true;
-			
 		}
 	}
 

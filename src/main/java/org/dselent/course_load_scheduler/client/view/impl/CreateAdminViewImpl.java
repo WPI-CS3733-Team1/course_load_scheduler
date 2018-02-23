@@ -2,42 +2,34 @@ package org.dselent.course_load_scheduler.client.view.impl;
 
 import java.util.ArrayList;
 
-import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.model.User;
-import org.dselent.course_load_scheduler.client.presenter.CreateAdmin1Presenter;
-import org.dselent.course_load_scheduler.client.presenter.LoginPresenter;
-import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
-import org.dselent.course_load_scheduler.client.view.LoginView;
+import org.dselent.course_load_scheduler.client.presenter.CreateAdminPresenter;
+import org.dselent.course_load_scheduler.client.view.CreateAdminView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.Widget;
-import com.google.gwt.user.client.ui.ScrollPanel;
-import com.google.gwt.user.client.ui.ToggleButton;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.ToggleButton;
+import com.google.gwt.user.client.ui.Widget;
 
-public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> implements CreateAdmin1View {
+public class CreateAdminViewImpl extends BaseViewImpl<CreateAdminPresenter> implements CreateAdminView {
 
-	private static CreateAdmin1ViewUiBinder uiBinder = GWT.create(CreateAdmin1ViewUiBinder.class);
+	private static CreateAdminViewUiBinder uiBinder = GWT.create(CreateAdminViewUiBinder.class);
 
-	interface CreateAdmin1ViewUiBinder extends UiBinder<Widget, CreateAdmin1ViewImpl> {
+	interface CreateAdminViewUiBinder extends UiBinder<Widget, CreateAdminViewImpl> {
 	}
 
-	public CreateAdmin1ViewImpl() {
+	public CreateAdminViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 	@UiField
-	HorizontalPanel createAdmin1ViewHorizontalPanel;
+	HorizontalPanel createAdminViewHorizontalPanel;
 	@UiField
 	Label firstNameLabel;
 	@UiField
@@ -45,7 +37,7 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 	@UiField
 	Label userNameLabel;
 	@UiField
-	Label titleLabel;
+	Label roleLabel;
 	@UiField
 	Label departmentLabel;
 	@UiField
@@ -53,23 +45,9 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 	@UiField
 	ListBox professorList;
 
-/*
-	@UiHandler("button")
-	void onClick(ClickEvent e) {
-		Window.alert("Hello!");
-	}
-*/
-	public void setText(String text) {
-		//button.setText(text);
-	}
-
-	public String getText() {
-		return null; //button.getText();
-	}
-
 	@Override
-	public void setPresenter(CreateAdmin1Presenter presenter) {
-		this.presenter = presenter;	
+	public void setPresenter(CreateAdminPresenter presenter) {
+		this.presenter = presenter;
 	}
 
 	@Override
@@ -113,18 +91,18 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 	}
 	
 	@Override
-	public Label getTitleLabel() {
-		return titleLabel;
+	public Label getRoleLabel() {
+		return roleLabel;
 	}
 	
 	@Override
-	public void setTitleLabel(Label titleLabel) {
-		this.titleLabel = titleLabel;
+	public void setRoleLabel(Label roleLabel) {
+		this.roleLabel = roleLabel;
 	}
 	
 	@Override
-	public Label getDepartmentLabel() {
-		return departmentLabel;
+	public String getDepartmentLabel() {
+		return departmentLabel.getText();
 	}
 	
 	@Override
@@ -153,8 +131,8 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 	}
 	
 	@Override
-	public HorizontalPanel getAdmin1HorizontalPanel() {
-		return createAdmin1ViewHorizontalPanel;
+	public HorizontalPanel getAdminHorizontalPanel() {
+		return createAdminViewHorizontalPanel;
 	}
 	
 	public void populateListBox(ArrayList<User> users) {
@@ -174,6 +152,6 @@ public class CreateAdmin1ViewImpl extends BaseViewImpl<CreateAdmin1Presenter> im
 	
 	@UiHandler("adminToggle")
 	void onAdminToggleClicked(ClickEvent evt) {
-		presenter.createAdmin1();
+		presenter.createAdmin();
 	}
 }
