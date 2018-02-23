@@ -25,9 +25,8 @@ public class CreateAdminPresenterImpl extends BasePresenterImpl implements Creat
 		view.getAdminToggle().setText("No Faculty Selected");
 	}
 	
-	private void sendCreateAdmin(String firstName, String lastName, String userName, String title, String department)
-	{
-		SendCreateAdminAction scca = new SendCreateAdminAction(firstName, lastName, userName, title, department);
+	private void sendCreateAdmin(String moderatorUserName, String facultyUserName) {
+		SendCreateAdminAction scca = new SendCreateAdminAction(moderatorUserName, facultyUserName);
 		SendCreateAdminEvent scce = new SendCreateAdminEvent(scca);
 		eventBus.fireEvent(scce);
 	}
