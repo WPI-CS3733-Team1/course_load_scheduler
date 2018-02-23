@@ -83,8 +83,9 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 
 	@Override
 	public void openSchedule(String username, String term) 	{
+		HasWidgets container = parentPresenter.getView().getViewRootPanel();
 		OpenScheduleAction osca = new OpenScheduleAction(username, term);
-		OpenScheduleEvent osce = new OpenScheduleEvent(osca);
+		OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
 		eventBus.fireEvent(osce);
 	}
 

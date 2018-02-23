@@ -66,8 +66,9 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 
 	@Override
 	public void openSchedule(String username, String term) 	{
+		HasWidgets container = parentPresenter.getView().getViewRootPanel(); //this might have to change to be the specific DockPanel CENTER panel
 		OpenScheduleAction osca = new OpenScheduleAction(userName, term);
-		OpenScheduleEvent osce = new OpenScheduleEvent(osca);
+		OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
 		eventBus.fireEvent(osce); //how is this going to connect to schedulePresenter/scheduleView?
 	}
 

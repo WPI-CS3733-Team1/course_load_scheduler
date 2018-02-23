@@ -1,9 +1,7 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
-import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.ModPresenter;
-import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.ModView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
@@ -29,6 +27,8 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 	
 	@Override
 	public void bind() {
+		//this probably needs to be filled out with some sort of event register
+		
 		
 	}
 	

@@ -4,7 +4,9 @@ import org.dselent.course_load_scheduler.client.action.SendLoginAction;
 import org.dselent.course_load_scheduler.client.callback.SendLoginCallback;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.action.OpenInboxAction;
+import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.callback.OpenInboxCallback;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.action.SendOpenInboxAction;
@@ -61,6 +63,8 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.LOGIN, loginCallback, json);
 		request.send();
 	}
+	
+	
 //	
 //	@Override
 //	public void  {}
