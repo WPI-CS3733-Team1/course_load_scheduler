@@ -16,7 +16,6 @@ public class SendCreateAdminAction {
 	public String getFacultyUserName() {
 		return facultyUserName;
 	}
-		
 
 	@Override
 	public String toString() {
