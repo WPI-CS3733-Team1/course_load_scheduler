@@ -19,6 +19,7 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	
 	private IndexPresenter parentPresenter;
 	private AdminInboxView view;
+	private boolean openAdminInboxClickInProgress;
 	
 	@Inject
 	public AdminInboxPresenterImpl(IndexPresenter parentPresenter, AdminInboxView view)
@@ -87,9 +88,17 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	
 	@Override
 	public void onOpenInbox(OpenInboxEvent evt) {
-		// TODO Auto-generated method stub
 		evt.getAction().getUserName();
 		
+	}
+	
+	void openAdminInbox() {
+		if (!openAdminInboxClickInProgress);
+		{
+			openAdminInboxClickInProgress = true;
+			
+			
+		}
 	}
 	
 }
