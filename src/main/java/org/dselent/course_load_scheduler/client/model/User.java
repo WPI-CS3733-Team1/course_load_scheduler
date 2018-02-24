@@ -5,7 +5,7 @@ import java.util.Date;
 public class User extends Model
 {	
 	// attributes
-	
+
 	private Integer id;
 	private String userName;
 	private String firstName;
@@ -16,8 +16,8 @@ public class User extends Model
 	private Date updatedAt;
 
 	// methods
-		
-	
+
+
 	public Integer getId()
 	{
 		return id;
@@ -221,7 +221,7 @@ public class User extends Model
 		}
 		return true;
 	}
-	
+
 
 	@Override
 	public String toString()
@@ -248,5 +248,5 @@ public class User extends Model
 		builder.append("]");
 		return builder.toString();
 	}
-	
+
 }

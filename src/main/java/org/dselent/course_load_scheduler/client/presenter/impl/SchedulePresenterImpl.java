@@ -34,10 +34,8 @@ public class SchedulePresenterImpl extends BasePresenterImpl implements Schedule
 
 	@Override
 	public void go(HasWidgets container) {
-		
 		container.clear();
 		container.add(view.getWidgetContainer());
-	
 	}
 
 	@Override
@@ -75,8 +73,8 @@ public class SchedulePresenterImpl extends BasePresenterImpl implements Schedule
 		HashMap<String, InlineLabel> monday = view.getMondaySchedule();
 		HashMap<String, InlineLabel> tuesday = view.getTuesdaySchedule();
 		HashMap<String, InlineLabel> wednesday = view.getWednesdaySchedule();
-		HashMap<String, InlineLabel> thursday = view.getWednesdaySchedule();
-		HashMap<String, InlineLabel> friday = view.getWednesdaySchedule();
+		HashMap<String, InlineLabel> thursday = view.getThursdaySchedule();
+		HashMap<String, InlineLabel> friday = view.getFridaySchedule();
 		
 		
 		

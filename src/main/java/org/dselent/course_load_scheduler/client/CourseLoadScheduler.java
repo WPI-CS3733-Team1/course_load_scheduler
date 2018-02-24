@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
@@ -13,10 +14,12 @@ import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImp
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.ModPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.SearchPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SideBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.service.impl.UserServiceImpl;
 import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
+import org.dselent.course_load_scheduler.client.view.SearchView;
 import org.dselent.course_load_scheduler.client.view.SideBarView;
 
 import com.google.gwt.core.client.EntryPoint;
@@ -79,6 +82,10 @@ public class CourseLoadScheduler implements EntryPoint
 		sideBarPresenter.init();
 		SideBarView sideBarView = sideBarPresenter.getView();
 		
+		SearchPresenterImpl searchPresenter = injector.getSearchPresenter();
+		searchPresenter.setParentPresenter(indexPresenter);
+		searchPresenter.init();
+		SearchView searchView = searchPresenter.getView();
 		
 		
 		/*
@@ -120,6 +127,10 @@ public class CourseLoadScheduler implements EntryPoint
 		//sidebarPresenter.setParentPresenter(indexPresenter);
 		sidebarPresenter.init();		
 		
+		CreateAdminPresenterImpl createAdmin1Presenter = injector.getCreateAdminPresenter();
+		createAdmin1Presenter.setParentPresenter(indexPresenter);
+		createAdmin1Presenter.init();
+		
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		//indexPresenter.go(root);
 		
@@ -145,7 +156,10 @@ public class CourseLoadScheduler implements EntryPoint
 		//facultyPresenter.go(indexView.getViewRootPanel());
 		//adminPresenter.go(indexView.getViewRootPanel());
 		//sideBarPresenter.go(indexView.getViewRootPanel());
-		modPresenter.go(indexView.getViewRootPanel());
+		//createAdmin1Presenter.go(indexView.getViewRootPanel());
+		//createAdmin2Presenter.go(indexView.getViewRootPanel());
+		//modPresenter.go(indexView.getViewRootPanel());
+		searchPresenter.go(indexView.getViewRootPanel());
 		
 		
 		

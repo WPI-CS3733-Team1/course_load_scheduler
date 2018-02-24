@@ -3,9 +3,11 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 import org.dselent.course_load_scheduler.client.presenter.ModeratorTopBarPresenter;
 import org.dselent.course_load_scheduler.client.action.OpenCreateAdminAction;
 import org.dselent.course_load_scheduler.client.action.OpenCreateCourseAction;
+import org.dselent.course_load_scheduler.client.action.OpenCreateSectionAction;
 import org.dselent.course_load_scheduler.client.action.OpenSearchAction;
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
+import org.dselent.course_load_scheduler.client.event.OpenCreateSectionEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -72,6 +74,13 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 		OpenCreateCourseAction occa = new OpenCreateCourseAction(userName);
 		OpenCreateCourseEvent occe = new OpenCreateCourseEvent(occa);
 		eventBus.fireEvent(occe);
+	}
+		
+	@Override
+	public void openCreateSection(String userName) {
+		OpenCreateSectionAction ocsa = new OpenCreateSectionAction(userName);
+		OpenCreateSectionEvent ocse = new OpenCreateSectionEvent(ocsa);
+		eventBus.fireEvent(ocse);
 	}
 
 	@Override

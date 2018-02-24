@@ -2,6 +2,7 @@ package org.dselent.course_load_scheduler.client.gin;
 
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateCoursePresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateSectionPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
@@ -10,6 +11,7 @@ import org.dselent.course_load_scheduler.client.presenter.impl.IndexPresenterImp
 import org.dselent.course_load_scheduler.client.presenter.impl.LoginPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.ModPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.SearchPresenterImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminTopBarViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.AdminViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.CreateCourseViewImpl;
@@ -26,6 +28,7 @@ import org.dselent.course_load_scheduler.client.view.impl.IndexViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ModViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl;
 
 import com.google.gwt.core.client.GWT;
@@ -66,9 +69,11 @@ public interface Injector extends Ginjector
     public CreateSectionPresenterImpl getCreateSectionPresenter();
     public AdminPresenterImpl getAdminPresenter();
     public ModPresenterImpl getModPresenter();
+    public CreateAdminPresenterImpl getCreateAdminPresenter();
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();
+    public SearchPresenterImpl getSearchPresenter();
     //views
     public IndexViewImpl getIndexView();
     public LoginViewImpl getLoginView();
@@ -83,6 +88,7 @@ public interface Injector extends Ginjector
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
     public SideBarViewImpl getSideBarView();
+    public SearchViewImpl getSearchView();
   
     
 }
