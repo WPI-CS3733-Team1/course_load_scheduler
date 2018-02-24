@@ -29,6 +29,9 @@ import org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ModViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.ScheduleViewImpl;
 import org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl;
+import org.dselent.course_load_scheduler.client.view.impl.SideBarFacultyBottomImpl;
+import org.dselent.course_load_scheduler.client.view.impl.SideBarFacultyMiddleImpl;
+import org.dselent.course_load_scheduler.client.view.impl.SideBarFacultyTopImpl;
 import org.dselent.course_load_scheduler.client.view.impl.SideBarViewImpl;
 
 import com.google.gwt.core.client.GWT;
@@ -73,6 +76,7 @@ public interface Injector extends Ginjector
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyPresenterImpl getFacultyPresenter();
     public SideBarPresenterImpl getSideBarPresenter();
+    
     public SearchPresenterImpl getSearchPresenter();
     //views
     public IndexViewImpl getIndexView();
@@ -84,6 +88,10 @@ public interface Injector extends Ginjector
     public CreateSectionViewImpl getCreateSectionView();
     public AdminViewImpl getAdminView();
     public ModViewImpl getModView();
+    public SideBarFacultyBottomImpl getSideBarFacultyBottom();
+    public SideBarFacultyMiddleImpl getSideBarFacultyMiddle();
+    public SideBarFacultyTopImpl getSideBarFacultyTop();
+    
     
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
