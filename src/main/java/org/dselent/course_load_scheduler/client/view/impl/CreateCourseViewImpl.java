@@ -167,4 +167,18 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 	}
 
 
+	@Override
+	public HorizontalPanel getCourseHorizontalPanel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public void setCourseHorizontalPanel(HorizontalPanel createCourseHorizontalPanel) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 }

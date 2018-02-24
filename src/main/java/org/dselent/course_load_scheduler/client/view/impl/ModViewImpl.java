@@ -11,12 +11,15 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
 
 public class ModViewImpl extends BaseViewImpl<ModPresenter> implements ModView {
 
+	@UiField DockPanel modViewDockPanel;
+	
 	private static ModViewImplUiBinder uiBinder = GWT.create(ModViewImplUiBinder.class);
 
 	interface ModViewImplUiBinder extends UiBinder<Widget, ModViewImpl> {
@@ -46,4 +49,7 @@ public class ModViewImpl extends BaseViewImpl<ModPresenter> implements ModView {
 		return null;
 	}
 
+	public DockPanel getDockPanel() {
+		return modViewDockPanel;
+	}
 }

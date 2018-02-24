@@ -41,6 +41,11 @@ public class ModeratorTopBarViewImpl extends BaseViewImpl<ModeratorTopBarPresent
 		presenter.openCreateCourse(userName);
 	}
 	
+	@UiHandler("createSection")
+	void onCreateSectionLink(ClickEvent e) {
+		presenter.openCreateSection(userName);
+	}
+	
 	@UiHandler("createAdmin")
 	void onCreateAdminClick(ClickEvent e) {
 		presenter.openCreateAdmin(userName);

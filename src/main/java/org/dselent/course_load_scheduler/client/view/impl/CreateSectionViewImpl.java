@@ -18,6 +18,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.IntegerBox;
 import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 
@@ -31,6 +32,7 @@ public class CreateSectionViewImpl extends BaseViewImpl<CreateSectionPresenter> 
 	@UiField TextBox sectionNameTextBox;
 	@UiField Button createSectionButton;
 	@UiField TextBox sectionTermTextBox;
+	@UiField VerticalPanel createCourseVerticalPanel;
 	
 	public TextBox getSectionRequiredFrequencyTextBox() {
 		return sectionRequiredFrequencyTextBox;
@@ -67,6 +69,10 @@ public class CreateSectionViewImpl extends BaseViewImpl<CreateSectionPresenter> 
 	}
 
 
+	public VerticalPanel getSectionVerticalPanel() {
+		return createCourseVerticalPanel;
+	}
+	
 	public TextBox getSectionExpectedPopulationTextBox() {
 		return sectionExpectedPopulationTextBox;
 	}
