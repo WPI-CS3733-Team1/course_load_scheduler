@@ -68,8 +68,9 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 
 	@Override
 	public void openInbox(String username) 	{
+		HasWidgets container = parentPresenter.getView().getViewRootPanel();
 		OpenInboxAction oia = new OpenInboxAction(username);
-		OpenInboxEvent oie = new OpenInboxEvent(oia);
+		OpenInboxEvent oie = new OpenInboxEvent(oia, container);
 		eventBus.fireEvent(oie);
 	}
 
@@ -82,8 +83,9 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 
 	@Override
 	public void openSchedule(String username, String term) 	{
+		HasWidgets container = parentPresenter.getView().getViewRootPanel();
 		OpenScheduleAction osca = new OpenScheduleAction(username, term);
-		OpenScheduleEvent osce = new OpenScheduleEvent(osca);
+		OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
 		eventBus.fireEvent(osce);
 	}
 

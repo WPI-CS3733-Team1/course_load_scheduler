@@ -2,6 +2,7 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import java.util.ArrayList;
 
+import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
@@ -18,6 +19,7 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	
 	private IndexPresenter parentPresenter;
 	private AdminInboxView view;
+	private boolean openAdminInboxClickInProgress;
 	
 	@Inject
 	public AdminInboxPresenterImpl(IndexPresenter parentPresenter, AdminInboxView view)
@@ -85,7 +87,18 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	}
 	
 	@Override
-	public void onReceiveLogin(ReceiveLoginEvent evt) {
-		// TODO Auto-generated method stub
+	public void onOpenInbox(OpenInboxEvent evt) {
+		evt.getAction().getUserName();
+		
 	}
+	
+	void openAdminInbox() {
+		if (!openAdminInboxClickInProgress);
+		{
+			openAdminInboxClickInProgress = true;
+			
+			
+		}
+	}
+	
 }

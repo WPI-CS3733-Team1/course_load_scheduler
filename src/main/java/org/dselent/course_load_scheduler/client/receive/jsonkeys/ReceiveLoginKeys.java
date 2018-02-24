@@ -9,5 +9,5 @@ public enum ReceiveLoginKeys
 	EMAIL,
 	USER_STATE_ID,
 	CREATED_AT,
-	UPDATED_AT;
+	UPDATED_AT
 }

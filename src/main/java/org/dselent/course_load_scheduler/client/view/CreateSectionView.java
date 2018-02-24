@@ -4,6 +4,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.Widget;
 
 import org.dselent.course_load_scheduler.client.presenter.CreateSectionPresenter;
 
@@ -36,5 +37,6 @@ public interface CreateSectionView extends BaseView<CreateSectionPresenter> {
 	  void setSectionAvailableSectionsLabel(Label sectionAvailableSectionsLabel);
 	  TextBox getSectionTermTextBox();
 	  void setSectionTermTextBox(TextBox sectionTermTextBox);
+	Widget getSectionVerticalPanel();
 
 }

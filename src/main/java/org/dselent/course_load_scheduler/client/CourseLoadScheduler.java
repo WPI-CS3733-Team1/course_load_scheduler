@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 //----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
@@ -126,6 +127,10 @@ public class CourseLoadScheduler implements EntryPoint
 		//sidebarPresenter.setParentPresenter(indexPresenter);
 		sidebarPresenter.init();		
 		
+		CreateAdminPresenterImpl createAdmin1Presenter = injector.getCreateAdminPresenter();
+		createAdmin1Presenter.setParentPresenter(indexPresenter);
+		createAdmin1Presenter.init();
+		
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		//indexPresenter.go(root);
 		
@@ -151,6 +156,8 @@ public class CourseLoadScheduler implements EntryPoint
 		//facultyPresenter.go(indexView.getViewRootPanel());
 		//adminPresenter.go(indexView.getViewRootPanel());
 		//sideBarPresenter.go(indexView.getViewRootPanel());
+		//createAdmin1Presenter.go(indexView.getViewRootPanel());
+		//createAdmin2Presenter.go(indexView.getViewRootPanel());
 		//modPresenter.go(indexView.getViewRootPanel());
 		searchPresenter.go(indexView.getViewRootPanel());
 		
