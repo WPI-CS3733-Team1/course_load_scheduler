@@ -15,9 +15,11 @@ public class SendCreateAdminAction {
 
 	public String getFacultyUserName() {
 		return facultyUserName;
+	}
+		
 
 	@Override
 	public String toString() {
-		return "SendCreateAdminAction [moderatorUserName=" + firstName + ", facultyUserName=" + lastName + "]";
+		return "SendCreateAdminAction [moderatorUserName=" + moderatorUserName + ", facultyUserName=" + facultyUserName + "]";
 	}
 }

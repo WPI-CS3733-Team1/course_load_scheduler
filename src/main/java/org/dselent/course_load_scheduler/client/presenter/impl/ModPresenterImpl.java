@@ -11,7 +11,7 @@ import org.dselent.course_load_scheduler.client.presenter.ModPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.CreateCourseView;
 import org.dselent.course_load_scheduler.client.view.CreateSectionView;
-import org.dselent.course_load_scheduler.client.view.CreateAdmin1View;
+import org.dselent.course_load_scheduler.client.view.CreateAdminView;
 import org.dselent.course_load_scheduler.client.view.ModView;
 
 import com.google.gwt.user.client.ui.HasWidgets;
@@ -23,15 +23,15 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 	ModView view;
 	private CreateCourseView createCourseView;
 	private CreateSectionView createSectionView;
-	private CreateAdmin1View createAdmin1View;
+	private CreateAdminView createAdminView;
 	
 	@Inject
-	public ModPresenterImpl(IndexPresenter parent, ModView view, CreateSectionView createSectionView, CreateCourseView createCourseView, CreateAdmin1View createAdmin1View) {
+	public ModPresenterImpl(IndexPresenter parent, ModView view, CreateSectionView createSectionView, CreateCourseView createCourseView, CreateAdminView createAdminView) {
 		this.parentPresenter = parent;
 		this.view = view;
 		this.createSectionView = createSectionView;
 		this.createCourseView = createCourseView;
-		this.createAdmin1View = createAdmin1View;
+		this.createAdminView = createAdminView;
 		view.setPresenter(this);
 		//createSectionView.setParentPresenter(this);
 		//createCourseView.setParentPresenter(this);
@@ -87,7 +87,7 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 	@Override
 	public void onOpenCreateAdmin(OpenCreateAdminEvent evt)
 	{
-		view.getDockPanel().add(createAdmin1View.getAdmin1HorizontalPanel(), view.getDockPanel().CENTER);
+		view.getDockPanel().add(createAdminView.getAdminHorizontalPanel(), view.getDockPanel().CENTER);
 	}
 
 }
