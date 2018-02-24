@@ -6,6 +6,7 @@ import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.event.InvalidMessageEvent;
 import org.dselent.course_load_scheduler.client.event.InvalidOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.InvalidOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.InvalidResolveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateSectionEvent;
@@ -16,6 +17,7 @@ import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveResolveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateSectionEvent;
@@ -23,6 +25,7 @@ import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendMessageEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.SendResolveMessageEvent;
 
 /**
  * Adapter class for convenience
@@ -39,7 +42,8 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 			OpenCreateCourseEventHandler, ReceiveLoginEventHandler,InvalidCreateCourseEventHandler, InvalidCreateSectionEventHandler, OpenInboxEventHandler, 
 			OpenScheduleEventHandler,OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler, OpenCreateSectionEventHandler,
 			SendOpenInboxEventHandler, InvalidOpenInboxEventHandler, ReceiveOpenInboxEventHandler, ReceiveOpenCreateAdminEventHandler, ReceiveScheduleEventHandler,
-			SendMessageEventHandler, InvalidMessageEventHandler, ReceiveMessageEventHandler
+			SendMessageEventHandler, InvalidMessageEventHandler, ReceiveMessageEventHandler, SendResolveMessageEventHandler, InvalidResolveMessageEventHandler,
+			ReceiveResolveMessageEventHandler
 {
 	//Noah - Still need to write ExecuteSearchEventHandler/Action/Event pathway
 	
@@ -111,4 +115,13 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	
 	@Override
 	public void onInvalidMessage(InvalidMessageEvent evt) {}
+	
+	@Override
+	public void onSendResolveMessage(SendResolveMessageEvent evt) {}
+	
+	@Override
+	public void onReceiveResolveMessage(ReceiveResolveMessageEvent evt) {}
+	
+	@Override
+	public void onInvalidResolveMessage(InvalidResolveMessageEvent evt) {}
 }
