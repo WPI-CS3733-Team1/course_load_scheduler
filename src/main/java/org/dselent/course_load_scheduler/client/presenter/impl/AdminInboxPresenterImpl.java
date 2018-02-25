@@ -108,4 +108,14 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 		
 	}
 	
+//	void openAdminInbox() {
+//		if (!openAdminInboxClickInProgress);
+//		{
+//			openAdminInboxClickInProgress = true;
+//			
+//			
+//		}
+//	}
+
+	
 }
