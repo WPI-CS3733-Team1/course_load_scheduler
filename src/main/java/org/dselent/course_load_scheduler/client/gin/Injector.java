@@ -88,10 +88,7 @@ public interface Injector extends Ginjector
     public CreateSectionViewImpl getCreateSectionView();
     public AdminViewImpl getAdminView();
     public ModViewImpl getModView();
-    public SideBarFacultyBottomImpl getSideBarFacultyBottom();
-    public SideBarFacultyMiddleImpl getSideBarFacultyMiddle();
-    public SideBarFacultyTopImpl getSideBarFacultyTop();
-    
+  
     
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();

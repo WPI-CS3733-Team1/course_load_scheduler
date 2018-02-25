@@ -22,7 +22,7 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 
 	private static FacultyViewImplUiBinder uiBinder = GWT.create(FacultyViewImplUiBinder.class);
 
-	interface FacultyViewImplUiBinder extends UiBinder<Widget, FacultyView> {}
+	interface FacultyViewImplUiBinder extends UiBinder<Widget, FacultyViewImpl> {}
 	
 	@UiField
 	DockPanel mainPanel;

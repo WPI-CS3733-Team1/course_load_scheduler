@@ -21,8 +21,6 @@ import com.google.gwt.user.client.ui.SimplePanel;
 public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> implements FacultyTopBarView {
 
 	private static FacultyTopBarViewImplUiBinder uiBinder = GWT.create(FacultyTopBarViewImplUiBinder.class);
-	
-	
 
 	interface FacultyTopBarViewImplUiBinder extends UiBinder<Widget, FacultyTopBarViewImpl> {
 	}
