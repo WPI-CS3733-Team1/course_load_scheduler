@@ -10,7 +10,6 @@ import org.dselent.course_load_scheduler.client.event.InvalidResolveMessageEvent
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateSectionEvent;
-import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
@@ -39,7 +38,7 @@ import org.dselent.course_load_scheduler.client.event.SendResolveMessageEvent;
  */
 public abstract class EventHandlerAdapter
 implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEventHandler, SendOpenCreateAdminEventHandler, InvalidOpenCreateAdminEventHandler,
-			OpenCreateCourseEventHandler, ReceiveLoginEventHandler,InvalidCreateCourseEventHandler, InvalidCreateSectionEventHandler, OpenInboxEventHandler, 
+			OpenCreateCourseEventHandler, ReceiveLoginEventHandler,InvalidCreateCourseEventHandler, InvalidCreateSectionEventHandler, 
 			OpenScheduleEventHandler,OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler, OpenCreateSectionEventHandler,
 			SendOpenInboxEventHandler, InvalidOpenInboxEventHandler, ReceiveOpenInboxEventHandler, ReceiveOpenCreateAdminEventHandler, ReceiveScheduleEventHandler,
 			SendMessageEventHandler, InvalidMessageEventHandler, ReceiveMessageEventHandler, SendResolveMessageEventHandler, InvalidResolveMessageEventHandler,
@@ -85,9 +84,6 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	
 	@Override
 	public void onInvalidCreateSection(InvalidCreateSectionEvent evt) {}
-
-	@Override
-	public void onOpenInbox(OpenInboxEvent evt) {}
 	
 	@Override
 	public void onOpenSchedule(OpenScheduleEvent evt) {}
@@ -124,4 +120,7 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	
 	@Override
 	public void onInvalidResolveMessage(InvalidResolveMessageEvent evt) {}
+	
+	
+	
 }

@@ -2,12 +2,10 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import javax.inject.Inject;
 
-import org.dselent.course_load_scheduler.client.action.OpenInboxAction;
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.action.OpenSearchAction;
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
 import org.dselent.course_load_scheduler.client.action.SendOpenInboxAction;
-import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
