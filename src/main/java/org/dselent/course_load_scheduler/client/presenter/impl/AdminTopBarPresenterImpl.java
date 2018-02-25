@@ -6,11 +6,13 @@ import org.dselent.course_load_scheduler.client.action.OpenInboxAction;
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.action.OpenSearchAction;
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
+import org.dselent.course_load_scheduler.client.action.SendOpenInboxAction;
 import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -69,8 +71,8 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 	@Override
 	public void openInbox(String username) 	{
 		HasWidgets container = parentPresenter.getView().getViewRootPanel();
-		OpenInboxAction oia = new OpenInboxAction(username);
-		OpenInboxEvent oie = new OpenInboxEvent(oia, container);
+		SendOpenInboxAction oia = new SendOpenInboxAction(username);
+		SendOpenInboxEvent oie = new SendOpenInboxEvent(oia, container);
 		eventBus.fireEvent(oie);
 	}
 

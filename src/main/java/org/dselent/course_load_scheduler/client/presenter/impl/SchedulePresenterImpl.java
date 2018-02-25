@@ -91,12 +91,12 @@ public class SchedulePresenterImpl extends BasePresenterImpl implements Schedule
 			//for(string key : sections)
 			for(int i = 0; i<sections.size();i++) {
 				
-				for(String key : sections.get(i).keySet()) {
+				for(String key : sections.get(i).keySet()) { //iterates through each hashmap of timeblocks with formatted strings
 					
 					String section = sections.get(i).get(key);
 					
 					if(section!=null) {
-						map.get(key).setText(sections.get(i).get(key));
+						map.get(key).setText(section);
 					}
 				
 				}

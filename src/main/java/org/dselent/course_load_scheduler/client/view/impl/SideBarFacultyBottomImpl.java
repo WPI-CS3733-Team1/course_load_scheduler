@@ -1,15 +1,17 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
 import org.dselent.course_load_scheduler.client.view.SideBarFacultyBottomView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 
-public class SideBarFacultyBottomImpl extends Composite implements SideBarFacultyBottomView{
+public class SideBarFacultyBottomImpl extends BaseViewImpl<SideBarPresenter> implements SideBarFacultyBottomView{
 
 	private static SideBarFacultyBottomImplUiBinder uiBinder = GWT.create(SideBarFacultyBottomImplUiBinder.class);
 
@@ -55,6 +57,21 @@ public class SideBarFacultyBottomImpl extends Composite implements SideBarFacult
 	}
 	public void setCourse5(Label course5) {
 		this.course5 = course5;
+	}
+	@Override
+	public void setPresenter(SideBarPresenter presenter) {
+		this.presenter = presenter;
+		
+	}
+	@Override
+	public Widget getWidgetContainer() {
+		// TODO Auto-generated method stub
+		return this;
+	}
+	@Override
+	public HasWidgets getViewRootPanel() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

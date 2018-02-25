@@ -4,7 +4,7 @@ public class SendOpenInboxAction extends Action
 {
 	private String userName;
 	
-	public SendOpenInboxAction(String userName, String password)
+	public SendOpenInboxAction(String userName)
 	{
 		this.userName = userName;
 	}
@@ -13,7 +13,6 @@ public class SendOpenInboxAction extends Action
 	{
 		return userName;
 	}
-
 
 	@Override
 	public String toString()

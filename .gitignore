@@ -4,4 +4,8 @@ war/course_load_scheduler/
 src/main/java/org/dselent/course_load_scheduler/.DS_Store
 .classpath
 war/
-/.gradle/
+.gwt
+/.classpath
+/.gitignore
+/war
+/gwt-unitCache
