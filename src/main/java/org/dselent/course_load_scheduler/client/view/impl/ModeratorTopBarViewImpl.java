@@ -11,6 +11,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -22,6 +23,7 @@ public class ModeratorTopBarViewImpl extends BaseViewImpl<ModeratorTopBarPresent
 	interface ModeratorTopBarViewImplUiBinder extends UiBinder<Widget, ModeratorTopBarViewImpl> {
 	}
 	
+	@UiField HorizontalPanel topBarFrame;
 	@UiField Button createCourse;
 	@UiField Button search;
 	@UiField Button createAdmin;
@@ -68,19 +70,16 @@ public class ModeratorTopBarViewImpl extends BaseViewImpl<ModeratorTopBarPresent
 	
 	@Override
 	public void setPresenter(ModeratorTopBarPresenter presenter) {
-		// TODO Auto-generated method stub
-		
+		this.presenter = presenter;	
 	}
 
 	@Override
 	public Widget getWidgetContainer() {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override
 	public HasWidgets getViewRootPanel() {
-		// TODO Auto-generated method stub
-		return null;
+		return topBarFrame;
 	}
 }
