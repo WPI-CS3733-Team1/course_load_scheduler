@@ -5,35 +5,40 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.dselent.course_load_scheduler.client.action.ReceiveScheduleAction;
+import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.FacultyView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
+import org.dselent.course_load_scheduler.client.view.SearchView;
 
+import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.inject.Inject;
+
+
+//FacultyView needs layout getters
+	/*
+	 * @author Noah
+	 * 
+	 */
 
 public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPresenter {
 
 	private IndexPresenter parentPresenter;
 	private FacultyView view;
 	private ScheduleView scheduleView;
+	private SearchView searchView;
 	
 	
-	
-	//FacultyView needs layout getters
-	/*
-	 * @author Noah
-	 * 
-	 * TODO: Need to inject scheduleView so that onReceiveSchedule can be completely implemented
-	 */
 	@Inject
-	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, ScheduleView scheduleView) {
+	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, ScheduleView scheduleView, SearchView searchView) {
 		this.parentPresenter = parentPresenter;
 		this.view = view;
 		this.scheduleView = scheduleView;
+		this.searchView = searchView;
 		view.setPresenter(this);
 	}
 	
@@ -58,6 +63,8 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	public void bind() {
 		//nothing to put here yet
 		//most event are triggered by internal views
+		
+		
 	}
 
 
@@ -70,6 +77,14 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	@Override
 	public void setParentPresenter(IndexPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
+	}
+	
+	@Override
+	public void onOpenSearch(OpenSearchEvent evt) {
+		DockPanel p = view.getDockPanel();
+		p.remove(scheduleView.getWidgetContainer());
+		p.add(searchView.getWidgetContainer(), DockPanel.CENTER);
+		//searchView.getPresenter().go(parentPresenter.getView().getViewRootPanel());
 	}
 	
 	@Override
