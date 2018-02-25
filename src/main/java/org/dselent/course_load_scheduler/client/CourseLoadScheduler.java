@@ -21,6 +21,7 @@ import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.SearchView;
 import org.dselent.course_load_scheduler.client.view.SideBarView;
+import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
@@ -79,13 +80,14 @@ public class CourseLoadScheduler implements EntryPoint
 		//---------------End of OG files-----------------------------------------------------------		
 		SideBarPresenterImpl sideBarPresenter = injector.getSideBarPresenter();
 		sideBarPresenter.setParentPresenter(indexPresenter);
-		sideBarPresenter.init();
 		SideBarView sideBarView = sideBarPresenter.getView();
+		sideBarPresenter.init();
 		
 		SearchPresenterImpl searchPresenter = injector.getSearchPresenter();
 		searchPresenter.setParentPresenter(indexPresenter);
 		searchPresenter.init();
 		SearchView searchView = searchPresenter.getView();
+		
 		
 		
 		/*
@@ -106,6 +108,15 @@ public class CourseLoadScheduler implements EntryPoint
 		//SideBarPresenterImpl sideBar
 		
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+		
+		FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
+		facultyTopBarPresenter.setParentPresenter(indexPresenter);
+		//facultyTopBarPresenter.getView().setPresenter(facultyTopBarPresenter);
+		//FacultyTopBarViewImpl ftbv = injector.getFacultyTopBarView();
+		//ftbv.setPresenter(facultyTopBarPresenter); //presenter still null?
+		
+		facultyTopBarPresenter.init();
+		
 		FacultyPresenterImpl facultyPresenter = injector.getFacultyPresenter();
 		facultyPresenter.setParentPresenter(indexPresenter);
 		facultyPresenter.init();

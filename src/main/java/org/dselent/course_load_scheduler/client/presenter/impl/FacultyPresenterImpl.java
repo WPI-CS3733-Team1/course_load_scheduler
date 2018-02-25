@@ -10,10 +10,12 @@ import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
+import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import org.dselent.course_load_scheduler.client.view.FacultyView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.SearchView;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Window;
 import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.inject.Inject;
@@ -31,18 +33,19 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	private FacultyView view;
 	private ScheduleView scheduleView;
 	private SearchView searchView;
+	private FacultyTopBarView topBarView;
 	
 	
 	@Inject
-	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, ScheduleView scheduleView, SearchView searchView) {
+	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, ScheduleView scheduleView, SearchView searchView, FacultyTopBarView topBarView) {
 		this.parentPresenter = parentPresenter;
 		this.view = view;
 		this.scheduleView = scheduleView;
 		this.searchView = searchView;
+		this.topBarView = topBarView;
 		view.setPresenter(this);
 	}
 	
-		
 	@Override
 	public void init() {
 		bind();
@@ -81,11 +84,16 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	
 	@Override
 	public void onOpenSearch(OpenSearchEvent evt) {
+		alert("onOpenSearch Test!!");
 		DockPanel p = view.getDockPanel();
 		p.remove(scheduleView.getWidgetContainer());
 		p.add(searchView.getWidgetContainer(), DockPanel.CENTER);
-		//searchView.getPresenter().go(parentPresenter.getView().getViewRootPanel());
+		searchView.getPresenter().go(view.getCenterPanel());
 	}
+	
+	public static native void alert(String msg) /*-{
+	  $wnd.alert(msg);
+	}-*/;
 	
 	@Override
 	public void onReceiveSchedule(ReceiveScheduleEvent evt) {

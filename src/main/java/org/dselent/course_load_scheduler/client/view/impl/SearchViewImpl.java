@@ -104,4 +104,9 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 		this.submit_button = submitButton;
 	}
 
+	@Override
+	public SearchPresenter getPresenter() {
+		return presenter;
+	}
+
 }

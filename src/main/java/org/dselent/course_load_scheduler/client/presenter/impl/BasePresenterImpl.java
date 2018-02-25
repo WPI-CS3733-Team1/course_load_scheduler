@@ -31,10 +31,10 @@ public abstract class BasePresenterImpl extends EventHandlerAdapter implements B
 	}
 	
 	@Override
-	public void init() {};
+	public void init(){}
 	
 	@Override
-	public void bind() {};
+	public void bind() {}
 	
 	@Override
 	public void unbind()
