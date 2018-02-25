@@ -88,4 +88,9 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 		this.dept_box = nameTextBox;
 	}
 
+	@Override
+	public SearchPresenter getPresenter() {
+		return presenter;
+	}
+
 }

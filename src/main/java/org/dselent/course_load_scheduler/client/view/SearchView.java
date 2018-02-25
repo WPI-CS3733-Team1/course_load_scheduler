@@ -13,4 +13,6 @@ public interface SearchView extends BaseView<SearchPresenter>
 	void setCoursesRadioButton(RadioButton coursesRadioButton);
 	TextBox getDeptIDTextBox();
 	void setDeptIDTextBox(TextBox nameTextBox);
+	SearchPresenter getPresenter();
+	
 }

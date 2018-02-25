@@ -6,5 +6,5 @@ public interface FacultyTopBarPresenter extends BasePresenter{
 	void setParentPresenter(IndexPresenter parentPresenter);
 	void FacultyTopBar();
 	void openSchedule(String username, String string);
-	void openSearch(String userName);
+	void openSearch();
 }

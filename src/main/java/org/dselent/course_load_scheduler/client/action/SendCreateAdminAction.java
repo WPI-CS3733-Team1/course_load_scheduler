@@ -1,6 +1,6 @@
 package org.dselent.course_load_scheduler.client.action;
 
-public class SendCreateAdminAction {
+public class SendCreateAdminAction extends Action {
 	private String moderatorUserName;
 	private String facultyUserName;
 	
