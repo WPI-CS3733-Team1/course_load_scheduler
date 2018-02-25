@@ -17,7 +17,7 @@ public class Section extends Model {
 	private Integer courseId;
 	private Integer CRN;
 	private String sectionName;
-	private Integer sectionId;
+	private Integer sectionId; //type of section
 	private Integer expectedPop;
 	private Integer requiredFreq;
 	private Integer academicYear;

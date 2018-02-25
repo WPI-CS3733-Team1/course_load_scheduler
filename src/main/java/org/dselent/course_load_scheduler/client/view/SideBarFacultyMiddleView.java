@@ -1,5 +1,7 @@
 package org.dselent.course_load_scheduler.client.view;
 
-public interface SideBarFacultyMiddleView {
+import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
+
+public interface SideBarFacultyMiddleView extends BaseView<SideBarPresenter>{
 
 }
