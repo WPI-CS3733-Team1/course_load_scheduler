@@ -78,6 +78,7 @@ public interface Injector extends Ginjector
     public SideBarPresenterImpl getSideBarPresenter();
     
     public SearchPresenterImpl getSearchPresenter();
+  
     //views
     public IndexViewImpl getIndexView();
     public LoginViewImpl getLoginView();
@@ -96,7 +97,13 @@ public interface Injector extends Ginjector
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
     public SideBarViewImpl getSideBarView();
+    public SideBarFacultyBottomImpl getSideBarFacultyBottom();
+    public SideBarFacultyMiddleImpl getSideBarFacultyMiddle();
+    public SideBarFacultyTopImpl getSideBarFacultyTop();
     public SearchViewImpl getSearchView();
+    public SideBarFacultyBottomImpl getSidebarFacultyBottomView();
+    public SideBarFacultyTopImpl getSidebarFacultyTopView();
+    public SideBarFacultyMiddleImpl getSideBarFacultyMiddleView();
   
     
 }

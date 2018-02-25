@@ -24,12 +24,7 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	private FacultyTopBarView view;
 	public String userName = "dselent";
 	
-	@Override
-	public void init() {
-		bind();
-	}
-	
-	@Inject
+		@Inject
 	public FacultyTopBarPresenterImpl(IndexPresenter parentPresenter, FacultyTopBarView view)
 	{
 		this.view = view;
@@ -37,7 +32,23 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 		view.setPresenter(this);
 	}
 	
-	
+	@Override
+	public void init() {
+		bind();
+	}
+		
+	@Override
+	public void bind() {
+		HandlerRegistration registration;
+		
+		registration = eventBus.addHandler(OpenSearchEvent.TYPE, this);
+		eventBusRegistration.put(OpenSearchEvent.TYPE, registration);
+		
+		HandlerRegistration reg;
+		reg = eventBus.addHandler(OpenScheduleEvent.TYPE, this);
+		eventBusRegistration.put(OpenScheduleEvent.TYPE, reg);
+	}
+
 	
 	@Override
 	public void go(HasWidgets container) {

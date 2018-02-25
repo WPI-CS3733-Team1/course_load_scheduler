@@ -64,6 +64,17 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
 	
+	public void onSendOpenInbox(SendOpenInboxEvent evt)
+	{
+		SendOpenInboxAction action = evt.getAction();
+		OpenInboxActionTranslatorImpl openInboxActionTranslator = new OpenInboxActionTranslatorImpl();
+		JSONObject json = openInboxActionTranslator.translateToJson(action);
+		OpenInboxCallback openInboxCallback = new OpenInboxCallback(eventBus, evt.getContainer());
+		
+		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.OPEN_INBOX, openInboxCallback, json);
+		request.send();
+		
+	}
 	
 //	
 //	@Override

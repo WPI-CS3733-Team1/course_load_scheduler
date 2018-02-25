@@ -9,9 +9,17 @@ public class SendOpenInboxEvent extends DisplayEvent<SendOpenInboxAction, SendOp
 {
 	public static Type<SendOpenInboxEventHandler> TYPE = new Type<SendOpenInboxEventHandler>();
 	
+	private SendOpenInboxAction action;
+	
 	public SendOpenInboxEvent(SendOpenInboxAction action, HasWidgets container)
 	{
 		super(action, container);
+		this.action = action;
+	}
+	
+	public SendOpenInboxAction getAction()
+	{
+		return action;
 	}
 	
 	@Override
