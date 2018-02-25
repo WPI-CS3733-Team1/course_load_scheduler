@@ -124,6 +124,9 @@ public class InjectorModule extends AbstractGinModule
         bind(AdminView.class).to(AdminViewImpl.class).in(Singleton.class);
         bind(ModView.class).to(ModViewImpl.class).in(Singleton.class);
         bind(SearchView.class).to(SearchViewImpl.class).in(Singleton.class);
+        bind(SideBarFacultyBottomView.class).to(SideBarFacultyBottomImpl.class).in(Singleton.class);
+        bind(SideBarFacultyMiddleView.class).to(SideBarFacultyMiddleImpl.class).in(Singleton.class);
+        bind(SideBarFacultyTopView.class).to(SideBarFacultyTopImpl.class).in(Singleton.class);
     }
 	/*
 	 * Tried playing with this but had unresolved issues

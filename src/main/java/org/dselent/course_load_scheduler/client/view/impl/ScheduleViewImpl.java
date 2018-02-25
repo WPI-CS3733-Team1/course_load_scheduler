@@ -3,6 +3,7 @@ package org.dselent.course_load_scheduler.client.view.impl;
 import java.util.HashMap;
 
 import org.dselent.course_load_scheduler.client.presenter.SchedulePresenter;
+import org.dselent.course_load_scheduler.client.presenter.impl.SchedulePresenterImpl;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 
 import com.google.gwt.core.client.GWT;
@@ -236,7 +237,8 @@ public class ScheduleViewImpl extends BaseViewImpl<SchedulePresenter> implements
 	public void setPresenter(SchedulePresenter presenter) {
 		this.presenter = presenter;
 	}
-
+	
+	
 	@Override
 	public Widget getWidgetContainer() {
 		return this;
@@ -249,6 +251,11 @@ public class ScheduleViewImpl extends BaseViewImpl<SchedulePresenter> implements
 	
 	public Grid getGrid() {
 		return grid;
+	}
+
+	@Override
+	public SchedulePresenter getPresenter() {
+		return presenter;
 	}
 	
 }

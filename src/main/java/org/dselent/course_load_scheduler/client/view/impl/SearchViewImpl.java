@@ -48,7 +48,6 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 
 	@Override
 	public Widget getWidgetContainer() {
-		
 		return this;
 	}
 
