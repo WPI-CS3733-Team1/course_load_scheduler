@@ -14,6 +14,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Grid;
+import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.TextBox;
 
@@ -33,20 +34,17 @@ public class AdminInboxViewImpl extends BaseViewImpl<AdminInboxPresenter> implem
 
 	@Override
 	public void setPresenter(AdminInboxPresenter presenter) {
-		// TODO Auto-generated method stub
-		
+		this.presenter = presenter;
 	}
 
 	@Override
 	public Widget getWidgetContainer() {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override
 	public HasWidgets getViewRootPanel() {
-		// TODO Auto-generated method stub
-		return null;
+		return scrollPanel;
 	}
 	
 	public void populateTable(ArrayList<Message> adminInboxInfo) 
@@ -59,6 +57,12 @@ public class AdminInboxViewImpl extends BaseViewImpl<AdminInboxPresenter> implem
 			
 			gridPanel.add(new AdminInboxRowViewImpl(newUser, newMessage));
 		}
+	}
+
+	@Override
+	public void showErrorMessages(String errorMessages) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 

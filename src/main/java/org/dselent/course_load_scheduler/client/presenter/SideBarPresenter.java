@@ -4,4 +4,6 @@ public interface SideBarPresenter extends BasePresenter{
 
 	IndexPresenter getParentPresenter();
 	void setParentPresenter(IndexPresenter parentPresenter);
+	void openRequestScheduleChange();
+	void openSchedule(String userName, String term);
 }

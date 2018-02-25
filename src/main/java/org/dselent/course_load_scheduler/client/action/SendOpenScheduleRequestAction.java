@@ -1,10 +1,10 @@
 package org.dselent.course_load_scheduler.client.action;
 
-public class OpenInboxAction extends Action
+public class SendOpenScheduleRequestAction extends Action
 {
 	private String userName;
 	
-	public OpenInboxAction(String userName)
+	public SendOpenScheduleRequestAction(String userName)
 	{
 		this.userName = userName;
 	}
@@ -14,11 +14,12 @@ public class OpenInboxAction extends Action
 		return userName;
 	}
 
+
 	@Override
 	public String toString()
 	{
 		StringBuilder builder = new StringBuilder();
-		builder.append("OpenInboxAction [userName=");
+		builder.append("SendOpenInboxAction [userName=");
 		builder.append(userName);
 		builder.append("]");
 		return builder.toString();

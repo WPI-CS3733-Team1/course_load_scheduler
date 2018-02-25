@@ -3,9 +3,7 @@ package org.dselent.course_load_scheduler.client.service.impl;
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
 import org.dselent.course_load_scheduler.client.callback.SendLoginCallback;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
-import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
-import org.dselent.course_load_scheduler.client.action.OpenInboxAction;
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.callback.OpenInboxCallback;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
@@ -64,6 +62,17 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
 	
+	public void onSendOpenInbox(SendOpenInboxEvent evt)
+	{
+		SendOpenInboxAction action = evt.getAction();
+		OpenInboxActionTranslatorImpl openInboxActionTranslator = new OpenInboxActionTranslatorImpl();
+		JSONObject json = openInboxActionTranslator.translateToJson(action);
+		OpenInboxCallback openInboxCallback = new OpenInboxCallback(eventBus, evt.getContainer());
+		
+		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.OPEN_INBOX, openInboxCallback, json);
+		request.send();
+		
+	}
 	
 //	
 //	@Override

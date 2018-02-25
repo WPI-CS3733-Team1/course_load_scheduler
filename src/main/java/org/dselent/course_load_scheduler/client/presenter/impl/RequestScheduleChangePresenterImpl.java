@@ -4,11 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.dselent.course_load_scheduler.client.action.InvalidLoginAction;
+import org.dselent.course_load_scheduler.client.action.SendLoginAction;
+import org.dselent.course_load_scheduler.client.action.SendMessageAction;
 import org.dselent.course_load_scheduler.client.errorstring.InvalidLoginStrings;
 import org.dselent.course_load_scheduler.client.errorstring.InvalidScheduleChangeStrings;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendMessageEvent;
 import org.dselent.course_load_scheduler.client.exceptions.EmptyStringException;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.RequestScheduleChangePresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.LoginView;
@@ -19,9 +24,8 @@ import com.google.gwt.user.client.ui.HasWidgets;
 public class RequestScheduleChangePresenterImpl extends BasePresenterImpl implements RequestScheduleChangePresenter {
 
 	private RequestScheduleChangeView view;
-	
-	
-	
+	private IndexPresenter parentPresenter;
+	private String userName = "username"; //placeholder until we can determine global variables
 	
 	@Override
 	public void go(HasWidgets container) {
@@ -54,7 +58,7 @@ public class RequestScheduleChangePresenterImpl extends BasePresenterImpl implem
 		}
 		
 		if(sendMessage) {
-			sendMessageToAdmin(message);
+			sendMessageToAdmin(userName, message);
 		}
 		else {
 			displayErrorMessage();
@@ -67,10 +71,12 @@ public class RequestScheduleChangePresenterImpl extends BasePresenterImpl implem
 		
 	}
 
-	private void sendMessageToAdmin(String message) {
-		// TODO Auto-generated method stub
-		
-	}
+	private void sendMessageToAdmin(String userName, String message) {
+			HasWidgets container = parentPresenter.getView().getViewRootPanel();
+			SendMessageAction sma = new SendMessageAction(userName, message);
+			SendMessageEvent sme = new SendMessageEvent(sma, container);
+			eventBus.fireEvent(sme);
+		}
 
 	private void checkEmptyString(String string) throws EmptyStringException
 	{

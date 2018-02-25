@@ -55,7 +55,6 @@ public interface Injector extends Ginjector
 	// GWT.create uses deferred bindings where many permutations are created but only one
 	// is used at runtime (the one for the specific browser)
     public static final Injector INSTANCE = GWT.create(Injector.class);
- 
     // event bus
     public SimpleEventBus getEventBus();
     
@@ -78,6 +77,7 @@ public interface Injector extends Ginjector
     public SideBarPresenterImpl getSideBarPresenter();
     
     public SearchPresenterImpl getSearchPresenter();
+  
     //views
     public IndexViewImpl getIndexView();
     public LoginViewImpl getLoginView();
@@ -88,7 +88,7 @@ public interface Injector extends Ginjector
     public CreateSectionViewImpl getCreateSectionView();
     public AdminViewImpl getAdminView();
     public ModViewImpl getModView();
-  
+    
     
 	//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
     public FacultyViewImpl getFacultyView();
@@ -97,6 +97,9 @@ public interface Injector extends Ginjector
     public SideBarFacultyMiddleImpl getSideBarFacultyMiddle();
     public SideBarFacultyTopImpl getSideBarFacultyTop();
     public SearchViewImpl getSearchView();
+    public SideBarFacultyBottomImpl getSidebarFacultyBottomView();
+    public SideBarFacultyTopImpl getSidebarFacultyTopView();
+    public SideBarFacultyMiddleImpl getSideBarFacultyMiddleView();
   
     
 }

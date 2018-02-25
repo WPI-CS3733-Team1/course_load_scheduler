@@ -3,22 +3,28 @@ package org.dselent.course_load_scheduler.client.action;
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class InvalidOpenInboxAction extends Action
+/**
+ * Actions are used to package up data to be sent on the event bus
+ * This particular action is for data related to an invalid login attempt caught client-side
+ * 
+ * @author dselent
+ *
+ */
+public class InvalidOpenScheduleRequestAction extends Action
 {
 	private List<String> reasonList;
 	
-	public InvalidOpenInboxAction()
+	public InvalidOpenScheduleRequestAction()
 	{
 		reasonList = new ArrayList<>();
 	}
 	
-	public InvalidOpenInboxAction(List<String> reasonList)
+	public InvalidOpenScheduleRequestAction(List<String> reasonList)
 	{
 		this.reasonList = reasonList;
 	}
 	
-	public InvalidOpenInboxAction(String reason)
+	public InvalidOpenScheduleRequestAction(String reason)
 	{
 		reasonList = new ArrayList<>();
 		reasonList.add(reason);
