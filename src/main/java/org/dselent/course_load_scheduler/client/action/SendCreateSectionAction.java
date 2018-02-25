@@ -1,6 +1,6 @@
 package org.dselent.course_load_scheduler.client.action;
 
-public class SendCreateSectionAction {
+public class SendCreateSectionAction extends Action {
 	String sectionExpectedPopulation;
 	String sectionYear;
 	String sectionType; 

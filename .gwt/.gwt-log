@@ -7135,3 +7135,1159 @@ Rebinding org.dselent.course_load_scheduler.client.view.impl.CreateSectionViewIm
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 3007 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 6 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 12.68 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.17 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.18 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519510513328.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519510513328.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519510513328_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519510515097.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519510515097.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519510515097_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.02 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511118274.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511118274.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511118274_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511118930.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511118930.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511118930_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511130624.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511130624.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511130624_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511132999.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511132999.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511132999_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511133103.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511133103.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511133103_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511137482.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511137482.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511137482_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511140783.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511140783.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl_SearchViewImplUiBinderImpl_designTime1519511140783_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Invalid Unit: org.dselent.course_load_scheduler.client.gin.InjectorModule
+Invalid Unit: org.dselent.course_load_scheduler.client.gin.Injector
+Invalid units found: 2
+Compiling...
+   Compilation completed in 0.03 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.01 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+      Line 41: search_panel cannot be resolved to a variable
+      Line 47: users_button cannot be resolved to a variable
+      Line 53: users_button cannot be resolved or is not a field
+      Line 59: courses_button cannot be resolved to a variable
+      Line 65: courses_button cannot be resolved or is not a field
+      Line 71: dept_box cannot be resolved to a variable
+      Line 77: dept_box cannot be resolved or is not a field
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+[ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+   [ERROR] Line 41: search_panel cannot be resolved to a variable
+   [ERROR] Line 47: users_button cannot be resolved to a variable
+   [ERROR] Line 53: users_button cannot be resolved or is not a field
+   [ERROR] Line 59: courses_button cannot be resolved to a variable
+   [ERROR] Line 65: courses_button cannot be resolved or is not a field
+   [ERROR] Line 71: dept_box cannot be resolved to a variable
+   [ERROR] Line 77: dept_box cannot be resolved or is not a field
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Checking rule <generate-with class='com.google.gwt.inject.rebind.GinjectorGenerator'/>
+      [ERROR] Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/view/impl/SearchViewImpl.java'
+         [ERROR] Line 41: search_panel cannot be resolved to a variable
+         [ERROR] Line 47: users_button cannot be resolved to a variable
+         [ERROR] Line 53: users_button cannot be resolved or is not a field
+         [ERROR] Line 59: courses_button cannot be resolved to a variable
+         [ERROR] Line 65: courses_button cannot be resolved or is not a field
+         [ERROR] Line 71: dept_box cannot be resolved to a variable
+         [ERROR] Line 77: dept_box cannot be resolved or is not a field
+      [ERROR] Unable to find type 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'
+         [ERROR] Hint: Previous compiler errors may have made this type unavailable
+         [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.03 seconds
+Invalid Unit: org.dselent.course_load_scheduler.client.gin.InjectorModule
+Invalid Unit: org.dselent.course_load_scheduler.client.gin.Injector
+Invalid units found: 2
+Compiling...
+   Compilation completed in 0.02 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "at" in urn:import:com.google.gwt.user.client.ui: <g:at left='0' top='0'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.02 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "at" in urn:import:com.google.gwt.user.client.ui: <g:at left='0' top='0'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3006 cached/archived units.  Used 3006 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.02 seconds
+Invalid Unit: org.dselent.course_load_scheduler.client.gin.Injector
+Invalid Unit: org.dselent.course_load_scheduler.client.gin.InjectorModule
+Invalid units found: 2
+Compiling...
+   Compilation completed in 0.03 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "at" in urn:import:com.google.gwt.user.client.ui: <g:at left='0' top='0'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl.LoginViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1519512404536.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1519512404536.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1519512404536_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl.LoginViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1519512405295.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1519512405295.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.LoginViewImpl_LoginViewImplUiBinderImpl_designTime1519512405295_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "at" in urn:import:com.google.gwt.user.client.ui: <g:at left='0' top='0'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "at" in urn:import:com.google.gwt.user.client.ui: <g:at left='0' top='0'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 3007 cached/archived units.  Used 3007 / 3007 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/sokke/Desktop/CS3733/ui_course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] No class matching "at" in urn:import:com.google.gwt.user.client.ui: <g:at left='0' top='0'> (:9)
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.SearchViewImpl.SearchViewImplUiBinder'; expect subsequent failures

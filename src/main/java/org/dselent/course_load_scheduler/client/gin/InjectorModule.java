@@ -113,6 +113,9 @@ public class InjectorModule extends AbstractGinModule
         bind(AdminTopBarView.class).to(AdminTopBarViewImpl.class).in(Singleton.class);
         bind(ModeratorTopBarView.class).to(ModeratorTopBarViewImpl.class).in(Singleton.class);
         bind(SideBarView.class).to(SideBarViewImpl.class).in(Singleton.class);
+        bind(SideBarFacultyBottomView.class).to(SideBarFacultyBottomImpl.class).in(Singleton.class);
+        bind(SideBarFacultyMiddleView.class).to(SideBarFacultyMiddleImpl.class).in(Singleton.class);
+        bind(SideBarFacultyTopView.class).to(SideBarFacultyTopImpl.class).in(Singleton.class);
         bind(CreateCourseView.class).to(CreateCourseViewImpl.class).in(Singleton.class);
         bind(CreateSectionView.class).to(CreateSectionViewImpl.class).in(Singleton.class);
         bind(CreateAdminView.class).to(CreateAdminViewImpl.class).in(Singleton.class);
