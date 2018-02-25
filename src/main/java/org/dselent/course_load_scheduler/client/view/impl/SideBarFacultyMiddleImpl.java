@@ -4,8 +4,10 @@ import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
 import org.dselent.course_load_scheduler.client.view.SideBarFacultyMiddleView;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasWidgets;
@@ -24,6 +26,7 @@ public class SideBarFacultyMiddleImpl extends BaseViewImpl<SideBarPresenter> imp
 	
 	@UiField Button viewScheduleButton;
 	@UiField Button requestChangeButton;
+	private String userName = "username";
 	
 	public Button getViewScheduleButton() {
 		return viewScheduleButton;
@@ -53,6 +56,16 @@ public class SideBarFacultyMiddleImpl extends BaseViewImpl<SideBarPresenter> imp
 		return null;
 	}
 
+	@UiHandler("requestChangeButton")
+	void onRequestChangeButtonClicked(ClickEvent evt)
+	{
+		presenter.openRequestScheduleChange();
+	}
 	
+	@UiHandler("viewScheduleButton")
+	void onViewScheduleButtonClicked(ClickEvent evt)
+	{
+		presenter.openSchedule(userName, "A");
+	}
 
 }

@@ -239,7 +239,7 @@ public class CreateSectionViewImpl extends BaseViewImpl<CreateSectionPresenter> 
 
 	@Override
 	public void setSectionButton(Button sectionButton) {
-		// TODO Auto-generated method stub
+		this.createSectionButton = sectionButton;
 		
 	}
 }
