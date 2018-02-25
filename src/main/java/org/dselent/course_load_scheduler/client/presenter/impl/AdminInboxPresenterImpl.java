@@ -6,7 +6,6 @@ import org.dselent.course_load_scheduler.client.action.InvalidLoginAction;
 import org.dselent.course_load_scheduler.client.action.InvalidOpenInboxAction;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.event.InvalidOpenInboxEvent;
-import org.dselent.course_load_scheduler.client.event.OpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.model.Message;
@@ -102,14 +101,11 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 		InvalidOpenInboxAction ila = evt.getAction();
 		view.showErrorMessages(ila.toString());
 	}
-	
-//	void openAdminInbox() {
-//		if (!openAdminInboxClickInProgress);
-//		{
-//			openAdminInboxClickInProgress = true;
-//			
-//			
-//		}
-//	}
+
+	@Override
+	public void onOpenInbox(SendOpenInboxEvent evt) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

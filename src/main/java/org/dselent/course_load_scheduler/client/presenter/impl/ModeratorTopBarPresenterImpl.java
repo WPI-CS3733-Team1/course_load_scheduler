@@ -71,9 +71,9 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 
 	@Override
 	public void openCreateCourse(String userName) {
-		OpenCreateCourseAction occa = new OpenCreateCourseAction(userName);
-		OpenCreateCourseEvent occe = new OpenCreateCourseEvent(occa);
-		eventBus.fireEvent(occe);
+		OpenCreateCourseAction socca = new OpenCreateCourseAction(userName);
+		OpenCreateCourseEvent socce = new OpenCreateCourseEvent(socca);
+		eventBus.fireEvent(socce);
 	}
 		
 	@Override
@@ -85,8 +85,8 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 
 	@Override
 	public void openSearch(String username) 	{
-		OpenSearchAction osa = new OpenSearchAction(username);
-		OpenSearchEvent ose = new OpenSearchEvent(osa);
-		eventBus.fireEvent(ose);
+		OpenSearchAction sosa = new OpenSearchAction(username);
+		OpenSearchEvent sose = new OpenSearchEvent(sosa);
+		eventBus.fireEvent(sose);
 	}
 }
