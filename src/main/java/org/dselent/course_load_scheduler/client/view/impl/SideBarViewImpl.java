@@ -34,7 +34,7 @@ public class SideBarViewImpl extends BaseViewImpl<SideBarPresenter> implements S
 	@Override
 	public Widget getWidgetContainer()
 	{
-		return this;
+		return sideBarPanel;
 	}
 
 	@Override
