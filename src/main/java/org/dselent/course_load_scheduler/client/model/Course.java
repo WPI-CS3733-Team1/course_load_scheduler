@@ -13,9 +13,9 @@ public class Course extends Model {
 	private String name;
 	private Integer deptId;
 	private String courseNum;
-	private String numLectures;
-	private String numLabs;
-	private String numConferences;
+	private Integer numLectures;
+	private Integer numLabs;
+	private Integer numConferences;
 	private Date createdAt;
 	private Date updatedAt;
 
@@ -49,22 +49,22 @@ public class Course extends Model {
 	public void setCourseNum(String courseNum) {
 		this.courseNum = courseNum;
 	}
-	public String getNumLectures() {
+	public Integer getNumLectures() {
 		return numLectures;
 	}
-	public void setNumLectures(String numLectures) {
+	public void setNumLectures(Integer numLectures) {
 		this.numLectures = numLectures;
 	}
-	public String getNumLabs() {
+	public Integer getNumLabs() {
 		return numLabs;
 	}
-	public void setNumLabs(String numLabs) {
+	public void setNumLabs(Integer numLabs) {
 		this.numLabs = numLabs;
 	}
-	public String getNumConferences() {
+	public Integer getNumConferences() {
 		return numConferences;
 	}
-	public void setNumConferences(String numConferences) {
+	public void setNumConferences(Integer numConferences) {
 		this.numConferences = numConferences;
 	}
 	public Date getCreatedAt() {
