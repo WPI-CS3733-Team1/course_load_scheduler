@@ -58,6 +58,12 @@ public class AdminInboxViewImpl extends BaseViewImpl<AdminInboxPresenter> implem
 			gridPanel.add(new AdminInboxRowViewImpl(newUser, newMessage));
 		}
 	}
+
+	@Override
+	public void showErrorMessages(String errorMessages) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
