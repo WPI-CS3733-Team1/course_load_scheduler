@@ -1,5 +1,11 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
+import org.dselent.course_load_scheduler.client.action.SendLoginAction;
+import org.dselent.course_load_scheduler.client.action.SendOpenScheduleRequestAction;
+import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
+import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
 import org.dselent.course_load_scheduler.client.model.Model;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -21,7 +27,7 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	private SideBarFacultyTopView topView;
 	private SideBarFacultyMiddleView middleView;
 	private SideBarFacultyBottomView bottomView;
-	private boolean loginClickInProgress;
+	private String userName = "username";
 
 	@Inject
 	public SideBarPresenterImpl(IndexPresenter parentPresenter, SideBarView view, SideBarFacultyTopView topView, SideBarFacultyMiddleView middleView, SideBarFacultyBottomView bottomView)
@@ -66,13 +72,30 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	@Override
 	public IndexPresenter getParentPresenter() {
 		// TODO Auto-generated method stub
-		return null;
+		return parentPresenter;
 	}
 
 	@Override
 	public void setParentPresenter(IndexPresenter parentPresenter) {
-		// TODO Auto-generated method stub
-		
+		this.parentPresenter = parentPresenter;
+
+	}
+
+	@Override
+	public void openRequestScheduleChange() 	
+	{
+		HasWidgets container = parentPresenter.getView().getViewRootPanel();
+		SendOpenScheduleRequestAction sla = new SendOpenScheduleRequestAction(userName);
+		SendOpenScheduleRequestEvent sle = new SendOpenScheduleRequestEvent(sla, container);
+		eventBus.fireEvent(sle);
+	}
+	
+	@Override
+	public void openSchedule(String userName, String term) 	{
+		HasWidgets container = parentPresenter.getView().getViewRootPanel(); //this might have to change to be the specific DockPanel CENTER panel
+		OpenScheduleAction sosca = new OpenScheduleAction(userName, term);
+		OpenScheduleEvent sosce = new OpenScheduleEvent(sosca, container);
+		eventBus.fireEvent(sosce); //how is this going to connect to schedulePresenter/scheduleView?
 	}
 
 }

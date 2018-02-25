@@ -92,8 +92,7 @@ public class AdminTopBarViewImpl extends BaseViewImpl<AdminTopBarPresenter> impl
 
 	@Override
 	public void setPresenter(AdminTopBarPresenter presenter) {
-		// TODO Auto-generated method stub
-		
+		this.presenter = presenter;		
 	}
 
 	@Override
@@ -104,14 +103,12 @@ public class AdminTopBarViewImpl extends BaseViewImpl<AdminTopBarPresenter> impl
 
 	@Override
 	public Widget getWidgetContainer() {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override
 	public HasWidgets getViewRootPanel() {
-		// TODO Auto-generated method stub
-		return null;
+		return htmlPanel;
 	}
 
 
