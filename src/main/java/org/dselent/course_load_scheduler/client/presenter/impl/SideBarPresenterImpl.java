@@ -22,7 +22,7 @@ import com.google.inject.Inject;
 
 public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPresenter {
 
-	private IndexPresenter parentPresenter;
+	private BasePresenter parentPresenter;
 	private SideBarView view;
 	private SideBarFacultyTopView topView;
 	private SideBarFacultyMiddleView middleView;
@@ -70,13 +70,13 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	}
 
 	@Override
-	public IndexPresenter getParentPresenter() {
+	public BasePresenter getParentPresenter() {
 		// TODO Auto-generated method stub
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(IndexPresenter parentPresenter) {
+	public void setParentPresenter(BasePresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 
 	}
