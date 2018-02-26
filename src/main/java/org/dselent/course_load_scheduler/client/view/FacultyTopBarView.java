@@ -13,5 +13,6 @@ public interface FacultyTopBarView extends BaseView<FacultyTopBarPresenter> {
 	public Button getDTerm();
 	public Button getSearch();
 	public Button getMySchedule();
+	FacultyTopBarPresenter getPresenter();
 
 }
