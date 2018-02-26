@@ -18,7 +18,7 @@
 			<g:Button ui:field="createCourseButton" text="Create Course" width="50%" />
 			
 		</g:VerticalPanel>
-			<g:ScrollPanel ui:field="courseScrollPanel" width="86px" height="299px"/>
+			<g:ListBox ui:field="courseListBox" width="86px" height="299px"/>
 		</g:HorizontalPanel>
 	</g:HTMLPanel>
 </ui:UiBinder> 
