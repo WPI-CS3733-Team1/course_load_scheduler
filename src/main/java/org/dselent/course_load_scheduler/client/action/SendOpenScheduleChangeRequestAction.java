@@ -1,10 +1,10 @@
 package org.dselent.course_load_scheduler.client.action;
 
-public class SendOpenScheduleRequestAction extends Action
+public class SendOpenScheduleChangeRequestAction extends Action
 {
 	private String userName;
 	
-	public SendOpenScheduleRequestAction(String userName)
+	public SendOpenScheduleChangeRequestAction(String userName)
 	{
 		this.userName = userName;
 	}

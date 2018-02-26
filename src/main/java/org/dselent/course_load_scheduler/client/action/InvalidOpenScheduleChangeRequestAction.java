@@ -10,21 +10,21 @@ import java.util.List;
  * @author dselent
  *
  */
-public class InvalidOpenScheduleRequestAction extends Action
+public class InvalidOpenScheduleChangeRequestAction extends Action
 {
 	private List<String> reasonList;
 	
-	public InvalidOpenScheduleRequestAction()
+	public InvalidOpenScheduleChangeRequestAction()
 	{
 		reasonList = new ArrayList<>();
 	}
 	
-	public InvalidOpenScheduleRequestAction(List<String> reasonList)
+	public InvalidOpenScheduleChangeRequestAction(List<String> reasonList)
 	{
 		this.reasonList = reasonList;
 	}
 	
-	public InvalidOpenScheduleRequestAction(String reason)
+	public InvalidOpenScheduleChangeRequestAction(String reason)
 	{
 		reasonList = new ArrayList<>();
 		reasonList.add(reason);

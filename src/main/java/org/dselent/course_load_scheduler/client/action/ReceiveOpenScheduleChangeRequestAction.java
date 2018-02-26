@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.dselent.course_load_scheduler.client.model.User;
 
-public class ReceiveOpenScheduleRequestAction extends Action
+public class ReceiveOpenScheduleChangeRequestAction extends Action
 {
 	private User model;
 	
-	public ReceiveOpenScheduleRequestAction(User msg)
+	public ReceiveOpenScheduleChangeRequestAction(User msg)
 	{
 		this.model= msg;
 	}
