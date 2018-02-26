@@ -7,12 +7,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.dselent.course_load_scheduler.client.action.ReceiveScheduleAction;
-import org.dselent.course_load_scheduler.client.action.SendOpenScheduleRequestAction;
+import org.dselent.course_load_scheduler.client.action.SendOpenScheduleChangeRequestAction;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
-import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
+import org.dselent.course_load_scheduler.client.event.SendOpenScheduleChangeRequestEvent;
 import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
@@ -141,8 +141,8 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 		logger.log(Level.SEVERE, "onOpenSchedule executed in FacultyPresenterImpl");
 		//fire sendopenschedulerequestevent?
 		String user = evt.getAction().getUserName();
-		SendOpenScheduleRequestAction action = new SendOpenScheduleRequestAction(user);
-		SendOpenScheduleRequestEvent event = new SendOpenScheduleRequestEvent(action, schedulePresenter.getView().getViewRootPanel());
+		SendOpenScheduleChangeRequestAction action = new SendOpenScheduleChangeRequestAction(user);
+		SendOpenScheduleChangeRequestEvent event = new SendOpenScheduleChangeRequestEvent(action, schedulePresenter.getView().getViewRootPanel());
 		eventBus.fireEvent(event);
 	}
 	

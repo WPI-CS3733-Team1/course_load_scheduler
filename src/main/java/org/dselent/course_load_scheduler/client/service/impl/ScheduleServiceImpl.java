@@ -1,17 +1,14 @@
 package org.dselent.course_load_scheduler.client.service.impl;
 
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
-import org.dselent.course_load_scheduler.client.action.SendOpenScheduleRequestAction;
 import org.dselent.course_load_scheduler.client.callback.OpenScheduleCallback;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
-import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
 import org.dselent.course_load_scheduler.client.network.NetworkRequest;
 import org.dselent.course_load_scheduler.client.network.NetworkRequestStrings;
 import org.dselent.course_load_scheduler.client.service.ScheduleService;
 import org.dselent.course_load_scheduler.client.translator.impl.OpenScheduleActionTranslatorImpl;
-import org.dselent.course_load_scheduler.client.translator.impl.OpenScheduleRequestActionTranslatorImpl;
 
 import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.json.client.JSONObject;
