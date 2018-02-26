@@ -8,6 +8,7 @@ import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
 import org.dselent.course_load_scheduler.client.model.Model;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
@@ -22,7 +23,7 @@ import com.google.inject.Inject;
 
 public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPresenter {
 
-	private BasePresenter parentPresenter;
+	private FacultyPresenter parentPresenter;
 	private SideBarView view;
 	private SideBarFacultyTopView topView;
 	private SideBarFacultyMiddleView middleView;
@@ -30,13 +31,12 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	private String userName = "username";
 
 	@Inject
-	public SideBarPresenterImpl(IndexPresenter parentPresenter, SideBarView view, SideBarFacultyTopView topView, SideBarFacultyMiddleView middleView, SideBarFacultyBottomView bottomView)
+	public SideBarPresenterImpl(SideBarView view, SideBarFacultyTopView topView, SideBarFacultyMiddleView middleView, SideBarFacultyBottomView bottomView)
 	{
 		this.view = view;
 		this.topView = topView;
 		this.middleView = middleView;
 		this.bottomView = bottomView;
-		this.parentPresenter = parentPresenter;
 		view.setPresenter(this);
 	}
 
@@ -70,13 +70,13 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	}
 
 	@Override
-	public BasePresenter getParentPresenter() {
+	public FacultyPresenter getParentPresenter() {
 		// TODO Auto-generated method stub
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(BasePresenter parentPresenter) {
+	public void setParentPresenter(FacultyPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 
 	}

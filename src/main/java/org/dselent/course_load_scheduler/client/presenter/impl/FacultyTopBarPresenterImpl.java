@@ -11,6 +11,7 @@ import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.BaseView;
@@ -22,9 +23,10 @@ import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.inject.Inject;
 
-public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements FacultyTopBarPresenter {
+public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements FacultyTopBarPresenter
+{
 
-	private BasePresenter parentPresenter;
+	private FacultyPresenter parentPresenter;
 	private FacultyTopBarView view;
 	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	//public String userName = "dselent";
@@ -39,26 +41,28 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	 */
 	
 	@Inject
-	public FacultyTopBarPresenterImpl(IndexPresenter parentPresenter, FacultyTopBarView view)
+	public FacultyTopBarPresenterImpl(FacultyTopBarView view)
 	{
 		this.view = view;
-		this.parentPresenter = parentPresenter;
+
 		view.setPresenter(this);
-		log("Faculty Top Bar Presenter Initialized.");
+		/*log("Faculty Top Bar Presenter Initialized.");
 		if(view.getPresenter()==null) {
 			log("Faculty Top Bar Presenter was null!");
 		}else {
 			log("Faculty Top Bar Presenter was NOT null on construct");
-		}
+		}*/
 	}
 	
 	@Override
-	public void init() {
+	public void init()
+	{
 		bind();
 	}
 		
 	@Override
-	public void bind() {
+	public void bind()
+	{
 		
 		HandlerRegistration registration;
 		registration = eventBus.addHandler(OpenSearchEvent.TYPE, this);
@@ -71,36 +75,39 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 
 	
 	@Override
-	public void go(HasWidgets container) {
+	public void go(HasWidgets container)
+	{
 		container.clear();
 		container.add(view.getWidgetContainer());
 	}
 
+	
 	@Override
-	public FacultyTopBarView getView() {
+	public void setParentPresenter(FacultyPresenter parentPresenter)
+	{
+		this.parentPresenter = parentPresenter;
+	}
+	
+	
+	@Override
+	public FacultyTopBarView getView()
+	{
 		return view;
 	}
 
 	@Override
-	public BasePresenter getParentPresenter() {
-		return parentPresenter;
-	}
-
-	@Override
-	public void setParentPresenter(BasePresenter parentPresenter) {
-		this.parentPresenter = parentPresenter;
-	}
-
-	@Override
-	public void FacultyTopBar() {
+	public void setView(FacultyTopBarView  view)
+	{
+		this.view = view;
 	}
 
 	@Override
 	public void openSchedule(String username, String term) 	{
-		HasWidgets container = parentPresenter.getView().getViewRootPanel(); //this might have to change to be the specific DockPanel CENTER panel
-		OpenScheduleAction osca = new OpenScheduleAction("dselent", term);
-		OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
-		eventBus.fireEvent(osce); //how is this going to connect to schedulePresenter/scheduleView?
+		//TODO
+		//HasWidgets container = parentPresenter.getView().getViewRootPanel(); //this might have to change to be the specific DockPanel CENTER panel
+		//OpenScheduleAction osca = new OpenScheduleAction("dselent", term);
+		//OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
+		//eventBus.fireEvent(osce); //how is this going to connect to schedulePresenter/scheduleView?
 	}
 
 	@Override
@@ -115,6 +122,12 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	
 	public void log(String value) {
 		logger.log(Level.SEVERE, value);
+	}
+
+	@Override
+	public void FacultyTopBar() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

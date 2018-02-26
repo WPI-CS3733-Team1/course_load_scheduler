@@ -1,9 +1,14 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.OpenCreateSectionEvent;
+import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateAdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateSectionPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -21,23 +26,36 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 
 	IndexPresenter parentPresenter;
 	ModView view;
-	private CreateCourseView createCourseView;
-	private CreateSectionView createSectionView;
-	private CreateAdminView createAdminView;
+	
+	//private CreateCoursePresenterImpl createCoursePresenter;
+	//private CreateSectionPresenterImpl createSectionPresenter;
+	//private CreateAdminPresenterImpl createAdminPresenter;
+	
+	private SchedulePresenterImpl scheduleViewPresenter;
+	private ModeratorTopBarPresenterImpl topBarPresenter;
+	private SideBarPresenterImpl sidebarPresenter;
+	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	
 	@Inject
-	public ModPresenterImpl(IndexPresenter parent, ModView view, CreateSectionView createSectionView, CreateCourseView createCourseView, CreateAdminView createAdminView) {
+	public ModPresenterImpl(IndexPresenter parent, ModView view, SchedulePresenterImpl schedulePresenterImpl, ModeratorTopBarPresenterImpl modTopPresenterImpl, SideBarPresenterImpl sidebarPresenter) {
 		this.parentPresenter = parent;
 		this.view = view;
-		this.createSectionView = createSectionView;
-		this.createCourseView = createCourseView;
-		this.createAdminView = createAdminView;
+		
+		
+		//this.createSectionPresenter = createSectionPresenter;
+		//this.createCoursePresenter = createCoursePresenter;
+		//this.createAdminPresenter = createAdminPresenter;
+		
+		this.scheduleViewPresenter = scheduleViewPresenter;
+		this.topBarPresenter = modTopPresenterImpl;
+		this.sidebarPresenter = sidebarPresenter;
+		
 		view.setPresenter(this);
-		//createSectionView.setParentPresenter(this);
-		//createCourseView.setParentPresenter(this);
 		
-		
+		topBarPresenter.setView(view.getTopBarView());
+		topBarPresenter.getView().setPresenter(topBarPresenter);
 	}
+	
 	
 	
 	@Override
@@ -75,19 +93,24 @@ public class ModPresenterImpl extends BasePresenterImpl implements ModPresenter 
 	@Override
 	public void onOpenCreateCourse(OpenCreateCourseEvent evt)
 	{
-		view.getDockPanel().add(createCourseView.getCourseHorizontalPanel(), view.getDockPanel().CENTER);
+		//view.getDockPanel().add(createCoursePresenter.getView().getCourseHorizontalPanel(), view.getDockPanel().CENTER);
 	}
 	
 	@Override
 	public void onOpenCreateSection(OpenCreateSectionEvent evt)
 	{
-		view.getDockPanel().add(createSectionView.getSectionVerticalPanel(), view.getDockPanel().CENTER); 
+		//view.getDockPanel().add(createSectionPresenter.getView().getSectionVerticalPanel(), view.getDockPanel().CENTER); 
+	}
+	
+	@Override
+	public void onOpenSearch(OpenSearchEvent evt) {
+		logger.log(Level.SEVERE, "onOpenSearch triggered!");
 	}
 	
 	@Override
 	public void onOpenCreateAdmin(OpenCreateAdminEvent evt)
 	{
-		view.getDockPanel().add(createAdminView.getAdminHorizontalPanel(), view.getDockPanel().CENTER);
+		//view.getDockPanel().add(createAdminPresenter.getView().getAdminHorizontalPanel(), view.getDockPanel().CENTER);
 	}
 
 }
