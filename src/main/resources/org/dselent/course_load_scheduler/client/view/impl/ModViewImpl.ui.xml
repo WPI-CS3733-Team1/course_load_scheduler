@@ -12,7 +12,7 @@
 				<d:ScheduleViewImpl ui:field="test"/>
 			</g:Dock>
 			<g:Dock direction="WEST">
-				<d:SideBarViewImpl></d:SideBarViewImpl>
+				<d:SideBarModeratorViewImpl ui:field = "moderatorSideBar"></d:SideBarModeratorViewImpl>
 			</g:Dock>
 			<g:Dock direction="NORTH">
 				<d:ModeratorTopBarViewImpl ui:field="moderatorTopBar"></d:ModeratorTopBarViewImpl>
