@@ -7,5 +7,6 @@ public interface AdminInboxPresenter extends BasePresenter{
 	IndexPresenter getParentPresenter();
 	void setParentPresenter(IndexPresenter parentPresenter);
 	//void AdminInbox();
-	void onOpenInbox(SendOpenInboxEvent evt);
+	void onSendOpenInbox(SendOpenInboxEvent evt);
+	void bind();
 }
