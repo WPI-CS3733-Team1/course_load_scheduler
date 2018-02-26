@@ -24,7 +24,7 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	private FacultyTopBarView view;
 	public String userName = "dselent";
 	
-		@Inject
+	@Inject
 	public FacultyTopBarPresenterImpl(IndexPresenter parentPresenter, FacultyTopBarView view)
 	{
 		this.view = view;

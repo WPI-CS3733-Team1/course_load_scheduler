@@ -71,7 +71,6 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.OPEN_INBOX, openInboxCallback, json);
 		request.send();
-		
 	}
 	
 //	
