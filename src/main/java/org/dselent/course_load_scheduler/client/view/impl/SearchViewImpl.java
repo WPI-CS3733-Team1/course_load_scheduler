@@ -8,6 +8,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.TextBox;
@@ -22,7 +23,7 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 	}
 	
 	@UiField
-	VerticalPanel search_panel;
+	HTMLPanel search_panel;
 	
 	@UiField
 	RadioButton users_button;
@@ -101,6 +102,11 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 	@Override
 	public void setSubmitButton(Button submitButton) {
 		this.submit_button = submitButton;
+	}
+
+	@Override
+	public SearchPresenter getPresenter() {
+		return presenter;
 	}
 
 }

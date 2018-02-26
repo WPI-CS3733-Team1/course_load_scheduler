@@ -16,4 +16,5 @@ public interface SearchView extends BaseView<SearchPresenter>
 	void setDeptIDTextBox(TextBox nameTextBox);
 	Button getSubmitButton();
 	void setSubmitButton(Button submitButton);
+	SearchPresenter getPresenter();
 }

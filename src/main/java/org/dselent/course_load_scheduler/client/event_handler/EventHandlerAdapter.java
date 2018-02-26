@@ -120,4 +120,7 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	
 	@Override
 	public void onInvalidResolveMessage(InvalidResolveMessageEvent evt) {}
+	
+	
+	
 }

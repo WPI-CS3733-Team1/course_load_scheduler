@@ -1,5 +1,9 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import com.google.gwt.core.client.GWT;
@@ -22,10 +26,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 
 	private static FacultyTopBarViewImplUiBinder uiBinder = GWT.create(FacultyTopBarViewImplUiBinder.class);
 	
-	
-
-	interface FacultyTopBarViewImplUiBinder extends UiBinder<Widget, FacultyTopBarViewImpl> {
-	}
+	interface FacultyTopBarViewImplUiBinder extends UiBinder<Widget, FacultyTopBarViewImpl> {}
 	
 	@UiField Button mySchedule;
 	@UiField Button search;
@@ -35,11 +36,67 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 	@UiField Button cTerm;
 	@UiField Button dTerm;
 	@UiField HTMLPanel htmlPanel;
-	String userName = "dselent";
+	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	
 	
 	public FacultyTopBarViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
+	}
+	
+	public HorizontalPanel getTopBarFrame() {
+		return topBarFrame;
+	}
+
+	public void setTopBarFrame(HorizontalPanel topBarFrame) {
+		this.topBarFrame = topBarFrame;
+	}
+
+	public Button getaTerm() {
+		return aTerm;
+	}
+
+	public void setaTerm(Button aTerm) {
+		this.aTerm = aTerm;
+	}
+
+	public Button getbTerm() {
+		return bTerm;
+	}
+
+	public void setbTerm(Button bTerm) {
+		this.bTerm = bTerm;
+	}
+
+	public Button getcTerm() {
+		return cTerm;
+	}
+
+	public void setcTerm(Button cTerm) {
+		this.cTerm = cTerm;
+	}
+
+	public Button getdTerm() {
+		return dTerm;
+	}
+
+	public void setdTerm(Button dTerm) {
+		this.dTerm = dTerm;
+	}
+
+	public HTMLPanel getHtmlPanel() {
+		return htmlPanel;
+	}
+
+	public void setHtmlPanel(HTMLPanel htmlPanel) {
+		this.htmlPanel = htmlPanel;
+	}
+
+	public void setMySchedule(Button mySchedule) {
+		this.mySchedule = mySchedule;
+	}
+
+	public void setSearch(Button search) {
+		this.search = search;
 	}
 
 	@Override
@@ -75,35 +132,46 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 
 	@UiHandler("mySchedule")
 	void onMyScheduleClick(ClickEvent event) {
-		presenter.openSchedule(userName, "A");
+		presenter.openSchedule("dselent", "A");
 	}
 	@UiHandler("aTerm")
 	void onATermClick(ClickEvent event) {
 		//
-		presenter.openSchedule(userName, "A");
+		presenter.openSchedule("dselent", "A");
 	}
 	@UiHandler("bTerm")
 	void onBTermClick(ClickEvent event) {
-		presenter.openSchedule(userName, "B");
+		presenter.openSchedule("dselent", "B");
 	}
 	@UiHandler("cTerm")
 	void onCTermClick(ClickEvent event) {
-		presenter.openSchedule(userName, "C");
+		presenter.openSchedule("dselent", "C");
 	}
 	
 	@UiHandler("dTerm")
 	void onDtermClick(ClickEvent event) {
-		presenter.openSchedule(userName, "D");
-		
+		presenter.openSchedule("dselent", "D");
 	}
+	
 	@UiHandler("search")
 	void onSearchClick(ClickEvent event) {
-		presenter.openSearch(userName);
+		//alert("onSearchClick!!!");
+		logger.log(Level.FINE, "onSearchClick()!");
+		if(presenter == null) {
+			logger.log(Level.SEVERE, "Presenter was null!");
+		}
+		presenter.openSearch();
 	}
 	
 	@Override
 	public void setPresenter(FacultyTopBarPresenter presenter) {
+		logger.log(Level.SEVERE, "Presenter set!"); //this is never getting called
 		this.presenter = presenter;
+	}
+	
+	
+	public FacultyTopBarPresenter getPresenter() {
+		return presenter;
 	}
 	
 	@Override
@@ -115,4 +183,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 		return htmlPanel;
 	}
 
+	public static native void alert(String msg) /*-{
+	  $wnd.alert(msg);
+	}-*/;
 }
