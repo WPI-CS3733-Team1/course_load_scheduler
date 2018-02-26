@@ -3,10 +3,16 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.dselent.course_load_scheduler.client.action.ReceiveScheduleAction;
+import org.dselent.course_load_scheduler.client.action.SendOpenScheduleRequestAction;
+import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
+import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
 import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
@@ -20,6 +26,7 @@ import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.SearchView;
 
 import com.gargoylesoftware.htmlunit.javascript.host.Window;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.inject.Inject;
@@ -38,16 +45,20 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	private SchedulePresenter schedulePresenter;
 	private SideBarPresenter sidebarPresenter;
 	private FacultyTopBarPresenterImpl facultyTopPresenter;
+	private SearchPresenterImpl searchPresenter;
+	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	
 	@Inject
-	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, SchedulePresenter schedulePresenter, SideBarPresenter sideBarPresenter, FacultyTopBarPresenterImpl facultyTopPresenter)
+	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, SchedulePresenter schedulePresenter, SideBarPresenter sideBarPresenter, FacultyTopBarPresenterImpl facultyTopPresenter, SearchPresenterImpl searchPresenter)
 	{
 		this.parentPresenter = parentPresenter;
 		this.view = view;
 		this.schedulePresenter = schedulePresenter;
 		this.sidebarPresenter = sideBarPresenter;
 		this.facultyTopPresenter = facultyTopPresenter;
-				
+		this.searchPresenter = searchPresenter;
+		
+		//add searchPresenter.getView()
 		view.setPresenter(this);
 		
 		//view.getTopBarViewView().getATerm().setText("AAAAAA");
@@ -87,7 +98,19 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 		//nothing to put here yet
 		//most event are triggered by internal views
 		
+		//open search event...
+		HandlerRegistration registration;
 		
+		registration = eventBus.addHandler(OpenSearchEvent.TYPE, this);
+		eventBusRegistration.put(OpenSearchEvent.TYPE, registration);
+		
+		HandlerRegistration reg;
+		reg = eventBus.addHandler(OpenScheduleEvent.TYPE, this);
+		eventBusRegistration.put(OpenScheduleEvent.TYPE, reg);
+		
+		HandlerRegistration r;
+		r = eventBus.addHandler(ReceiveScheduleEvent.TYPE, this);
+		eventBusRegistration.put(ReceiveScheduleEvent.TYPE, r);
 	}
 
 
@@ -104,11 +127,23 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	
 	@Override
 	public void onOpenSearch(OpenSearchEvent evt) {
-		alert("onOpenSearch Test!!");
+		
+		logger.log(Level.SEVERE, "onOpenSearch executed.");
 		DockPanel p = view.getDockPanel();
-	//	p.remove(scheduleView.getWidgetContainer());
-		//p.add(searchView.getWidgetContainer(), DockPanel.CENTER);
+		p.remove(schedulePresenter.getView().getWidgetContainer());
+		
+		//p.add(searchPresenter.getView().getWidgetContainer(), DockPanel.CENTER);
 		//searchView.getPresenter().go(view.getCenterPanel());
+	}
+	
+	@Override
+	public void onOpenSchedule(OpenScheduleEvent evt) {
+		logger.log(Level.SEVERE, "onOpenSchedule executed in FacultyPresenterImpl");
+		//fire sendopenschedulerequestevent?
+		String user = evt.getAction().getUserName();
+		SendOpenScheduleRequestAction action = new SendOpenScheduleRequestAction(user);
+		SendOpenScheduleRequestEvent event = new SendOpenScheduleRequestEvent(action, schedulePresenter.getView().getViewRootPanel());
+		eventBus.fireEvent(event);
 	}
 	
 	public static native void alert(String msg) /*-{
@@ -127,6 +162,8 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 		List<HashMap<String, String>> formattedSchedule = convertScheduleData(schedule);
 		//
 		//scheduleView.getPresenter().presentSchedule(formattedSchedule);
+		schedulePresenter.presentSchedule(formattedSchedule);
+		//schedulePresenter.go(container);
 		//call go?
 	}
 	

@@ -104,16 +104,18 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	@Override
 	public void openSchedule(String username, String term) 	{
 		//TODO
-		//HasWidgets container = parentPresenter.getView().getViewRootPanel(); //this might have to change to be the specific DockPanel CENTER panel
-		//OpenScheduleAction osca = new OpenScheduleAction("dselent", term);
-		//OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
-		//eventBus.fireEvent(osce); //how is this going to connect to schedulePresenter/scheduleView?
+		HasWidgets container = parentPresenter.getView().getViewRootPanel(); //this might have to change to be the specific DockPanel CENTER panel
+		OpenScheduleAction osca = new OpenScheduleAction("dselent", term);
+		OpenScheduleEvent osce = new OpenScheduleEvent(osca, container);
+		eventBus.fireEvent(osce); //how is this going to connect to schedulePresenter/scheduleView?
 	}
 
+	
+	
 	@Override
 	public void openSearch() 	{
 		//System.out.println("open Search!");
-		GWT.log("Test");
+		//GWT.log("Test");
 		log("openSearch() executed.");
 		OpenSearchAction osa = new OpenSearchAction("dselent");
 		OpenSearchEvent ose = new OpenSearchEvent(osa);

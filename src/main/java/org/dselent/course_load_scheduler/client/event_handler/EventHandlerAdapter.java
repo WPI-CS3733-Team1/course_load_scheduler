@@ -24,6 +24,7 @@ import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendMessageEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
 import org.dselent.course_load_scheduler.client.event.SendResolveMessageEvent;
 
 /**
@@ -42,7 +43,7 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 			OpenScheduleEventHandler,OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler, OpenCreateSectionEventHandler,
 			SendOpenInboxEventHandler, InvalidOpenInboxEventHandler, ReceiveOpenInboxEventHandler, ReceiveOpenCreateAdminEventHandler, ReceiveScheduleEventHandler,
 			SendMessageEventHandler, InvalidMessageEventHandler, ReceiveMessageEventHandler, SendResolveMessageEventHandler, InvalidResolveMessageEventHandler,
-			ReceiveResolveMessageEventHandler
+			ReceiveResolveMessageEventHandler, SendOpenScheduleRequestEventHandler
 {
 	//Noah - Still need to write ExecuteSearchEventHandler/Action/Event pathway
 	
@@ -121,6 +122,7 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	@Override
 	public void onInvalidResolveMessage(InvalidResolveMessageEvent evt) {}
 	
-	
+	@Override
+	public void onSendOpenScheduleRequest(SendOpenScheduleRequestEvent evt) {}
 	
 }
