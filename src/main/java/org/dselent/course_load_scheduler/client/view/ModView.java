@@ -8,5 +8,6 @@ public interface ModView extends BaseView<ModPresenter> {
 	public DockPanel getDockPanel();
 
 	ModeratorTopBarView getTopBarView();
-
+	
+	SideBarModeratorView getSideBarView();
 }
