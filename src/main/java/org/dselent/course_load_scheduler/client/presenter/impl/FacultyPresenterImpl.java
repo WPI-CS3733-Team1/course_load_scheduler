@@ -7,6 +7,7 @@ import java.util.List;
 import org.dselent.course_load_scheduler.client.action.ReceiveScheduleAction;
 import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
+import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
@@ -34,29 +35,39 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 
 	private IndexPresenter parentPresenter;
 	private FacultyView view;
-	SchedulePresenter schedulePresenter;
-	SideBarPresenter sidebarPresenter;
-	FacultyTopBarPresenter facultyTopPresenter;
+	private SchedulePresenter schedulePresenter;
+	private SideBarPresenter sidebarPresenter;
+	private FacultyTopBarPresenterImpl facultyTopPresenter;
 	
 	@Inject
-	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, SchedulePresenter schedulePresenter, SideBarPresenter sideBarPresenter, FacultyTopBarPresenter facultyTopPresenter) {
+	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, SchedulePresenter schedulePresenter, SideBarPresenter sideBarPresenter, FacultyTopBarPresenterImpl facultyTopPresenter)
+	{
 		this.parentPresenter = parentPresenter;
 		this.view = view;
 		this.schedulePresenter = schedulePresenter;
 		this.sidebarPresenter = sideBarPresenter;
 		this.facultyTopPresenter = facultyTopPresenter;
+				
 		view.setPresenter(this);
+		
+		//view.getTopBarViewView().getATerm().setText("AAAAAA");
+		
+		facultyTopPresenter.setView(view.getTopBarViewView());
+		facultyTopPresenter.getView().setPresenter(facultyTopPresenter);
 	}
 	
 	@Override
-	public void init() {
+	public void init()
+	{
+		schedulePresenter.init();
 		schedulePresenter.setParentPresenter(this);
+		
+		sidebarPresenter.init();
 		sidebarPresenter.setParentPresenter(this);
+		
+		facultyTopPresenter.init();
 		facultyTopPresenter.setParentPresenter(this);
 		
-		schedulePresenter.init();
-		sidebarPresenter.init();
-		facultyTopPresenter.init();
 		bind();
 	}
 

@@ -6,19 +6,16 @@
 	<ui:style>
 	
 	</ui:style>
-	<g:HTMLPanel width="100%" height="100%">
-		<g:DockPanel ui:field="mainPanel" width="100%" height="100%">
-			<g:Dock ui:field="centerDock" direction="CENTER">
-				<d:ScheduleViewImpl ui:field="test"/>
-			</g:Dock>
-			<g:Dock direction="WEST">
-				<d:SideBarViewImpl></d:SideBarViewImpl>
-			</g:Dock>
-			<g:Dock direction="NORTH">
-				<d:FacultyTopBarViewImpl></d:FacultyTopBarViewImpl>
-			</g:Dock>
-			
-			
-		</g:DockPanel>
-	</g:HTMLPanel>
+
+	<g:DockPanel ui:field="mainPanel" width="100%" height="100%">
+		<g:Dock direction="CENTER">
+			<d:ScheduleViewImpl ui:field="scheduleView"/>
+		</g:Dock>
+		<g:Dock direction="WEST">
+			<d:SideBarViewImpl ui:field="scheduleSideBarView"></d:SideBarViewImpl>
+		</g:Dock>
+		<g:Dock direction="NORTH">
+			<d:FacultyTopBarViewImpl ui:field="topBarViewView"></d:FacultyTopBarViewImpl>
+		</g:Dock>
+	</g:DockPanel>
 </ui:UiBinder> 

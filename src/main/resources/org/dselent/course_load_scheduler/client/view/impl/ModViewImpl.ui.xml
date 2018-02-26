@@ -15,7 +15,7 @@
 				<d:SideBarViewImpl></d:SideBarViewImpl>
 			</g:Dock>
 			<g:Dock direction="NORTH">
-				<d:ModeratorTopBarViewImpl></d:ModeratorTopBarViewImpl>
+				<d:ModeratorTopBarViewImpl ui:field="moderatorTopBar"></d:ModeratorTopBarViewImpl>
 			</g:Dock>
 		</g:DockPanel>
 	</g:HTMLPanel>
