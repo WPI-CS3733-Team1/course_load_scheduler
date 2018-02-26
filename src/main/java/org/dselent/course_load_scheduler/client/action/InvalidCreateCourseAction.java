@@ -12,9 +12,8 @@ public class InvalidCreateCourseAction extends Action {
 		reasonList = new ArrayList<>();
 	}
 	
-	public InvalidCreateCourseAction(String reason)
-	{reasonList = new ArrayList<>();
-	reasonList.add(reason);
+	public InvalidCreateCourseAction(List<String> invalidReasonList)
+	{this.reasonList = reasonList;
 	}
 
 	public boolean addReasons(List<String> reasonList)
