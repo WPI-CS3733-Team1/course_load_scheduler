@@ -41,7 +41,7 @@ public class ReceiveOpenCreateAdminAction extends Action
 	public String toString()
 	{
 		StringBuilder builder = new StringBuilder();
-		builder.append("ReceiveLoginAction [model=");
+		builder.append("ReceiveOpenCreateAdminAction [model=");
 		builder.append(model);
 		builder.append("]");
 		return builder.toString();
