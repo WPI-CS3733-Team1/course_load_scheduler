@@ -3,6 +3,7 @@ package org.dselent.course_load_scheduler.client.view.impl;
 import org.dselent.course_load_scheduler.client.presenter.ModPresenter;
 import org.dselent.course_load_scheduler.client.view.ModView;
 import org.dselent.course_load_scheduler.client.view.ModeratorTopBarView;
+import org.dselent.course_load_scheduler.client.view.SideBarModeratorView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -19,9 +20,14 @@ import com.google.gwt.user.client.ui.Widget;
 
 public class ModViewImpl extends BaseViewImpl<ModPresenter> implements ModView {
 
-	@UiField DockPanel modViewDockPanel;
+	@UiField
+	DockPanel modViewDockPanel;
 	
-	@UiField ModeratorTopBarViewImpl moderatorTopBar;
+	@UiField
+	ModeratorTopBarViewImpl moderatorTopBar;
+	
+	@UiField
+	SideBarModeratorViewImpl moderatorSideBar;
 	
 	private static ModViewImplUiBinder uiBinder = GWT.create(ModViewImplUiBinder.class);
 
@@ -37,7 +43,11 @@ public class ModViewImpl extends BaseViewImpl<ModPresenter> implements ModView {
 		return moderatorTopBar;
 	}
 
-	
+	@Override
+	public SideBarModeratorView getSideBarView() {
+		return moderatorSideBar;
+	}
+
 	public ModViewImpl(String firstName) {
 		initWidget(uiBinder.createAndBindUi(this));
 	}

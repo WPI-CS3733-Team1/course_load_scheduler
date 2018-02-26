@@ -3,6 +3,7 @@ package org.dselent.course_load_scheduler.client.view.impl;
 import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
 import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
 import org.dselent.course_load_scheduler.client.view.AdminView;
+import org.dselent.course_load_scheduler.client.view.SideBarAdminView;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -12,6 +13,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
@@ -23,15 +25,24 @@ public class AdminViewImpl extends BaseViewImpl<AdminPresenter> implements Admin
 	interface AdminViewImplUiBinder extends UiBinder<Widget, AdminViewImpl> {
 	}
 
+	@UiField
+	DockPanel adminViewDockPanel;
 	
 	@UiField
 	AdminTopBarViewImpl adminTopBar;
+	
+	@UiField
+	SideBarAdminViewImpl adminSideBar;
 	
 	@Override
 	public AdminTopBarView getTopBarView() {
 		return adminTopBar;
 	}
 	
+	@Override
+	public SideBarAdminView getSideBarView() {
+		return adminSideBar;
+	}
 	
 	public AdminViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -54,4 +65,9 @@ public class AdminViewImpl extends BaseViewImpl<AdminPresenter> implements Admin
 		return null;
 	}
 
+
+	@Override
+	public DockPanel getDockPanel() {
+		return adminViewDockPanel;
+	}
 }

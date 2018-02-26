@@ -11,12 +11,14 @@ import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
+import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.AdminInboxView;
 import org.dselent.course_load_scheduler.client.view.BaseView;
 import org.dselent.course_load_scheduler.client.view.LoginView;
 
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.inject.Inject;
 
@@ -52,8 +54,8 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 		return parentPresenter;
 	}
 
-	@Override
-	public void setParentPresenter(IndexPresenter parentPresenter) {
+	public void setParentPresenter (IndexPresenter parentPresenter) 
+	{
 		this.parentPresenter = parentPresenter;		
 	}
 	
@@ -92,8 +94,10 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 //	}
 	
 	@Override
-	public void onSendOpenInbox(SendOpenInboxEvent evt) {
+	public void onSendOpenInbox(SendOpenInboxEvent evt) 
+	{
 		evt.getAction().getUserName();
+		view.populateTable(ReceiveOpenInboxAction.getMessageList());
 	}
 	
 	public void onInvalidOpenInbox(InvalidOpenInboxEvent evt)
@@ -104,11 +108,27 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 	}
 
 	@Override
-	public void onOpenInbox(SendOpenInboxEvent evt) {
-		view.populateTable(ReceiveOpenInboxAction.getMessageList());
-		
+//	public void onOpenInbox(SendOpenInboxEvent evt) {
+//		view.populateTable(ReceiveOpenInboxAction.getMessageList());
+//		
+//	} 
+// ^^^this method should be useless, but lack of it may cause errors so it's here for troubleshooting in case
+	
+	public void init()
+	{
+		bind();
 	}
 	
+	public void bind()
+	{
+		HandlerRegistration registration1;
+		registration1 = eventBus.addHandler(InvalidOpenInboxEvent.TYPE, this);
+		eventBusRegistration.put(InvalidOpenInboxEvent.TYPE, registration1);
+		
+		HandlerRegistration registration2;
+		registration2 = eventBus.addHandler(SendOpenInboxEvent.TYPE, this);
+		eventBusRegistration.put(SendOpenInboxEvent.TYPE, registration2);
+	}
 //	void openAdminInbox() {
 //		if (!openAdminInboxClickInProgress);
 //		{

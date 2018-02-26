@@ -1,5 +1,5 @@
 package org.dselent.course_load_scheduler.client.event_handler;
-import org.dselent.course_load_scheduler.client.event.InvalidOpenScheduleRequestEvent;
+import org.dselent.course_load_scheduler.client.event.InvalidOpenScheduleChangeRequestEvent;
 
 import com.google.gwt.event.shared.EventHandler;
 
@@ -11,7 +11,7 @@ import com.google.gwt.event.shared.EventHandler;
  * @author dselent
  *
  */
-public interface InvalidOpenScheduleRequestEventHandler extends EventHandler
+public interface InvalidOpenScheduleChangeRequestEventHandler extends EventHandler
 {
-	  public void onInvalidOpenScheduleRequest(InvalidOpenScheduleRequestEvent evt);
+	  public void onInvalidOpenScheduleRequest(InvalidOpenScheduleChangeRequestEvent evt);
 }

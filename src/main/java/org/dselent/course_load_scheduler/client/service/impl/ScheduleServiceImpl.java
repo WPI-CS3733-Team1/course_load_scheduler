@@ -21,7 +21,7 @@ public class ScheduleServiceImpl extends BaseServiceImpl implements ScheduleServ
 
 	@Override
 	public void init() {
-		
+		bind();
 	}
 
 	@Override
@@ -32,10 +32,6 @@ public class ScheduleServiceImpl extends BaseServiceImpl implements ScheduleServ
 		eventBusRegistration.put(OpenScheduleEvent.TYPE, registration);
 	}
 
-	@Override
-	public void unbind() {
-		
-	}
 	
 	@Override
 	public void onOpenSchedule(OpenScheduleEvent evt) {
@@ -49,10 +45,4 @@ public class ScheduleServiceImpl extends BaseServiceImpl implements ScheduleServ
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.REQUEST_SCHEDULE, callback, json);
 		request.send();
 	}
-	
-	@Override
-	public void onReceiveSchedule(ReceiveScheduleEvent evt) {
-		
-	}
-
 }

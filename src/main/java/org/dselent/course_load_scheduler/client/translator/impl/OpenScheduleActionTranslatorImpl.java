@@ -22,14 +22,10 @@ public class OpenScheduleActionTranslatorImpl implements ActionTranslator<OpenSc
 	@Override
 	public JSONObject translateToJson(OpenScheduleAction action) {
 		
-		
-		
 		JSONObject jsonObject = new JSONObject();
 		
 		JSONHelper.putStringValue(jsonObject, JSONHelper.convertKeyName(SendOpenScheduleKeys.USER_NAME), action.getUserName());
 		JSONHelper.putStringValue(jsonObject, JSONHelper.convertKeyName(SendOpenScheduleKeys.TERM), action.getTerm());
-		
-		
 		
 		return jsonObject;
 	}
