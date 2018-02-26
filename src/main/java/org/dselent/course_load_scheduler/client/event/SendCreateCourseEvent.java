@@ -4,18 +4,19 @@ import org.dselent.course_load_scheduler.client.action.SendCreateCourseAction;
 import org.dselent.course_load_scheduler.client.event_handler.SendCreateCourseEventHandler;
 
 import com.google.gwt.event.shared.GwtEvent;
+import com.google.gwt.user.client.ui.HasWidgets;
 
-public class SendCreateCourseEvent extends GwtEvent<SendCreateCourseEventHandler> 
+public class SendCreateCourseEvent extends DisplayEvent<SendCreateCourseAction, SendCreateCourseEventHandler> 
 {
 
 	public static Type<SendCreateCourseEventHandler> TYPE = new Type<SendCreateCourseEventHandler>();
 	
 	private SendCreateCourseAction action;
 	
-	public SendCreateCourseEvent(SendCreateCourseAction action)
+	public SendCreateCourseEvent(SendCreateCourseAction action, HasWidgets container)
 	{
-		this.action = action;
-	}
+		super(action, container);
+		}
 	
 	public SendCreateCourseAction getAction()
 	{

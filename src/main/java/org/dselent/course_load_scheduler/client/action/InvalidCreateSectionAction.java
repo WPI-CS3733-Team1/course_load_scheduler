@@ -11,9 +11,10 @@ public InvalidCreateSectionAction()
 	reasonList = new ArrayList<>();
 }
 
-public InvalidCreateSectionAction(List<String> reasonList)
+public InvalidCreateSectionAction(String reason)
 {
-	this.reasonList = reasonList;
+	reasonList = new ArrayList<>();
+	reasonList.add(reason);
 }
 
 public boolean addReasons(List<String> reasonList)

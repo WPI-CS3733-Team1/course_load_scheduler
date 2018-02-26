@@ -44,7 +44,7 @@
 			<g:Button ui:field="createSectionButton" text="Create Section" width="20%" />
 			
 		</g:VerticalPanel>
-			<g:ScrollPanel ui:field="courseScrollPanel" width="86px" height="299px"/>
+			<g:ListBox ui:field="sectionListBox" width="86px" height="299px"/>
 		</g:HorizontalPanel>
 	</g:HTMLPanel>
 </ui:UiBinder> 
