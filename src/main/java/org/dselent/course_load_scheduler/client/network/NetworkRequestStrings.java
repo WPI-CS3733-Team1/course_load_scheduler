@@ -8,6 +8,8 @@ public final class NetworkRequestStrings
 	public static String REQUEST_SCHEDULE = "schedule/view_schedule";
 	public static String OPEN_INBOX = "user/inbox";
 	public static String CREATE_ADMIN = "user/create_admin";
+	public static String CREATE_COURSE ="user/create_course";
+	public static String CREATE_SECTION = "user/create_section";
 	
 	private NetworkRequestStrings() {};
 }

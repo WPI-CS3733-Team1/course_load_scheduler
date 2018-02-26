@@ -1,6 +1,7 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;

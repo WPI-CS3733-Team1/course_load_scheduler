@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.dselent.course_load_scheduler.client.action.InvalidLoginAction;
 import org.dselent.course_load_scheduler.client.action.InvalidOpenInboxAction;
+import org.dselent.course_load_scheduler.client.action.ReceiveOpenInboxAction;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.event.InvalidOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
@@ -104,7 +105,7 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 
 	@Override
 	public void onOpenInbox(SendOpenInboxEvent evt) {
-		// TODO Auto-generated method stub
+		view.populateTable(ReceiveOpenInboxAction.getMessageList());
 		
 	}
 	

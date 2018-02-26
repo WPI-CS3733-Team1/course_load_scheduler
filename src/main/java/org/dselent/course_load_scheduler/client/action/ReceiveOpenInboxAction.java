@@ -1,5 +1,6 @@
 package org.dselent.course_load_scheduler.client.action;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.dselent.course_load_scheduler.client.model.Message;
@@ -7,9 +8,9 @@ import org.dselent.course_load_scheduler.client.model.Message;
 public class ReceiveOpenInboxAction extends Action
 {
 	private Message model;
-	private List<Message> messageList;
+	private static ArrayList<Message> messageList;
 	
-	public ReceiveOpenInboxAction(List<Message> messages)
+	public ReceiveOpenInboxAction(ArrayList<Message> messages)
 	{
 		this.messageList = messages;
 	}
@@ -24,7 +25,7 @@ public class ReceiveOpenInboxAction extends Action
 		this.model = model;
 	}
 	
-	public List<Message> getMessageList(){
+	public static ArrayList<Message> getMessageList(){
 		return messageList;
 	}
 	
