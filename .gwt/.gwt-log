@@ -7135,3 +7135,667 @@ Rebinding org.dselent.course_load_scheduler.client.view.impl.CreateSectionViewIm
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 3113 units from cache.
+Compiling...
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 8.01 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Surya/Documents/School/GitHub/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519629982964.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519629982964.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519629982964_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519629983591.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519629983591.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519629983591_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630166915.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630166915.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630166915_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630178891.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630178891.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630178891_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630187451.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630187451.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519630187451_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519631753132.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519631753132.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519631753132_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 3113 cached/archived units.  Used 3113 / 3113 units from cache.
+Compiling...
+   Compilation completed in 0.00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Surya/Documents/School/GitHub/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] Unable to find resource: org/dselent/course_load_scheduler/client/view/impl/ResetPasswordViewImpl.ui.xml
+[ERROR] Deferred binding failed for 'org.dselent.course_load_scheduler.client.view.impl.ResetPasswordViewImpl.ResetPasswordViewImplUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 3113 units from cache.
+Compiling...
+   Compilation completed in 4.52 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Surya/Documents/School/GitHub/course_load_scheduler/src/main/java/org/dselent/course_load_scheduler/client/presenter/impl/CreateAdminPresenterImpl.java'
+      Line 73: The method getSelectedValue() is undefined for the type ListBox
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632029053.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632029053.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632029053_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632029385.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632029385.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632029385_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632042614.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632042614.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632042614_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632046788.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632046788.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632046788_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632046927.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632046927.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632046927_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632048962.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632048962.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632048962_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632063685.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632063685.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632063685_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632066529.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632066529.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632066529_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632127367.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632127367.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632127367_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632215032.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632215032.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632215032_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632218670.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632218670.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632218670_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632218712.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632218712.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632218712_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632225148.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632225148.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632225148_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632226462.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632226462.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632226462_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632226503.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632226503.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632226503_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632264578.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632264578.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632264578_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632281021.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632281021.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632281021_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632285467.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632285467.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632285467_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632287482.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632287482.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632287482_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632300791.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632300791.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632300791_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632313142.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632313142.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632313142_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632318817.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632318817.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632318817_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632473251.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632473251.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632473251_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl.ResetPasswordViewImplUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632481750.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632481750.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding org.dselent.course_load_scheduler.client.view.impl.ResetPasswordEmailViewImpl_ResetPasswordViewImplUiBinderImpl_designTime1519632481750_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units

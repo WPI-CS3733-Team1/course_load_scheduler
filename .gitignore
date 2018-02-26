@@ -9,3 +9,6 @@ war/
 /.gitignore
 /war
 /gwt-unitCache
+.gwt/.gwt-log
+.classpath
+.gwt/.gwt-log
