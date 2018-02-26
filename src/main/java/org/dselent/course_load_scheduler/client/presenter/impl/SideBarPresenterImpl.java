@@ -2,10 +2,10 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
-import org.dselent.course_load_scheduler.client.action.SendOpenScheduleRequestAction;
+import org.dselent.course_load_scheduler.client.action.SendOpenScheduleChangeRequestAction;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
-import org.dselent.course_load_scheduler.client.event.SendOpenScheduleRequestEvent;
+import org.dselent.course_load_scheduler.client.event.SendOpenScheduleChangeRequestEvent;
 import org.dselent.course_load_scheduler.client.model.Model;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
@@ -53,7 +53,6 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 
 	@Override
 	public SideBarView getView() {
-		// TODO Auto-generated method stub
 		return view;
 	}
 
@@ -70,8 +69,8 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	}
 
 	@Override
+
 	public FacultyPresenter getParentPresenter() {
-		// TODO Auto-generated method stub
 		return parentPresenter;
 	}
 
@@ -85,8 +84,8 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	public void openRequestScheduleChange() 	
 	{
 		HasWidgets container = parentPresenter.getView().getViewRootPanel();
-		SendOpenScheduleRequestAction sla = new SendOpenScheduleRequestAction(userName);
-		SendOpenScheduleRequestEvent sle = new SendOpenScheduleRequestEvent(sla, container);
+		SendOpenScheduleChangeRequestAction sla = new SendOpenScheduleChangeRequestAction(userName);
+		SendOpenScheduleChangeRequestEvent sle = new SendOpenScheduleChangeRequestEvent(sla, container);
 		eventBus.fireEvent(sle);
 	}
 	

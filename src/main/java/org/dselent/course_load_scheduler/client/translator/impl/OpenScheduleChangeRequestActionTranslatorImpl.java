@@ -4,8 +4,8 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.dselent.course_load_scheduler.client.action.SendOpenScheduleRequestAction;
-import org.dselent.course_load_scheduler.client.action.ReceiveOpenScheduleRequestAction;
+import org.dselent.course_load_scheduler.client.action.SendOpenScheduleChangeRequestAction;
+import org.dselent.course_load_scheduler.client.action.ReceiveOpenScheduleChangeRequestAction;
 import org.dselent.course_load_scheduler.client.model.User;
 import org.dselent.course_load_scheduler.client.receive.jsonkeys.ReceiveLoginKeys;
 import org.dselent.course_load_scheduler.client.send.jsonkeys.SendLoginKeys;
@@ -16,10 +16,10 @@ import com.google.gwt.json.client.JSONArray;
 import com.google.gwt.json.client.JSONObject;
 import com.google.gwt.json.client.JSONValue;
 
-public class OpenScheduleRequestActionTranslatorImpl implements ActionTranslator<SendOpenScheduleRequestAction, ReceiveOpenScheduleRequestAction>{
+public class OpenScheduleChangeRequestActionTranslatorImpl implements ActionTranslator<SendOpenScheduleChangeRequestAction, ReceiveOpenScheduleChangeRequestAction>{
 
 	@Override
-	public JSONObject translateToJson(SendOpenScheduleRequestAction action) {
+	public JSONObject translateToJson(SendOpenScheduleChangeRequestAction action) {
 		
 		
 		
@@ -33,7 +33,7 @@ public class OpenScheduleRequestActionTranslatorImpl implements ActionTranslator
 	}
 
 	@Override
-	public ReceiveOpenScheduleRequestAction translateToAction(JSONObject json) {
+	public ReceiveOpenScheduleChangeRequestAction translateToAction(JSONObject json) {
 		
 		List<User> users = new ArrayList<>();
 		
@@ -64,7 +64,7 @@ public class OpenScheduleRequestActionTranslatorImpl implements ActionTranslator
 			
 		users.add(user);
 
-		ReceiveOpenScheduleRequestAction action = new ReceiveOpenScheduleRequestAction(user);
+		ReceiveOpenScheduleChangeRequestAction action = new ReceiveOpenScheduleChangeRequestAction(user);
 		
 		return action;
 	}

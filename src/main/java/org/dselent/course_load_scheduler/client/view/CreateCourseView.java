@@ -13,18 +13,23 @@ public interface CreateCourseView extends BaseView<CreateCoursePresenter>
 	void setCourseNameTextBox(TextBox courseNameTextBox);
 	TextBox getCourseNumberTextBox();
 	void setCourseNumberTextBox(TextBox courseNumberTextBox);
-	TextBox getCourseSectionsTextBox();
-	void setCourseSectionsTextBox(TextBox courseSectionsTextBox);
 	Label getCourseNameLabel();
 	void setCourseNameLabel(Label courseNameLabel);
 	Label getCourseNumberLabel();
 	void setCourseNumberLabel(Label courseNumberLabel);
-	Label getCourseSectionsLabel();
-	void setCourseSectionsLabel(Label courseSectionsLabel);
+	TextBox getCourseNumberOfLectures();
+	void setCourseNumberOfLectures(TextBox courseNumberOfLectures);
+	TextBox getCourseNumberOfConferences();
+	void setCourseNumberOfConferences(TextBox courseNumberOfConferences);
+	TextBox getCourseNumberOfLabs();
+	void setCourseNumberOfLabs(TextBox courseNumberOfLabs);
 	Button getCreateCourseButton();
 	void setCreateCourseButton(Button CourseButton);
 	HorizontalPanel getCourseHorizontalPanel();
 	void setCourseHorizontalPanel(HorizontalPanel createCourseHorizontalPanel);
+	TextBox getCreateCourseDeptId();
+	void setCourseDeptId(TextBox createCourseDepartment);
+	
 }
 	
 
