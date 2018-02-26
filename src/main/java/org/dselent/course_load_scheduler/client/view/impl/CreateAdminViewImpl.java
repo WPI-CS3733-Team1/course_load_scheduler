@@ -145,6 +145,11 @@ public class CreateAdminViewImpl extends BaseViewImpl<CreateAdminPresenter> impl
 		}
 	}
 	
+	@Override
+	public void setAdminHorizontalPanel(HorizontalPanel createAdminViewHorizontalPane) {
+		this.createAdminViewHorizontalPanel = createAdminViewHorizontalPane;
+	}
+	
 	@UiHandler("professorList")
 	void onProfessorListClicked(ClickEvent evt) {
 		presenter.selectUser();
