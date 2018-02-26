@@ -6,5 +6,4 @@ import com.google.gwt.event.shared.EventHandler;
 public interface ReceiveSearchEventHandler extends EventHandler {
 
 	void onReceiveSearch(ReceiveSearchEvent receiveSearchEvent);
-	
 }

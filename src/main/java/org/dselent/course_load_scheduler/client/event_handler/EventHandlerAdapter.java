@@ -18,6 +18,7 @@ import org.dselent.course_load_scheduler.client.event.ReceiveOpenCreateAdminEven
 import org.dselent.course_load_scheduler.client.event.ReceiveOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveResolveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveSearchEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateSectionEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
@@ -25,6 +26,7 @@ import org.dselent.course_load_scheduler.client.event.SendMessageEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.SendResolveMessageEvent;
+import org.dselent.course_load_scheduler.client.event.SendSearchEvent;
 
 /**
  * Adapter class for convenience
@@ -42,7 +44,7 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 			OpenScheduleEventHandler,OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler, OpenCreateSectionEventHandler,
 			SendOpenInboxEventHandler, InvalidOpenInboxEventHandler, ReceiveOpenInboxEventHandler, ReceiveOpenCreateAdminEventHandler, ReceiveScheduleEventHandler,
 			SendMessageEventHandler, InvalidMessageEventHandler, ReceiveMessageEventHandler, SendResolveMessageEventHandler, InvalidResolveMessageEventHandler,
-			ReceiveResolveMessageEventHandler
+			ReceiveResolveMessageEventHandler, ReceiveSearchEventHandler, SendSearchEventHandler
 {
 	//Noah - Still need to write ExecuteSearchEventHandler/Action/Event pathway
 	
@@ -121,6 +123,10 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	@Override
 	public void onInvalidResolveMessage(InvalidResolveMessageEvent evt) {}
 	
+	@Override
+	public void onReceiveSearch(ReceiveSearchEvent receiveSearchEvent) {}
 	
+	@Override
+	public void onSendSearch(SendSearchEvent sendSearchEvent) {}
 	
 }
