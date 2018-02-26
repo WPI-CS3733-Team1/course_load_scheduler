@@ -7,12 +7,12 @@
 	
 	</ui:style>
 	<g:HTMLPanel width="100%" height="100%">
-		<g:DockPanel width="100%" height="100%">
+		<g:DockPanel ui:field = "adminViewDockPanel" width="100%" height="100%">
 			<g:Dock direction="CENTER">
 				<d:ScheduleViewImpl ui:field="test"/>
 			</g:Dock>
 			<g:Dock direction="WEST">
-				<d:SideBarViewImpl></d:SideBarViewImpl>
+				<d:SideBarAdminViewImpl ui:field = "adminSideBar"></d:SideBarAdminViewImpl>
 			</g:Dock>
 			<g:Dock direction="NORTH">
 				<d:AdminTopBarViewImpl ui:field="adminTopBar"></d:AdminTopBarViewImpl>
