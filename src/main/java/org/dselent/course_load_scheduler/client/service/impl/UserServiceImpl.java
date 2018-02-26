@@ -71,7 +71,17 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.OPEN_INBOX, openInboxCallback, json);
 		request.send();
+	}
+	
+	public void onSendOpenCreateAdmin(SendOpenCreateAdminEvent evt)
+	{
+		SendOpenCreateAdminAction action = evt.getAction();
+		OpenCreateAdminActionTranslatorImpl openCreateAdminTranslator = new OpenCreateAdminActionTranslatorImpl();
+		JSONObject json = openCreateAdminTranslator.translateToJson(action);
+		OpenCreateAdminCallback openCreateAdminCallback = new OpenCreateAdminCallback(eventBus, evt.getContainer());
 		
+		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.CREATE_ADMIN, openCreateAdminCallback, json);
+		request.send();
 	}
 	
 //	
