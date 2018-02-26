@@ -11,6 +11,7 @@ import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.model.Message;
 import org.dselent.course_load_scheduler.client.presenter.AdminInboxPresenter;
+import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.view.AdminInboxView;
@@ -53,8 +54,8 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 		return parentPresenter;
 	}
 
-	@Override
-	public void setParentPresenter(IndexPresenter parentPresenter) {
+	public void setParentPresenter (IndexPresenter parentPresenter) 
+	{
 		this.parentPresenter = parentPresenter;		
 	}
 	
@@ -93,7 +94,8 @@ public class AdminInboxPresenterImpl extends BasePresenterImpl implements AdminI
 //	}
 	
 	@Override
-	public void onSendOpenInbox(SendOpenInboxEvent evt) {
+	public void onSendOpenInbox(SendOpenInboxEvent evt) 
+	{
 		evt.getAction().getUserName();
 		view.populateTable(ReceiveOpenInboxAction.getMessageList());
 	}
