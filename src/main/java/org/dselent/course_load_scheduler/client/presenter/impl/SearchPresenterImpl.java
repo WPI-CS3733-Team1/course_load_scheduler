@@ -4,6 +4,7 @@ import java.util.List;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
 import org.dselent.course_load_scheduler.client.model.Course;
 import org.dselent.course_load_scheduler.client.model.User;
+import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.SearchPresenter;
 import org.dselent.course_load_scheduler.client.view.SearchView;
@@ -15,7 +16,7 @@ import com.google.inject.Inject;
 
 public class SearchPresenterImpl extends BasePresenterImpl implements SearchPresenter
 {
-	private IndexPresenter parentPresenter;
+	private BasePresenter parentPresenter;
 	private SearchView view;
 
 	@Inject
@@ -55,13 +56,13 @@ public class SearchPresenterImpl extends BasePresenterImpl implements SearchPres
 	}
 	
 	@Override
-	public IndexPresenter getParentPresenter()
+	public BasePresenter getParentPresenter()
 	{
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(IndexPresenter parentPresenter)
+	public void setParentPresenter(BasePresenter parentPresenter)
 	{
 		this.parentPresenter = parentPresenter;
 	}

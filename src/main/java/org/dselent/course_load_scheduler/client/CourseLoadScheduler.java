@@ -78,6 +78,7 @@ public class CourseLoadScheduler implements EntryPoint
 		indexPresenter.init();
 		IndexView indexView = indexPresenter.getView();		
 		//---------------End of OG files-----------------------------------------------------------		
+		/*
 		SideBarPresenterImpl sideBarPresenter = injector.getSideBarPresenter();
 		sideBarPresenter.setParentPresenter(indexPresenter);
 		SideBarView sideBarView = sideBarPresenter.getView();
@@ -87,7 +88,7 @@ public class CourseLoadScheduler implements EntryPoint
 		searchPresenter.setParentPresenter(indexPresenter);
 		searchPresenter.init();
 		SearchView searchView = searchPresenter.getView();
-		
+		*/
 		
 		
 		/*
@@ -109,18 +110,19 @@ public class CourseLoadScheduler implements EntryPoint
 		
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
 		
-		FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
-		facultyTopBarPresenter.setParentPresenter(indexPresenter);
+		//FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
+		//facultyTopBarPresenter.setParentPresenter(indexPresenter);
 		//facultyTopBarPresenter.getView().setPresenter(facultyTopBarPresenter);
 		//FacultyTopBarViewImpl ftbv = injector.getFacultyTopBarView();
 		//ftbv.setPresenter(facultyTopBarPresenter); //presenter still null?
 		
-		facultyTopBarPresenter.init();
+		//facultyTopBarPresenter.init();
 		
 		FacultyPresenterImpl facultyPresenter = injector.getFacultyPresenter();
 		facultyPresenter.setParentPresenter(indexPresenter);
 		facultyPresenter.init();
 		
+		/*
 		AdminPresenterImpl adminPresenter = injector.getAdminPresenter();
 		adminPresenter.setParentPresenter(indexPresenter);
 		adminPresenter.init();
@@ -128,8 +130,9 @@ public class CourseLoadScheduler implements EntryPoint
 		ModPresenterImpl modPresenter = injector.getModPresenter();
 		modPresenter.setParentPresenter(indexPresenter);
 		modPresenter.init();
-		
+		*/
 		//System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
+		/*
 		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
 		schedulePresenter.setParentPresenter(indexPresenter);
 		schedulePresenter.init();
@@ -141,7 +144,7 @@ public class CourseLoadScheduler implements EntryPoint
 		CreateAdminPresenterImpl createAdmin1Presenter = injector.getCreateAdminPresenter();
 		createAdmin1Presenter.setParentPresenter(indexPresenter);
 		createAdmin1Presenter.init();
-		
+		*/
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		//indexPresenter.go(root);
 		
@@ -167,13 +170,13 @@ public class CourseLoadScheduler implements EntryPoint
 		//facultyPresenter.go(indexView.getViewRootPanel());
 		//adminPresenter.go(indexView.getViewRootPanel());
 		//sideBarPresenter.go(indexView.getViewRootPanel());
-		createAdmin1Presenter.go(indexView.getViewRootPanel());
+		//createAdmin1Presenter.go(indexView.getViewRootPanel());
 		//createAdmin2Presenter.go(indexView.getViewRootPanel());
 		//modPresenter.go(indexView.getViewRootPanel());
 		
 		//searchPresenter.go(indexView.getViewRootPanel());
 		
-		
+		facultyPresenter.go(indexView.getViewRootPanel());
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
