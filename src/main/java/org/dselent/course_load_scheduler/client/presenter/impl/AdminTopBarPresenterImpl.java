@@ -93,4 +93,9 @@ public class AdminTopBarPresenterImpl extends BasePresenterImpl implements Admin
 	public void onReceiveLogin(ReceiveLoginEvent evt) {
 		
 	}
+
+	@Override
+	public void setView(AdminTopBarView view) {
+		this.view = view;
+	}
 }
