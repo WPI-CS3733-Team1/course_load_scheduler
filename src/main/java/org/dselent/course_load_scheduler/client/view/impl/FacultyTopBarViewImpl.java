@@ -3,6 +3,7 @@ package org.dselent.course_load_scheduler.client.view.impl;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.dselent.course_load_scheduler.client.gin.Injector;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import com.google.gwt.core.client.GWT;
@@ -36,6 +37,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 	@UiField Button dTerm;
 	@UiField HTMLPanel htmlPanel;
 	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
+	
 	
 	public FacultyTopBarViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -96,8 +98,6 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 	public void setSearch(Button search) {
 		this.search = search;
 	}
-
-	
 
 	@Override
 	public Button getMySchedule() {

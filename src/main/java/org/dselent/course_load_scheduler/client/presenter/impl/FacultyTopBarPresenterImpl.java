@@ -24,7 +24,7 @@ import com.google.inject.Inject;
 
 public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements FacultyTopBarPresenter {
 
-	private IndexPresenter parentPresenter;
+	private BasePresenter parentPresenter;
 	private FacultyTopBarView view;
 	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	//public String userName = "dselent";
@@ -82,12 +82,12 @@ public class FacultyTopBarPresenterImpl extends BasePresenterImpl implements Fac
 	}
 
 	@Override
-	public IndexPresenter getParentPresenter() {
+	public BasePresenter getParentPresenter() {
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(IndexPresenter parentPresenter) {
+	public void setParentPresenter(BasePresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 	}
 

@@ -9,7 +9,10 @@ import org.dselent.course_load_scheduler.client.event.OpenSearchEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
+import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
+import org.dselent.course_load_scheduler.client.presenter.SchedulePresenter;
+import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
 import org.dselent.course_load_scheduler.client.view.FacultyTopBarView;
 import org.dselent.course_load_scheduler.client.view.FacultyView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
@@ -31,23 +34,29 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 
 	private IndexPresenter parentPresenter;
 	private FacultyView view;
-	private ScheduleView scheduleView;
-	private SearchView searchView;
-	private FacultyTopBarView topBarView;
-	
+	SchedulePresenter schedulePresenter;
+	SideBarPresenter sidebarPresenter;
+	FacultyTopBarPresenter facultyTopPresenter;
 	
 	@Inject
-	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, ScheduleView scheduleView, SearchView searchView, FacultyTopBarView topBarView) {
+	public FacultyPresenterImpl(IndexPresenter parentPresenter, FacultyView view, SchedulePresenter schedulePresenter, SideBarPresenter sideBarPresenter, FacultyTopBarPresenter facultyTopPresenter) {
 		this.parentPresenter = parentPresenter;
 		this.view = view;
-		this.scheduleView = scheduleView;
-		this.searchView = searchView;
-		this.topBarView = topBarView;
+		this.schedulePresenter = schedulePresenter;
+		this.sidebarPresenter = sideBarPresenter;
+		this.facultyTopPresenter = facultyTopPresenter;
 		view.setPresenter(this);
 	}
 	
 	@Override
 	public void init() {
+		schedulePresenter.setParentPresenter(this);
+		sidebarPresenter.setParentPresenter(this);
+		facultyTopPresenter.setParentPresenter(this);
+		
+		schedulePresenter.init();
+		sidebarPresenter.init();
+		facultyTopPresenter.init();
 		bind();
 	}
 
@@ -86,9 +95,9 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 	public void onOpenSearch(OpenSearchEvent evt) {
 		alert("onOpenSearch Test!!");
 		DockPanel p = view.getDockPanel();
-		p.remove(scheduleView.getWidgetContainer());
-		p.add(searchView.getWidgetContainer(), DockPanel.CENTER);
-		searchView.getPresenter().go(view.getCenterPanel());
+	//	p.remove(scheduleView.getWidgetContainer());
+		//p.add(searchView.getWidgetContainer(), DockPanel.CENTER);
+		//searchView.getPresenter().go(view.getCenterPanel());
 	}
 	
 	public static native void alert(String msg) /*-{
@@ -105,7 +114,8 @@ public class FacultyPresenterImpl extends BasePresenterImpl implements FacultyPr
 		List<Section> schedule = action.getSchedule();
 		
 		List<HashMap<String, String>> formattedSchedule = convertScheduleData(schedule);
-		scheduleView.getPresenter().presentSchedule(formattedSchedule);
+		//
+		//scheduleView.getPresenter().presentSchedule(formattedSchedule);
 		//call go?
 	}
 	
