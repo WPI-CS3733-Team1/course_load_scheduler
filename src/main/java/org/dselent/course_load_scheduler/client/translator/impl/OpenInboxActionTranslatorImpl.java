@@ -32,13 +32,13 @@ public class OpenInboxActionTranslatorImpl implements ActionTranslator<SendOpenI
 	@Override
 	public ReceiveOpenInboxAction translateToAction(JSONObject json)
 	{		
-		// null values will not have their keys sent back from the sever
+		// null values will not have their keys sent back from the server
 		// this will throw an exception here
 		// you may choose to handle the exception as you wish
 		
 		// sent timestamps as epoch seconds (long)
 		
-		List<Message> inboxMessages = new ArrayList<>();
+		ArrayList<Message> inboxMessages = new ArrayList<>();
 		
 		JSONValue jsonObject = json.get("success");
 		JSONArray messageArray = jsonObject.isArray();
