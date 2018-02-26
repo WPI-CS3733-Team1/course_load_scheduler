@@ -5,8 +5,8 @@ import java.util.List;
 
 public interface SchedulePresenter extends BasePresenter {
 
-	IndexPresenter getParentPresenter();
-	void setParentPresenter(IndexPresenter parentPresenter);
+	BasePresenter getParentPresenter();
+	void setParentPresenter(BasePresenter parentPresenter);
 	
 	void presentSchedule(List<HashMap<String, String>> sections);
 	

@@ -3,7 +3,7 @@ package org.dselent.course_load_scheduler.client.action;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InvalidCreateSectionAction {
+public class InvalidCreateSectionAction extends Action {
 	
 private List<String> reasonList;
 public InvalidCreateSectionAction()

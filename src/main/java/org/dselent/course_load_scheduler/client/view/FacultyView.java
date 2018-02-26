@@ -4,7 +4,10 @@ import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 
 import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.HasWidgets;
+import com.google.gwt.user.client.ui.Widget;
 
 public interface FacultyView extends BaseView<FacultyPresenter>{
 	public DockPanel getDockPanel();
+	public HasWidgets getCenterPanel();
 }

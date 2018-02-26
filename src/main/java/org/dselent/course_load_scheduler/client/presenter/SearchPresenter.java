@@ -7,8 +7,8 @@ import org.dselent.course_load_scheduler.client.model.User;
 
 public interface SearchPresenter extends BasePresenter
 {
-	IndexPresenter getParentPresenter();
-	void setParentPresenter(IndexPresenter parentPresenter);
+	BasePresenter getParentPresenter();
+	void setParentPresenter(BasePresenter parentPresenter);
 	List<User> searchUsers(String deptID);
 	List<Course> searchCourses(String deptID);
 	
