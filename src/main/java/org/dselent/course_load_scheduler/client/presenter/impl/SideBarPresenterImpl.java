@@ -53,7 +53,6 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 
 	@Override
 	public SideBarView getView() {
-		// TODO Auto-generated method stub
 		return view;
 	}
 
@@ -70,8 +69,8 @@ public class SideBarPresenterImpl extends BasePresenterImpl implements SideBarPr
 	}
 
 	@Override
+
 	public FacultyPresenter getParentPresenter() {
-		// TODO Auto-generated method stub
 		return parentPresenter;
 	}
 
