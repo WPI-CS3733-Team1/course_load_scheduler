@@ -7,4 +7,6 @@ import com.google.gwt.user.client.ui.DockPanel;
 public interface ModView extends BaseView<ModPresenter> {
 	public DockPanel getDockPanel();
 
+	ModeratorTopBarView getTopBarView();
+
 }

@@ -169,7 +169,7 @@ public class FacultyTopBarViewImpl extends BaseViewImpl<FacultyTopBarPresenter> 
 		this.presenter = presenter;
 	}
 	
-	
+	@Override
 	public FacultyTopBarPresenter getPresenter() {
 		return presenter;
 	}

@@ -10,6 +10,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.DockPanel;
+import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -22,13 +23,22 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 	
 	@UiField
 	DockPanel mainPanel;
+
+	@UiField
+	ScheduleViewImpl scheduleView;
 	
 	@UiField
-	HasWidgets centerPanel;
+	SideBarViewImpl scheduleSideBarView;
 	
-	FacultyTopBarView view;
-	
-	public FacultyViewImpl() {
+	@UiField
+	FacultyTopBarViewImpl topBarViewView;
+
+	@Inject
+	public FacultyViewImpl(FacultyTopBarViewImpl topBarViewView, SideBarViewImpl scheduleSideBarView, ScheduleViewImpl scheduleView)
+	{
+		this.topBarViewView = topBarViewView;
+		this.scheduleSideBarView = scheduleSideBarView;
+		this.scheduleView = scheduleView;
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 		
@@ -44,17 +54,29 @@ public class FacultyViewImpl extends BaseViewImpl<FacultyPresenter> implements F
 
 	@Override
 	public HasWidgets getViewRootPanel() {
-		return mainPanel; //absolute panel
-	}
-
-	@Override
-	public HasWidgets getCenterPanel() {
-		return centerPanel;
+		return mainPanel;
 	}
 	
 	@Override
 	public DockPanel getDockPanel() {
 		return mainPanel;
+	}
+
+	@Override
+	public ScheduleViewImpl getScheduleView() {
+		return scheduleView;
+	}
+
+	@Override
+	public SideBarViewImpl getScheduleSideBarView() {
+		return scheduleSideBarView;
+	}
+
+	@Override
+	public FacultyTopBarViewImpl getTopBarViewView() {
+		return topBarViewView;
 	}	
+	
+	
 
 }

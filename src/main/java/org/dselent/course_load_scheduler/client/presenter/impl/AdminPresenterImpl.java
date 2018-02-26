@@ -15,16 +15,36 @@ public class AdminPresenterImpl extends BasePresenterImpl implements AdminPresen
 	
 	private IndexPresenter parentPresenter;
 	private AdminView view;
+	private SchedulePresenterImpl schedulePresenter;
+	private SideBarPresenterImpl sidebarPresenter;
+	private AdminTopBarPresenterImpl adminTopPresenter;
 	
 	@Inject
-	public AdminPresenterImpl(IndexPresenter parentPresenter, AdminView view) {
+	public AdminPresenterImpl(IndexPresenter parentPresenter, AdminView view, SchedulePresenterImpl schedulePresenter, SideBarPresenterImpl sidebarPresenter, AdminTopBarPresenterImpl adminTopPresenter) {
 		this.parentPresenter = parentPresenter;
 		this.view = view;
+		this.schedulePresenter = schedulePresenter;
+		this.sidebarPresenter = sidebarPresenter;
+		this.adminTopPresenter = adminTopPresenter;
+
+		
+		view.setPresenter(this);
+		
+		adminTopPresenter.setView(view.getTopBarView());
+		adminTopPresenter.getView().setPresenter(adminTopPresenter);
 	}
 	
 	
 	@Override
 	public void init() {
+		schedulePresenter.init();
+		//schedulePresenter.setParentPresenter(this);
+		sidebarPresenter.init();
+		
+		
+		adminTopPresenter.init();
+		
+		
 		bind();
 	}
 

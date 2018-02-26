@@ -1,6 +1,7 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
 import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
+import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
 import org.dselent.course_load_scheduler.client.view.AdminView;
 
 import com.google.gwt.core.client.GWT;
@@ -22,11 +23,19 @@ public class AdminViewImpl extends BaseViewImpl<AdminPresenter> implements Admin
 	interface AdminViewImplUiBinder extends UiBinder<Widget, AdminViewImpl> {
 	}
 
+	
+	@UiField
+	AdminTopBarViewImpl adminTopBar;
+	
+	@Override
+	public AdminTopBarView getTopBarView() {
+		return adminTopBar;
+	}
+	
+	
 	public AdminViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-
-	
 	
 	@Override
 	public void setPresenter(AdminPresenter presenter) {

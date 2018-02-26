@@ -1,6 +1,9 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import java.util.ArrayList;
+
 import org.dselent.course_load_scheduler.client.model.Model;
+import org.dselent.course_load_scheduler.client.model.Section;
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateSectionPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
@@ -16,6 +19,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.IntegerBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
@@ -33,6 +37,7 @@ public class CreateSectionViewImpl extends BaseViewImpl<CreateSectionPresenter> 
 	@UiField Button createSectionButton;
 	@UiField TextBox sectionTermTextBox;
 	@UiField VerticalPanel createCourseVerticalPanel;
+	@UiField ListBox sectionListBox;
 	
 	public TextBox getSectionRequiredFrequencyTextBox() {
 		return sectionRequiredFrequencyTextBox;
@@ -229,6 +234,15 @@ public class CreateSectionViewImpl extends BaseViewImpl<CreateSectionPresenter> 
 		presenter.createSection();
 	}
 
+	public void populateListBox(ArrayList<Section> sections)
+	{
+		for (int i = 0; i< sections.size(); i++) 
+		{
+			Section newSectionObject = sections.get(i);
+			String sectionName = newSectionObject.getSectionName();
+			sectionListBox.addItem(sectionName); 
+		}
+	}
 
 	@Override
 	public Button createSectionButton() {

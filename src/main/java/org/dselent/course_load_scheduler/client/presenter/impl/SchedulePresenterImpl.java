@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.dselent.course_load_scheduler.client.presenter.BasePresenter;
+import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.SchedulePresenter;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
@@ -15,20 +16,20 @@ import com.google.inject.Inject;
 
 public class SchedulePresenterImpl extends BasePresenterImpl implements SchedulePresenter {
 
-	private BasePresenter parentPresenter;
+	private FacultyPresenter parentPresenter;
 	private ScheduleView view;
 	
 	
 	@Inject
-	public SchedulePresenterImpl(IndexPresenter parentPresenter, ScheduleView view)
+	public SchedulePresenterImpl(ScheduleView view)
 	{
 		this.view = view;
-		this.parentPresenter = parentPresenter;
 		view.setPresenter(this);
 	}
 	
 	@Override
-	public void init() {
+	public void init()
+	{
 		System.out.println("[SchedulePresenter] init() called!");
 		bind();
 	}
@@ -57,12 +58,12 @@ public class SchedulePresenterImpl extends BasePresenterImpl implements Schedule
 	}
 
 	@Override
-	public BasePresenter getParentPresenter() {
+	public FacultyPresenter getParentPresenter() {
 		return parentPresenter;
 	}
 
 	@Override
-	public void setParentPresenter(BasePresenter parentPresenter) {
+	public void setParentPresenter(FacultyPresenter parentPresenter) {
 		this.parentPresenter = parentPresenter;
 	}
 

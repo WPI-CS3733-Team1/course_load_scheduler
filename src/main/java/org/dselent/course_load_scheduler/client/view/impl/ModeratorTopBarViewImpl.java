@@ -1,5 +1,8 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.ModeratorTopBarPresenter;
 import org.dselent.course_load_scheduler.client.view.AdminTopBarView;
@@ -28,6 +31,7 @@ public class ModeratorTopBarViewImpl extends BaseViewImpl<ModeratorTopBarPresent
 	@UiField Button search;
 	@UiField Button createAdmin;
 	String userName = "moderator1";
+	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	
 	public ModeratorTopBarViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -35,6 +39,7 @@ public class ModeratorTopBarViewImpl extends BaseViewImpl<ModeratorTopBarPresent
 
 	@UiHandler("search")
 	void onSearchClick(ClickEvent event) {
+		logger.log(Level.SEVERE, "onSearchClick called!");
 		presenter.openSearch(userName);
 	}
 	
