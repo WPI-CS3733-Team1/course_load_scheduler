@@ -37,10 +37,10 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 		view.setPresenter(this);
 		createCourseClickInProgress = false;
 	}
-	private void sendCreateCourse(String courseName, String courseNumber, String courseSections)
+	private void sendCreateCourse(String courseName, String courseNumber, String courseDepartment, String courseConferences, String courseLectures, String courseLabs)
 	{
 		HasWidgets container = parentPresenter.getView().getViewRootPanel();
-		SendCreateCourseAction scca = new SendCreateCourseAction(courseName, courseNumber, courseSections);
+		SendCreateCourseAction scca = new SendCreateCourseAction(courseName, courseNumber, courseDepartment, courseConferences, courseLectures, courseLabs);
 		SendCreateCourseEvent scce = new SendCreateCourseEvent(scca, container);
 		eventBus.fireEvent(scce);
 	}
@@ -58,8 +58,8 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 	{
 		HandlerRegistration registration;
 		
-		//registration = eventBus.addHandler(InvalidCreateCourseEvent.TYPE, this);
-		//eventBusRegistration.put(InvalidCreateCourseEvent.TYPE, registration);	
+		registration = eventBus.addHandler(InvalidCreateCourseEvent.TYPE, this);
+		eventBusRegistration.put(InvalidCreateCourseEvent.TYPE, registration);	
 	}
 	
 	private void validateCourseName(String courseName) throws EmptyStringException
@@ -70,10 +70,20 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 	{
 		checkEmptyString(courseNumber);
 	}
-	private void validateCourseSections(String courseSections) throws EmptyStringException
+	private void validateCourseNumberOfLectures(String courseNumberOfLectures) throws EmptyStringException
 	{
-		checkEmptyString(courseSections);
+		checkEmptyString(courseNumberOfLectures);
 	}
+	private void validateCourseNumberOfConferences(String courseNumberOfConferences) throws EmptyStringException
+	{
+		checkEmptyString(courseNumberOfConferences);
+	}
+	private void validateCourseDeptId(String createCourseDepartment) throws EmptyStringException
+	{
+		checkEmptyString(createCourseDepartment);
+	}
+
+	
 	@Override
 	public void go(HasWidgets container) {
 		container.clear();
@@ -109,11 +119,17 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			
 			String courseName = view.getCourseNameTextBox().getText();
 			String courseNumber = view.getCourseNumberTextBox().getText();
-			String courseSections = view.getCourseSectionsTextBox().getText();
+			String courseLectures = view.getCourseNumberOfLectures().getText();
+			String courseDepartment = view.getCreateCourseDeptId().getText();
+			String courseConferences = view.getCourseNumberOfConferences().getText();
+			String courseLabs = view.getCourseNumberOfLabs().getText();
 			
 			boolean validCourseName = true;
 			boolean validCourseNumber = true;
-			boolean validCourseSections = true;
+			boolean validCourseDepartment = true;
+			boolean validCourseConferences = true;
+			boolean validCourseLabs = true;
+			boolean validCourseLectures = true;
 			
 			List<String> invalidReasonList = new ArrayList<>();
 			
@@ -137,16 +153,41 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			}
 			try
 			{
-				validateCourseSections(courseSections);
+				validateCourseNumberOfLectures(courseLectures);
 			}
 			catch(EmptyStringException e)
 			{
-				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_SECTIONS);
-				validCourseSections = false;
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_NUM_LECTURES);
+				validCourseLectures = false;
 			}
-			if(validCourseName && validCourseNumber && validCourseSections)
+			try
 			{
-				sendCreateCourse(courseName, courseNumber, courseSections);
+				validateCourseNumberOfConferences(courseConferences);
+			}
+			catch(EmptyStringException e)
+			{
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_NUM_CONFERENCES);
+			}
+			try
+			{
+				validateCourseNumberOfLabs(courseLabs);
+			}
+			catch(EmptyStringException e)
+			{
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_NUM_LABS);
+			}
+			try
+			{
+				validateCourseDeptId(courseDepartment);
+			}
+			catch(EmptyStringException e)
+			{
+				invalidReasonList.add(InvalidCreateCourseStrings.NULL_COURSE_DEPARTMENT);
+			}
+			
+			if(validCourseName && validCourseNumber && validCourseDepartment && validCourseLectures && validCourseLabs && validCourseConferences)
+			{
+				sendCreateCourse(courseName, courseNumber, courseDepartment, courseLectures, courseLabs, courseConferences);
 			}
 			else
 			{
@@ -158,6 +199,10 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			
 			
 		}
+	private void validateCourseNumberOfLabs(String courseLabs) throws EmptyStringException {
+		checkEmptyString(courseLabs);
+		
+	}
 	private void checkEmptyString(String string) throws EmptyStringException
 		{
 			if(string == null || string.equals(""))
