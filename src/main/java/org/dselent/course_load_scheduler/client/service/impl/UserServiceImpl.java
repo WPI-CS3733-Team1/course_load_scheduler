@@ -6,8 +6,11 @@ import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.action.OpenScheduleAction;
 import org.dselent.course_load_scheduler.client.callback.OpenInboxCallback;
+import org.dselent.course_load_scheduler.client.callback.RegisterNewUserCallback;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.SendRegisterNewUserEvent;
 import org.dselent.course_load_scheduler.client.action.SendOpenInboxAction;
+import org.dselent.course_load_scheduler.client.action.SendRegisterNewUserAction;
 import org.dselent.course_load_scheduler.client.action.OpenCreateAdminAction;
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.callback.OpenCreateAdminCallback;
@@ -18,6 +21,7 @@ import org.dselent.course_load_scheduler.client.network.NetworkRequestStrings;
 import org.dselent.course_load_scheduler.client.service.UserService;
 import org.dselent.course_load_scheduler.client.translator.impl.LoginActionTranslatorImpl;
 import org.dselent.course_load_scheduler.client.translator.impl.OpenInboxActionTranslatorImpl;
+import org.dselent.course_load_scheduler.client.translator.impl.RegisterNewUserTranslatorImpl;
 import org.dselent.course_load_scheduler.client.translator.impl.OpenCreateAdminActionTranslatorImpl;
 /*
  * openCreateAdminEvent
@@ -72,6 +76,13 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.OPEN_INBOX, openInboxCallback, json);
 		request.send();
 		
+	}
+	
+	public void onSendRegisterNewUser(SendRegisterNewUserEvent evt) {
+		SendRegisterNewUserAction action = evt.getAction();
+		RegisterNewUserTranslatorImpl RegisterNewUserActionTranslator = new RegisterNewUserTranslatorImpl();
+		JSONObject json = RegisterNewUserActionTranslator.translateToJson(action);
+		RegisterNewUserCallback registerNewUserCallback = new RegisterNewUserCallback(eventBus, evt.getContainer());
 	}
 	
 //	
