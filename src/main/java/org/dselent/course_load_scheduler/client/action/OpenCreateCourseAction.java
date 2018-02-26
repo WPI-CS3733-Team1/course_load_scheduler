@@ -1,6 +1,6 @@
 package org.dselent.course_load_scheduler.client.action;
 
-public class OpenCreateCourseAction 
+public class OpenCreateCourseAction extends Action
 {
 	private String userName;
 	

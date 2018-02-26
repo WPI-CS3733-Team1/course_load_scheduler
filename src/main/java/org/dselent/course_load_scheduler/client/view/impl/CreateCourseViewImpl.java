@@ -1,5 +1,8 @@
 package org.dselent.course_load_scheduler.client.view.impl;
 
+import java.util.ArrayList;
+
+import org.dselent.course_load_scheduler.client.model.Course;
 import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
 import org.dselent.course_load_scheduler.client.view.CreateCourseView;
 
@@ -13,6 +16,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.PushButton;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.TextBox;
@@ -53,7 +57,7 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 	HorizontalPanel createCourseHorizontalPanel;
 	
 	@UiField
-	ScrollPanel courseScrollPanel;
+	ListBox courseListBox;
 	
 	public CreateCourseViewImpl()
 	{
@@ -146,6 +150,17 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 		presenter.createCourse();
 	}
 
+	public void populateListBox(ArrayList<Course> courses) {
+		for(int i = 0; i < courses.size(); i++) {
+			Course newCourseObject = courses.get(i);
+			String courseName = newCourseObject.getName();
+			String courseNumber = newCourseObject.getCourseNum();
+			Integer courseNumConferences = newCourseObject.getNumConferences();
+			Integer courseNumLectures = newCourseObject.getNumLectures();
+			Integer courseNumLabs = newCourseObject.getNumLabs();
+			courseListBox.addItem(courseNumber); 
+		}
+	}
 
 	@Override
 	public TextBox getCourseSectionsTextBox() {

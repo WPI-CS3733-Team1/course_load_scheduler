@@ -6,12 +6,11 @@ import org.dselent.course_load_scheduler.client.view.SearchView;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
 
 public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements SearchView {
@@ -22,7 +21,7 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 	}
 	
 	@UiField
-	VerticalPanel search_panel;
+	HTMLPanel search_panel;
 	
 	@UiField
 	RadioButton users_button;
@@ -101,6 +100,11 @@ public class SearchViewImpl extends BaseViewImpl<SearchPresenter> implements Sea
 	@Override
 	public void setSubmitButton(Button submitButton) {
 		this.submit_button = submitButton;
+	}
+
+	@Override
+	public SearchPresenter getPresenter() {
+		return presenter;
 	}
 
 }

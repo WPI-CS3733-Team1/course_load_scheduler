@@ -21,6 +21,7 @@ import org.dselent.course_load_scheduler.client.view.IndexView;
 import org.dselent.course_load_scheduler.client.view.ScheduleView;
 import org.dselent.course_load_scheduler.client.view.SearchView;
 import org.dselent.course_load_scheduler.client.view.SideBarView;
+import org.dselent.course_load_scheduler.client.view.impl.FacultyTopBarViewImpl;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
@@ -77,15 +78,17 @@ public class CourseLoadScheduler implements EntryPoint
 		indexPresenter.init();
 		IndexView indexView = indexPresenter.getView();		
 		//---------------End of OG files-----------------------------------------------------------		
+		/*
 		SideBarPresenterImpl sideBarPresenter = injector.getSideBarPresenter();
 		sideBarPresenter.setParentPresenter(indexPresenter);
-		sideBarPresenter.init();
 		SideBarView sideBarView = sideBarPresenter.getView();
+		sideBarPresenter.init();
 		
 		SearchPresenterImpl searchPresenter = injector.getSearchPresenter();
 		searchPresenter.setParentPresenter(indexPresenter);
 		searchPresenter.init();
 		SearchView searchView = searchPresenter.getView();
+		*/
 		
 		
 		/*
@@ -106,10 +109,33 @@ public class CourseLoadScheduler implements EntryPoint
 		//SideBarPresenterImpl sideBar
 		
 		//----------------------------------------------------------------------------------Faculty Issue; Please fix--------//
+		
+		//FacultyTopBarPresenterImpl facultyTopBarPresenter = injector.getFacultyTopBarPresenter();
+		//facultyTopBarPresenter.setParentPresenter(indexPresenter);
+		//facultyTopBarPresenter.getView().setPresenter(facultyTopBarPresenter);
+		//FacultyTopBarViewImpl ftbv = injector.getFacultyTopBarView();
+		//ftbv.setPresenter(facultyTopBarPresenter); //presenter still null?
+		
+		//facultyTopBarPresenter.init();
+		
+		//**********************************************************************
+		
 		FacultyPresenterImpl facultyPresenter = injector.getFacultyPresenter();
-		facultyPresenter.setParentPresenter(indexPresenter);
 		facultyPresenter.init();
 		
+		//***********************FACULTY PRESENTER TEST***********************
+
+		//**********************************************************************
+		
+		//ModPresenterImpl modPresenter = injector.getModPresenter();
+		//modPresenter.init();
+		
+		//**********************************************************************
+		
+		AdminPresenterImpl adminPresenter = injector.getAdminPresenter();
+		adminPresenter.init();
+		
+		/*
 		AdminPresenterImpl adminPresenter = injector.getAdminPresenter();
 		adminPresenter.setParentPresenter(indexPresenter);
 		adminPresenter.init();
@@ -117,8 +143,9 @@ public class CourseLoadScheduler implements EntryPoint
 		ModPresenterImpl modPresenter = injector.getModPresenter();
 		modPresenter.setParentPresenter(indexPresenter);
 		modPresenter.init();
-		
+		*/
 		//System.out.println("[CourseLoadScheduler] onModuleLoad() called!");
+		/*
 		SchedulePresenterImpl schedulePresenter = injector.getSchedulePresenter();
 		schedulePresenter.setParentPresenter(indexPresenter);
 		schedulePresenter.init();
@@ -130,7 +157,7 @@ public class CourseLoadScheduler implements EntryPoint
 		CreateAdminPresenterImpl createAdmin1Presenter = injector.getCreateAdminPresenter();
 		createAdmin1Presenter.setParentPresenter(indexPresenter);
 		createAdmin1Presenter.init();
-		
+		*/
 		//indexPresenter.go(RootPanel.get("indexContainer"));
 		//indexPresenter.go(root);
 		
@@ -144,25 +171,28 @@ public class CourseLoadScheduler implements EntryPoint
 		UserServiceImpl userService = injector.getUserService();
 		userService.init();
 
-		
+		indexPresenter.go(root);
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
 		//schedulePresenter.go(sideBarView.getViewRootPanel());
 		//sideBarPresenter.go(sideBarView.getViewRootPanel());
 		//indexPresenter.go(RootPanel.get("indexContainer"));
-		indexPresenter.go(root);
 		
-		facultyPresenter.go(indexView.getViewRootPanel());
+		//facultyPresenter.go(indexView.getViewRootPanel());
 		//adminPresenter.go(indexView.getViewRootPanel());
 		//sideBarPresenter.go(indexView.getViewRootPanel());
 		//createAdmin1Presenter.go(indexView.getViewRootPanel());
 		//createAdmin2Presenter.go(indexView.getViewRootPanel());
+
 		//modPresenter.go(indexView.getViewRootPanel());
 		
 		//searchPresenter.go(indexView.getViewRootPanel());
 		
+		facultyPresenter.go(indexView.getViewRootPanel());
+		//modPresenter.go(indexView.getViewRootPanel());
 		
+		//adminPresenter.go(indexView.getViewRootPanel());
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());

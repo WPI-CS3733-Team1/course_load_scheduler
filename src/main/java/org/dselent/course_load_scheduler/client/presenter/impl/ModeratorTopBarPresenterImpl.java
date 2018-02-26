@@ -1,6 +1,10 @@
 package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import org.dselent.course_load_scheduler.client.presenter.ModeratorTopBarPresenter;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.dselent.course_load_scheduler.client.action.OpenCreateAdminAction;
 import org.dselent.course_load_scheduler.client.action.OpenCreateCourseAction;
 import org.dselent.course_load_scheduler.client.action.OpenCreateSectionAction;
@@ -22,6 +26,7 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 
 	private IndexPresenter parentPresenter;
 	private ModeratorTopBarView view;
+	Logger logger = java.util.logging.Logger.getLogger("[FacultyTopBarPresenter]");
 	
 	@Inject
 	public ModeratorTopBarPresenterImpl(IndexPresenter parentPresenter, ModeratorTopBarView view)
@@ -58,6 +63,11 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 	}
 
 	@Override
+	public void setView(ModeratorTopBarView view) {
+		this.view = view;
+	}
+	
+	@Override
 	public void ModeratorTopBar() {
 		// TODO Auto-generated method stub
 	}
@@ -85,6 +95,7 @@ public class ModeratorTopBarPresenterImpl extends BasePresenterImpl implements M
 
 	@Override
 	public void openSearch(String username) 	{
+		logger.log(Level.SEVERE, "openSearch called!");
 		OpenSearchAction sosa = new OpenSearchAction(username);
 		OpenSearchEvent sose = new OpenSearchEvent(sosa);
 		eventBus.fireEvent(sose);

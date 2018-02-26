@@ -8,14 +8,18 @@ import org.dselent.course_load_scheduler.client.action.SendCreateCourseAction;
 import org.dselent.course_load_scheduler.client.model.Course;
 import org.dselent.course_load_scheduler.client.model.User;
 import org.dselent.course_load_scheduler.client.receive.jsonkeys.ReceiveOpenCreateCourseKeys;
-import org.dselent.course_load_scheduler.client.send.jsonkeys.SendOpenCreateCourseKeys;
+import org.dselent.course_load_scheduler.client.send.jsonkeys.SendCreateCourseKeys;
 import org.dselent.course_load_scheduler.client.translator.ActionTranslator;
 import org.dselent.course_load_scheduler.client.utils.JSONHelper;
 
 import com.google.gwt.json.client.JSONObject;
 import com.google.gwt.json.client.JSONValue;
 import com.google.gwt.json.client.JSONArray;
-
+/**
+ * 
+ * @author Surya
+ *
+ */
 public class CreateCourseTranslatorImpl
 		implements ActionTranslator<SendCreateCourseAction, ReceiveOpenCreateCourseAction> {
 
@@ -23,7 +27,7 @@ public class CreateCourseTranslatorImpl
 	public JSONObject translateToJson(SendCreateCourseAction action) {
 		JSONObject jsonObject = new JSONObject();
 
-		JSONHelper.putStringValue(jsonObject, JSONHelper.convertKeyName(SendOpenCreateCourseKeys.NAME),
+		JSONHelper.putStringValue(jsonObject, JSONHelper.convertKeyName(SendCreateCourseKeys.NAME),
 				action.getCourseName());
 
 		return jsonObject;

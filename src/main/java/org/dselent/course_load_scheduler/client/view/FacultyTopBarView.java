@@ -7,11 +7,12 @@ import com.google.gwt.user.client.ui.TextBox;
 
 public interface FacultyTopBarView extends BaseView<FacultyTopBarPresenter> {
 
-	Button getATerm();
-	Button getBTerm();
-	Button getCTerm();
-	Button getDTerm();
-	Button getSearch();
-	Button getMySchedule();
+	public Button getATerm();
+	public Button getBTerm();
+	public Button getCTerm();
+	public Button getDTerm();
+	public Button getSearch();
+	public Button getMySchedule();
+	FacultyTopBarPresenter getPresenter();
 
 }
