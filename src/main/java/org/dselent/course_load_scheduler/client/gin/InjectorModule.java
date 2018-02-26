@@ -4,6 +4,7 @@ import org.dselent.course_load_scheduler.client.presenter.AdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.AdminTopBarPresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateAdminPresenter;
 import org.dselent.course_load_scheduler.client.presenter.CreateCoursePresenter;
+import org.dselent.course_load_scheduler.client.presenter.CreateSectionPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyPresenter;
 import org.dselent.course_load_scheduler.client.presenter.FacultyTopBarPresenter;
 //----------------------------------------------------------------------------------Faculty Issue in Imports; Please fix--------//
@@ -18,6 +19,7 @@ import org.dselent.course_load_scheduler.client.presenter.impl.AdminPresenterImp
 import org.dselent.course_load_scheduler.client.presenter.impl.AdminTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateAdminPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.CreateCoursePresenterImpl;
+import org.dselent.course_load_scheduler.client.presenter.impl.CreateSectionPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.impl.FacultyTopBarPresenterImpl;
 import org.dselent.course_load_scheduler.client.presenter.SideBarPresenter;
@@ -104,7 +106,7 @@ public class InjectorModule extends AbstractGinModule
         bind(AdminPresenter.class).to(AdminPresenterImpl.class).in(Singleton.class);
         bind(ModPresenter.class).to(ModPresenterImpl.class).in(Singleton.class);
         bind(SearchPresenter.class).to(SearchPresenterImpl.class).in(Singleton.class);
-        
+        bind(CreateSectionPresenter.class).to(CreateSectionPresenterImpl.class).in(Singleton.class);
         // views
         bind(IndexView.class).to(IndexViewImpl.class).in(Singleton.class);
         bind(LoginView.class).to(LoginViewImpl.class).in(Singleton.class);

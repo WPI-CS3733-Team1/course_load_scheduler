@@ -36,16 +36,19 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 	Label courseNumberLabel;
 	
 	@UiField
-	Label courseSectionsLabel;
-	
-	@UiField
 	TextBox courseNameTextBox;
 	
 	@UiField
 	TextBox courseNumberTextBox;
 	
 	@UiField
-	TextBox courseSectionsTextBox;
+	TextBox courseNumberOfLectures;
+	
+	@UiField
+	TextBox courseNumberOfLabs;
+	
+	@UiField
+	TextBox courseNumberOfConferences;
 	
 	@UiField
 	Button createCourseButton;
@@ -58,6 +61,9 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 	
 	@UiField
 	ListBox courseListBox;
+	
+	@UiField
+	TextBox createCourseDepartment;
 	
 	public CreateCourseViewImpl()
 	{
@@ -105,12 +111,6 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 	}
 
 	@Override
-	public void setCourseSectionsTextBox(TextBox courseSectionsTextBox) {
-		this.courseSectionsTextBox = courseSectionsTextBox ;
-		
-	}
-
-	@Override
 	public Label getCourseNameLabel() {
 		return courseNameLabel;
 	}
@@ -129,18 +129,6 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 	@Override
 	public void setCourseNumberLabel(Label courseNumberLabel) {
 		this.courseNumberLabel = courseNumberLabel;
-		
-	}
-
-	@Override
-	public Label getCourseSectionsLabel() {
-		
-		return courseSectionsLabel;
-	}
-
-	@Override
-	public void setCourseSectionsLabel(Label courseSectionsLabel) {
-		this.courseSectionsLabel = courseSectionsLabel;
 		
 	}
 	
@@ -162,11 +150,6 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 		}
 	}
 
-	@Override
-	public TextBox getCourseSectionsTextBox() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 	@Override
@@ -194,6 +177,80 @@ public class CreateCourseViewImpl extends BaseViewImpl<CreateCoursePresenter> im
 		// TODO Auto-generated method stub
 		
 	}
+
+
+	public TextBox getCourseNumberOfLectures() {
+		return courseNumberOfLectures;
+	}
+
+
+	public void setCourseNumberOfLectures(TextBox courseNumberOfLectures) {
+		this.courseNumberOfLectures = courseNumberOfLectures;
+	}
+
+
+	public TextBox getCourseNumberOfLabs() {
+		return courseNumberOfLabs;
+	}
+
+
+	public void setCourseNumberOfLabs(TextBox courseNumberOfLabs) {
+		this.courseNumberOfLabs = courseNumberOfLabs;
+	}
+
+
+	public TextBox getCourseNumberOfConferences() {
+		return courseNumberOfConferences;
+	}
+
+
+	public void setCourseNumberOfConferences(TextBox courseNumberOfConferences) {
+		this.courseNumberOfConferences = courseNumberOfConferences;
+	}
+
+
+	public VerticalPanel getCreateCourseVerticalPanel() {
+		return createCourseVerticalPanel;
+	}
+
+
+	public void setCreateCourseVerticalPanel(VerticalPanel createCourseVerticalPanel) {
+		this.createCourseVerticalPanel = createCourseVerticalPanel;
+	}
+
+
+	public HorizontalPanel getCreateCourseHorizontalPanel() {
+		return createCourseHorizontalPanel;
+	}
+
+
+	public void setCreateCourseHorizontalPanel(HorizontalPanel createCourseHorizontalPanel) {
+		this.createCourseHorizontalPanel = createCourseHorizontalPanel;
+	}
+
+
+	public ListBox getCourseListBox() {
+		return courseListBox;
+	}
+
+
+	public void setCourseListBox(ListBox courseListBox) {
+		this.courseListBox = courseListBox;
+	}
+
+	@Override
+	public TextBox getCreateCourseDeptId() {
+		// TODO Auto-generated method stub
+		return createCourseDepartment;
+	}
+
+
+	@Override
+	public void setCourseDeptId(TextBox createCourseDepartment) {
+		this.createCourseDepartment = createCourseDepartment;		
+	}
+
+
 
 
 }
