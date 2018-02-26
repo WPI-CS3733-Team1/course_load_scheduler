@@ -22,4 +22,5 @@ public interface CreateAdminView extends BaseView<CreateAdminPresenter> {
 	ListBox getProfessorList();
 	void setProfessorList(ListBox professorList);
 	HorizontalPanel getAdminHorizontalPanel();
+	void setAdminHorizontalPanel(HorizontalPanel createAdminViewHorizontalPanel);
 }

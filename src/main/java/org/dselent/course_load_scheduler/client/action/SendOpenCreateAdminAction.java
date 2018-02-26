@@ -4,7 +4,7 @@ public class SendOpenCreateAdminAction extends Action
 {
 	private String userName;
 	
-	public SendOpenCreateAdminAction(String userName, String password)
+	public SendOpenCreateAdminAction(String userName)
 	{
 		this.userName = userName;
 	}

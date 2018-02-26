@@ -80,6 +80,17 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.OPEN_INBOX, openInboxCallback, json);
 		request.send();
 	}
+    
+    public void onSendOpenCreateAdmin(SendOpenCreateAdminEvent evt)
+    {
+        SendOpenCreateAdminAction action = evt.getAction();
+        OpenCreateAdminActionTranslatorImpl openCreateAdminTranslator = new OpenCreateAdminActionTranslatorImpl();
+        JSONObject json = openCreateAdminTranslator.translateToJson(action);
+        OpenCreateAdminCallback openCreateAdminCallback = new OpenCreateAdminCallback(eventBus, evt.getContainer());
+        
+        NetworkRequest request = new NetworkRequest(NetworkRequestStrings.CREATE_ADMIN, openCreateAdminCallback, json);
+        request.send();
+    }
 	
 	public void onSendCreateCourse(SendCreateCourseEvent evt)
 	{
@@ -92,13 +103,12 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
 
-
 	public void onSendCreateSection(SendCreateSectionEvent evt)
 	{
 		SendCreateSectionAction action = evt.getAction();
 		CreateSectionTranslatorImpl createSectionActionTranslator = new CreateSectionTranslatorImpl();
 		JSONObject json = createSectionActionTranslator.translateToJson(action);
-		CreateSectionCallback createSectionCallback = new CreateSectionCallback(eventBus, evt.getContainer()); 
+		CreateSectionCallback createSectionCallback = new CreateSectionCallback(eventBus, evt.getContainer());
 	
 		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.CREATE_SECTION, createSectionCallback, json);
 		request.send();
