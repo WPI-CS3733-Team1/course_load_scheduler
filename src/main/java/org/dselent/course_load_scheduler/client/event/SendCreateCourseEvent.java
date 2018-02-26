@@ -16,8 +16,7 @@ public class SendCreateCourseEvent extends DisplayEvent<SendCreateCourseAction, 
 	public SendCreateCourseEvent(SendCreateCourseAction action, HasWidgets container)
 	{
 		super(action, container);
-		this.action = action;
-	}
+		}
 	
 	public SendCreateCourseAction getAction()
 	{
