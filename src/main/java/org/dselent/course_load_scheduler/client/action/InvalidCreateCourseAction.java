@@ -12,7 +12,7 @@ public class InvalidCreateCourseAction extends Action {
 		reasonList = new ArrayList<>();
 	}
 	
-	public InvalidCreateCourseAction(List<String> invalidReasonList)
+	public InvalidCreateCourseAction(String invalidReasonList)
 	{this.reasonList = reasonList;
 	}
 

@@ -150,7 +150,7 @@ public class CreateCoursePresenterImpl extends BasePresenterImpl implements Crea
 			}
 			else
 			{
-				InvalidCreateCourseAction icca = new InvalidCreateCourseAction(invalidReasonList);
+				InvalidCreateCourseAction icca = new InvalidCreateCourseAction(invalidReasonList.toString());
 				InvalidCreateCourseEvent icce = new InvalidCreateCourseEvent(icca);
 				eventBus.fireEvent(icce);
 			}

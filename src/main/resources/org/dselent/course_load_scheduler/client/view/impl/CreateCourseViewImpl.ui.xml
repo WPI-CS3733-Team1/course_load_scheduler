@@ -5,7 +5,6 @@
 	<ui:style>
 	
 	</ui:style>
-	<g:HTMLPanel>
 		<g:HorizontalPanel ui:field="createCourseHorizontalPanel">
 			<g:VerticalPanel horizontalAlignment="ALIGN_CENTER" ui:field="createCourseVerticalPanel"
 			verticalAlignment="ALIGN_MIDDLE" width="450px" height="299px">
@@ -13,12 +12,14 @@
 			<g:TextBox ui:field="courseNameTextBox" />
 			<g:Label ui:field="courseNumberLabel" text ="Course Number" />
 			<g:TextBox ui:field="courseNumberTextBox" />
-			<g:Label ui:field="courseSectionsLabel" text="Course Section" />
-			<g:TextBox ui:field="courseSectionsTextBox"/>
+			<g:TextBox ui:field="courseNumberOfLectures" text = "Number of Lectures" />
+			<g:TextBox ui:field="courseNumberOfLabs" text = "Number of Labs" />
+			<g:TextBox ui:field="courseNumberOfConferences" text = "Number of Conferences" />
+			<g:TextBox ui:field="createCourseDepartment" text = "Course Department" />
 			<g:Button ui:field="createCourseButton" text="Create Course" width="50%" />
 			
 		</g:VerticalPanel>
 			<g:ListBox ui:field="courseListBox" width="86px" height="299px"/>
 		</g:HorizontalPanel>
-	</g:HTMLPanel>
+
 </ui:UiBinder> 

@@ -1,6 +1,7 @@
 package org.dselent.course_load_scheduler.client.receive.jsonkeys;
 
 public enum ReceiveCreateSectionKeys {
+	ID,
 	COURSE_ID,
 	CRN,
 	SECTION_NAME,
