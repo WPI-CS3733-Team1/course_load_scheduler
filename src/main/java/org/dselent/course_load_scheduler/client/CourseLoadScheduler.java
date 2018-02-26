@@ -119,10 +119,10 @@ public class CourseLoadScheduler implements EntryPoint
 		//facultyTopBarPresenter.init();
 		
 		//**********************************************************************
-		/*
+		
 		FacultyPresenterImpl facultyPresenter = injector.getFacultyPresenter();
 		facultyPresenter.init();
-		*/
+		
 		//***********************FACULTY PRESENTER TEST***********************
 
 		//**********************************************************************
@@ -171,7 +171,7 @@ public class CourseLoadScheduler implements EntryPoint
 		UserServiceImpl userService = injector.getUserService();
 		userService.init();
 
-		
+		indexPresenter.go(root);
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
@@ -189,10 +189,10 @@ public class CourseLoadScheduler implements EntryPoint
 		
 		//searchPresenter.go(indexView.getViewRootPanel());
 		
-		//facultyPresenter.go(indexView.getViewRootPanel());
+		facultyPresenter.go(indexView.getViewRootPanel());
 		//modPresenter.go(indexView.getViewRootPanel());
 		
-		adminPresenter.go(indexView.getViewRootPanel());
+		//adminPresenter.go(indexView.getViewRootPanel());
 		
 		//schedulePresenter.go(indexView.getViewRootPanel());
 		//loginPresenter.go(indexView.getViewRootPanel());
