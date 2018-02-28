@@ -16,17 +16,21 @@ import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveRegisterNewUserEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveResolveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.ReceiveSearchEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveSidebarInfoEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateCourseEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateSectionEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.SendMessageEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
+import org.dselent.course_load_scheduler.client.event.SendRegisterNewUserEvent;
 import org.dselent.course_load_scheduler.client.event.SendResolveMessageEvent;
 import org.dselent.course_load_scheduler.client.event.SendSearchEvent;
+import org.dselent.course_load_scheduler.client.event.SendSidebarInfoEvent;
 
 /**
  * Adapter class for convenience
@@ -44,7 +48,8 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 			OpenScheduleEventHandler,OpenSearchEventHandler, SendCreateSectionEventHandler, SendCreateCourseEventHandler, OpenCreateSectionEventHandler,
 			SendOpenInboxEventHandler, InvalidOpenInboxEventHandler, ReceiveOpenInboxEventHandler, ReceiveOpenCreateAdminEventHandler, ReceiveScheduleEventHandler,
 			SendMessageEventHandler, InvalidMessageEventHandler, ReceiveMessageEventHandler, SendResolveMessageEventHandler, InvalidResolveMessageEventHandler,
-			ReceiveResolveMessageEventHandler, ReceiveSearchEventHandler, SendSearchEventHandler
+			ReceiveResolveMessageEventHandler, ReceiveSearchEventHandler, SendSearchEventHandler, SendSidebarInfoEventHandler, ReceiveSidebarInfoEventHandler, 
+			SendRegisterNewUserEventHandler, ReceiveRegisterNewUserEventHandler
 {
 	//Noah - Still need to write ExecuteSearchEventHandler/Action/Event pathway
 	
@@ -129,4 +134,16 @@ implements InvalidLoginEventHandler, SendLoginEventHandler, OpenCreateAdminEvent
 	@Override
 	public void onSendSearch(SendSearchEvent sendSearchEvent) {}
 	
+	@Override
+	public void onSendSidebarInfo(SendSidebarInfoEvent evt) {}
+	
+	@Override
+	public void onSendRegisterNewUser(SendRegisterNewUserEvent evt) {}
+	
+	@Override
+	public void onReceiveSidebarInfo(ReceiveSidebarInfoEvent evt) {}
+	
+	@Override
+	public void onReceiveRegisterNewUser(ReceiveRegisterNewUserEvent evt) {}
+
 }

@@ -2,12 +2,24 @@ package org.dselent.course_load_scheduler.client.presenter.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.dselent.course_load_scheduler.client.action.InvalidLoginAction;
+import org.dselent.course_load_scheduler.client.action.ReceiveLoginAction;
+import org.dselent.course_load_scheduler.client.action.ReceiveSidebarInfoAction;
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
+import org.dselent.course_load_scheduler.client.action.SendSidebarInfoAction;
 import org.dselent.course_load_scheduler.client.errorstring.InvalidLoginStrings;
 import org.dselent.course_load_scheduler.client.event.InvalidLoginEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveLoginEvent;
+import org.dselent.course_load_scheduler.client.event.ReceiveSidebarInfoEvent;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
+import org.dselent.course_load_scheduler.client.event.SendSidebarInfoEvent;
 import org.dselent.course_load_scheduler.client.exceptions.EmptyStringException;
+import org.dselent.course_load_scheduler.client.gin.Injector;
+import org.dselent.course_load_scheduler.client.model.SidebarInfo;
+import org.dselent.course_load_scheduler.client.model.User;
 import org.dselent.course_load_scheduler.client.presenter.IndexPresenter;
 import org.dselent.course_load_scheduler.client.presenter.LoginPresenter;
 import org.dselent.course_load_scheduler.client.view.LoginView;
@@ -21,7 +33,9 @@ public class LoginPresenterImpl extends BasePresenterImpl implements LoginPresen
 	private IndexPresenter parentPresenter;
 	private LoginView view;
 	private boolean loginClickInProgress;
-
+	Logger logger = java.util.logging.Logger.getLogger("[LoginPresenter]");
+	
+	
 	@Inject
 	public LoginPresenterImpl(IndexPresenter parentPresenter, LoginView view)
 	{
@@ -44,6 +58,18 @@ public class LoginPresenterImpl extends BasePresenterImpl implements LoginPresen
 		
 		registration = eventBus.addHandler(InvalidLoginEvent.TYPE, this);
 		eventBusRegistration.put(InvalidLoginEvent.TYPE, registration);
+		
+		HandlerRegistration reg;
+		reg = eventBus.addHandler(ReceiveLoginEvent.TYPE, this);
+		eventBusRegistration.put(ReceiveLoginEvent.TYPE, reg);	
+	
+		HandlerRegistration sidebarReg;
+		sidebarReg = eventBus.addHandler(ReceiveSidebarInfoEvent.TYPE, this);
+		eventBusRegistration.put(ReceiveSidebarInfoEvent.TYPE, sidebarReg);
+		
+		HandlerRegistration loginReg;
+		loginReg = eventBus.addHandler(ReceiveLoginEvent.TYPE, this);
+		eventBusRegistration.put(ReceiveLoginEvent.TYPE, loginReg);
 	}
 		
 	@Override
@@ -69,6 +95,11 @@ public class LoginPresenterImpl extends BasePresenterImpl implements LoginPresen
 	public void setParentPresenter(IndexPresenter parentPresenter)
 	{
 		this.parentPresenter = parentPresenter;
+	}
+	
+	@Override
+	public void unbind() {
+		
 	}
 	
 	@Override
@@ -161,5 +192,47 @@ public class LoginPresenterImpl extends BasePresenterImpl implements LoginPresen
 		
 		InvalidLoginAction ila = evt.getAction();
 		view.showErrorMessages(ila.toString());
+	}
+	
+	@Override
+	public void onReceiveLogin(ReceiveLoginEvent evt) {
+		logger.log(Level.SEVERE, "onReceiveLogin called()");
+		
+		ReceiveLoginAction action = evt.getAction();
+		User user = action.getModel();
+		
+		//fire get sidebar
+		
+		String username = user.getUserName();
+		
+		HasWidgets container = parentPresenter.getView().getViewRootPanel();
+		SendSidebarInfoAction sendAction = new SendSidebarInfoAction(username);
+		SendSidebarInfoEvent event = new SendSidebarInfoEvent(sendAction, container);
+		eventBus.fireEvent(event);
+	}
+	
+	@Override
+	public void onReceiveSidebarInfo(ReceiveSidebarInfoEvent evt) {
+		ReceiveSidebarInfoAction action = evt.getAction();
+		SidebarInfo info = action.getSidebarInfo();
+		
+		switch(info.getRoleName()) {
+		case "faculty":
+			//
+			FacultyPresenterImpl facultyPresenter = Injector.INSTANCE.getFacultyPresenter();
+			facultyPresenter.init();
+			facultyPresenter.go(parentPresenter.getView().getViewRootPanel());
+			break;
+		case "administrator":
+			AdminPresenterImpl adminPresenter = Injector.INSTANCE.getAdminPresenter();
+			adminPresenter.init();
+			adminPresenter.go(parentPresenter.getView().getViewRootPanel());
+			break;
+		case "moderator":
+			ModPresenterImpl modPresenter = Injector.INSTANCE.getModPresenter();
+			modPresenter.init();
+			modPresenter.go(parentPresenter.getView().getViewRootPanel());
+			break;
+		}
 	}
 }

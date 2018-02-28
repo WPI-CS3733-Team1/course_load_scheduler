@@ -2,6 +2,7 @@ package org.dselent.course_load_scheduler.client.service.impl;
 
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
 import org.dselent.course_load_scheduler.client.callback.SendLoginCallback;
+import org.dselent.course_load_scheduler.client.callback.SendSidebarInfoCallback;
 import org.dselent.course_load_scheduler.client.event.SendLoginEvent;
 import org.dselent.course_load_scheduler.client.event.OpenScheduleEvent;
 import org.dselent.course_load_scheduler.client.event.SendCreateCourseEvent;
@@ -13,8 +14,14 @@ import org.dselent.course_load_scheduler.client.callback.OpenInboxCallback;
 import org.dselent.course_load_scheduler.client.callback.RegisterNewUserCallback;
 import org.dselent.course_load_scheduler.client.event.SendOpenInboxEvent;
 import org.dselent.course_load_scheduler.client.event.SendRegisterNewUserEvent;
+import org.dselent.course_load_scheduler.client.event.SendSidebarInfoEvent;
 import org.dselent.course_load_scheduler.client.action.SendOpenInboxAction;
 import org.dselent.course_load_scheduler.client.action.SendRegisterNewUserAction;
+import org.dselent.course_load_scheduler.client.action.SendSidebarInfoAction;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.dselent.course_load_scheduler.client.action.OpenCreateAdminAction;
 import org.dselent.course_load_scheduler.client.event.OpenCreateAdminEvent;
 import org.dselent.course_load_scheduler.client.callback.OpenCreateAdminCallback;
@@ -30,6 +37,7 @@ import org.dselent.course_load_scheduler.client.translator.impl.CreateSectionTra
 import org.dselent.course_load_scheduler.client.translator.impl.LoginActionTranslatorImpl;
 import org.dselent.course_load_scheduler.client.translator.impl.OpenInboxActionTranslatorImpl;
 import org.dselent.course_load_scheduler.client.translator.impl.RegisterNewUserTranslatorImpl;
+import org.dselent.course_load_scheduler.client.translator.impl.SidebarInfoTranslatorImpl;
 import org.dselent.course_load_scheduler.client.translator.impl.OpenCreateAdminActionTranslatorImpl;
 /*
  * openCreateAdminEvent
@@ -42,6 +50,8 @@ import com.google.gwt.json.client.JSONObject;
 
 public class UserServiceImpl extends BaseServiceImpl implements UserService
 {
+	
+	Logger logger = java.util.logging.Logger.getLogger("[UserService]");
 	public UserServiceImpl()
 	{
 		
@@ -51,6 +61,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 	public void init()
 	{
 		bind();
+		
 	}
 
 	@Override
@@ -60,12 +71,34 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		
 		registration = eventBus.addHandler(SendLoginEvent.TYPE, this);
 		eventBusRegistration.put(SendLoginEvent.TYPE, registration);
+		
+		HandlerRegistration reg;
+		
+		reg = eventBus.addHandler(SendSidebarInfoEvent.TYPE, this);
+		eventBusRegistration.put(SendSidebarInfoEvent.TYPE, reg);
+		
+		
+		
+	}
+	
+	@Override
+	public void onSendSidebarInfo(SendSidebarInfoEvent evt) {
+		SendSidebarInfoAction action = evt.getAction();
+		SidebarInfoTranslatorImpl t = new SidebarInfoTranslatorImpl();
+		JSONObject json = t.translateToJson(action);
+	
+		SendSidebarInfoCallback sidebarCallback = new SendSidebarInfoCallback(eventBus, evt.getContainer());
+		
+		NetworkRequest request = new NetworkRequest(NetworkRequestStrings.GET_SIDEBAR, sidebarCallback, json);
+		request.send();
 	}
 	
 	@Override
 	public void onSendLogin(SendLoginEvent evt)
 	{
 		SendLoginAction action = evt.getAction();
+		logger.log(Level.SEVERE, "onSendLogin: username: "+action.getUserName()+", password: "+action.getPassword());
+		
 		LoginActionTranslatorImpl loginActionTranslator = new LoginActionTranslatorImpl();
 		JSONObject json = loginActionTranslator.translateToJson(action);
 		SendLoginCallback loginCallback = new SendLoginCallback(eventBus, evt.getContainer());
@@ -74,6 +107,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
 	
+	@Override
 	public void onSendOpenInbox(SendOpenInboxEvent evt)
 	{
 		SendOpenInboxAction action = evt.getAction();
@@ -85,6 +119,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
     
+	@Override
     public void onSendOpenCreateAdmin(SendOpenCreateAdminEvent evt)
     {
         SendOpenCreateAdminAction action = evt.getAction();
@@ -96,6 +131,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
         request.send();
     }
 	
+	@Override
 	public void onSendCreateCourse(SendCreateCourseEvent evt)
 	{
 		SendCreateCourseAction action = evt.getAction();
@@ -107,6 +143,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
 
+	@Override
 	public void onSendCreateSection(SendCreateSectionEvent evt)
 	{
 		SendCreateSectionAction action = evt.getAction();
@@ -118,6 +155,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService
 		request.send();
 	}
 	
+	@Override
 	public void onSendRegisterNewUser(SendRegisterNewUserEvent evt) {
 		SendRegisterNewUserAction action = evt.getAction();
 		RegisterNewUserTranslatorImpl RegisterNewUserActionTranslator = new RegisterNewUserTranslatorImpl();

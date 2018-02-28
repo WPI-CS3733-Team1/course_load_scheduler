@@ -1,6 +1,8 @@
 package org.dselent.course_load_scheduler.client.translator.impl;
 
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.dselent.course_load_scheduler.client.action.ReceiveLoginAction;
 import org.dselent.course_load_scheduler.client.action.SendLoginAction;
@@ -15,11 +17,15 @@ import com.google.gwt.json.client.JSONValue;
 
 public class LoginActionTranslatorImpl implements ActionTranslator<SendLoginAction, ReceiveLoginAction>
 {
+	Logger logger = java.util.logging.Logger.getLogger("[LoginActionTranslator]");
+	
+	
 	@Override
 	public JSONObject translateToJson(SendLoginAction action)
 	{
 		JSONObject jsonObject = new JSONObject();
 		
+		logger.log(Level.SEVERE, "username converted key value: "+JSONHelper.convertKeyName(SendLoginKeys.USER_NAME));
 		JSONHelper.putStringValue(jsonObject, JSONHelper.convertKeyName(SendLoginKeys.USER_NAME), action.getUserName());
 		JSONHelper.putStringValue(jsonObject, JSONHelper.convertKeyName(SendLoginKeys.PASSWORD), action.getPassword());
 		

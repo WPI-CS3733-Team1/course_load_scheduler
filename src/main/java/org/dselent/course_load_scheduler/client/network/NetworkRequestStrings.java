@@ -10,6 +10,8 @@ public final class NetworkRequestStrings
 	public static String CREATE_ADMIN = "user/create_admin";
 	public static String CREATE_COURSE ="user/create_course";
 	public static String CREATE_SECTION = "user/create_section";
+	public static String GET_SIDEBAR = "user/sidebar_info";
+	
 	
 	private NetworkRequestStrings() {};
 }
